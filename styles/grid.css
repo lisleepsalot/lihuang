@@ -1,0 +1,39 @@
+.project-container{
+  background-color: white;
+  border-style: solid ;
+  border-radius: 1px;
+  border-color: black;
+  padding: 20px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  border-radius: 10px;
+  transition: border-radius 1.5s ease;
+}
+
+
+.project-container:hover {
+  /*
+  border-radius: 20px;
+  */
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.projects-display-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: -1px; 
+  background-color: black;
+  padding-left: 1px;
+  border-style: none;
+  padding-bottom: 1px;
+}
+
+.grid-image {
+  max-width: 100%;
+  height: auto;
+}
+.h1 {
+  font-family: Montserrat;
+  font-weight: 600;
+}
