@@ -1,32 +1,33 @@
 .project-container{
   background-color: white;
   border-style: solid ;
-  border-radius: 1px;
+  border-width: 1px;
   border-color: black;
+  border-radius: 10px;
   padding: 20px;
   margin-left: -1px;
   margin-bottom: -1px;
-  border-radius: 10px;
-  transition: border-radius 1.5s ease;
+  transition: border-radius 1s ease;
 }
 
 
 .project-container:hover {
+  border-radius: 25px;
   /*
-  border-radius: 20px;
-  */
   grid-column: span 2;
   grid-row: span 2;
+  */
 }
+
 
 .projects-display-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: -1px; 
+  grid-template-columns: repeat(4, 1fr);
   background-color: black;
   padding-left: 1px;
-  border-style: none;
   padding-bottom: 1px;
+  border-style: none;
+  margin-left: 200px;
 }
 
 .grid-image {
@@ -34,6 +35,8 @@
   height: auto;
 }
 .h1 {
-  font-family: Montserrat;
-  font-weight: 600;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 14px;
 }
