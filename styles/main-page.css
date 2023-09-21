@@ -1,12 +1,38 @@
 .side-bar-container {
   position: fixed;
   left: 0;
-  width: 160px;
-  height: 100%;
+  width: 220px;
+  height: 100vh;
   background-color: rgb(255, 255, 255);
-  border-style: solid;
+  /*border-style: solid;*/
   border-width: 1px;
   border-color: black;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   padding: 20px;
+  margin-top: 71px;
+  border-top-right-radius: 10px;
+}
+.header-container{
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  border-width: 1px;
+  /*border-style: solid;*/
+  border-color: black;
+  /*border-radius: 10px;*/
+  background-color: white;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-page-category{
+  padding-left: 20px;
+}
+.big-name {
+  padding-left: 20px;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
