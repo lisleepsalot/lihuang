@@ -27,7 +27,7 @@
   padding-left: 261px;
   padding-bottom: 1px;
   border-style: none;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .grid-image {
@@ -39,6 +39,7 @@
   font-weight: 400;
   line-height: 16px;
   font-size: 14px;
+  margin: 0;
 }
 .hover-underline:hover {
   text-decoration: underline;

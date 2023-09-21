@@ -1,4 +1,6 @@
 body {
+  height: 100vh;
+  cursor: url(images/icons/yellow-cursor.svg),auto;
   background-color: black;
   padding: 0;
   margin: 0;
