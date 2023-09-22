@@ -34,13 +34,7 @@
   max-width: 100%;
   height: auto;
 }
-.h1 {
-  font-family: Poppins;
-  font-weight: 400;
-  line-height: 16px;
-  font-size: 14px;
-  margin: 0;
-}
+
 .hover-underline:hover {
   text-decoration: underline;
 }

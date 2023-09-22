@@ -1,7 +1,51 @@
 body {
-  height: 100vh;
-  cursor: url(images/icons/yellow-cursor.svg),auto;
-  background-color: black;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: black;
+  cursor: none;
+}
+
+.h1 {
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.hover-yellow:hover {
+	color: #f7b81c;
+}
+.custom-cursor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.site-wide {
+  display: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+.site-wide .pointer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f7b81c;
+	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+.site-wide.active .pointer {
+	width: 30px;
+	height: 30px;
 }

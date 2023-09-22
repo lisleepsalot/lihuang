@@ -11,8 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Li Huang</title>
+
 </head>
 <body>
+    <!-- This is my custom cursor-->
+    <div class="custom-cursor site-wide">
+        <div class="pointer"></div>
+	</div>
+
+    <!-- This is where web cotents start-->
     <div class="header-container">
         <p class="big-name">
             <a>LI HUANG</a>
@@ -20,28 +27,28 @@
     </div>
     <div class="side-bar-container">
         <p class="h1 main-page-category">
-            <span class="">
+            <span class="hover-yellow">
                 <a onclick="showAllWork();">design</a>
             </span>
         </p>
         <p class="h1 main-page-category">
-            <span class="">
+            <span class="hover-yellow">
                 <a onclick="showTypeWork();">type</a>
             </span>
         </p>
         <p class="h1 main-page-category">
-            <span class="">
+            <span class="hover-yellow">
                 <a onclick="showIllustration();">illustration</a>
             </span>
         </p>
         <p class="h1 main-page-category">
-            <span class="">
+            <span class="hover-yellow">
                 <a onclick="showPlay();">play</a>
             </span>
         </p>
         <p class="h1 main-page-category">
-            <span class="hover-underline">
-                <a onclick="goToAbout();">about</a>
+            <span class="hover-yellow">
+                <a onclick="goToAbout();">about         </a>
             </span>
         </p>
 
@@ -54,7 +61,9 @@
 
     </div>
 </body>
+<script src="cursor.js"></script>
 <script src="data/projects.js"></script>
 <script src="projects-grid.js"></script>
 <script src="pages.js"></script>
+
 </html>
