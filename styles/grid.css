@@ -7,7 +7,7 @@
   padding: 20px;
   margin-left: -1px;
   margin-bottom: -1px;
-  transition: border-radius 1s ease;
+  transition: border-radius 0.7s ease;
 }
 
 
@@ -22,12 +22,9 @@
 
 .projects-display-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: black;
-  padding-left: 211px;
+  grid-template-columns: repeat(4, 1fr);
   padding-bottom: 1px;
   border-style: none;
-  padding-top: 50px;
 }
 
 .grid-image {
