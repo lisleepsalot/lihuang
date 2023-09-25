@@ -1,6 +1,6 @@
 .main {
 	padding-top: 50px;
-	padding-left: 271px;
+	padding-left: 291px;
 	background-color: none;
 }
 
@@ -32,7 +32,7 @@
   position: fixed;
   font-family: Poppins;
   left: 0;
-  width: 230px;
+  width: 250px;
   height: calc(100vh - 111px);
   background-color: rgb(255, 255, 255);
   border-style: solid;
@@ -99,7 +99,7 @@
   padding: 3px 0 3px 20px;
 }
 .big-name {
-  padding-left: 40px;
+  padding-left: 20px;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
