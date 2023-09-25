@@ -3,7 +3,7 @@ let projectsHTML = "";
 projects.forEach((project)=>{
   projectsHTML +=
   `
-  <div class="project-container">
+  <div class="project-container js-${project.identifier}">
     <img class="grid-image" src="${project.image}">
     <p class="h1 h1-center">${project.name}</p>
   </div>

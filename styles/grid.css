@@ -4,12 +4,13 @@
   border-width: 1px;
   border-color: black;
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px 10px 10px 20px;
   margin-left: -1px;
   margin-bottom: -1px;
   transition: border-radius 0.7s ease;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
@@ -32,4 +33,5 @@
 .grid-image {
   max-width: 100%;
   height: auto;
+
 }
