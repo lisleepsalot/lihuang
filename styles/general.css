@@ -19,6 +19,10 @@ body {
 	letter-spacing: 1px;
 }
 
+.h1-center {
+	text-align: center;
+}
+
 .hover-yellow:hover {
 	color: #f7b81c;
 }

@@ -5,7 +5,7 @@ projects.forEach((project)=>{
   `
   <div class="project-container">
     <img class="grid-image" src="${project.image}">
-    <p class="h1">${project.name}</p>
+    <p class="h1 h1-center">${project.name}</p>
   </div>
   `
 })
