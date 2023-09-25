@@ -10,5 +10,6 @@ projects.forEach((project)=>{
   `
 })
 
+
 document.querySelector('.projects-display-grid').
 innerHTML = projectsHTML;

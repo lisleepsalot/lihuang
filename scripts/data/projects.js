@@ -6,7 +6,7 @@ const projects =[
     identifier: 'afterParty',
   },
   {
-    image: "images/covers-gif/puzzle-type.gif",
+    image: "images/covers-gif/hope-and-anchor.gif",
     name: "Puzzle Type",
     categories: ['type','web','design'],
     identifier: 'puzzleType',

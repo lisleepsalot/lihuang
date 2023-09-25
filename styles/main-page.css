@@ -30,6 +30,7 @@
 /*side bar*/
 .side-bar-container {
   position: fixed;
+  font-family: Poppins;
   left: 0;
   width: 230px;
   height: calc(100vh - 111px);
@@ -69,6 +70,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
+
 }
 .header-right-section{
   display: flex;
