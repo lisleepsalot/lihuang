@@ -7,45 +7,14 @@ body {
   cursor: none;
 }
 
-.main {
-	padding-top: 50px;
-	padding-left: 211px;
-	background-color: black;
-}
 
-.add-above{
-	display: flex;
-}
-.flex-1{
-	flex: 1;
-}
-.flex-2{
-	flex: 2;
-}
-.flex-container{
-	background-color: white;
-  border-style: solid ;
-  border-width: 1px;
-  border-color: black;
-  border-radius: 8px;
-  margin-left: -1px;
-  margin-bottom: -1px;
-  transition: border-radius 0.7s ease;
-	display: none;
-}
-.flex-container:hover {
-	border-radius: 28px;
-}
-.flex-content {
-	padding: 20px;
-}
 /* typography settings*/
 
 .h1 {
   font-family: Poppins;
   font-weight: 400;
   line-height: 16px;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
 	letter-spacing: 1px;
 }
@@ -84,7 +53,21 @@ body {
 	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
 }
 
+.effect-image{
+	width: 80px;
+}
+
+.site-wide .effect{
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+
 .site-wide.active .pointer {
 	width: 30px;
 	height: 30px;
+}
+
+.site-wide.active .effect {
+	opacity: 1;
 }
