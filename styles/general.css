@@ -79,4 +79,5 @@ body {
 .index-title{
 	text-decoration: none;
   color: #333;
+	cursor: none;
 }
