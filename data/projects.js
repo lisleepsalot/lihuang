@@ -5,7 +5,7 @@ const projects =[
     categories: ['editorial','design'],
   },
   {
-    image: "images/covers-gif/anatomy-of-fascism.gif",
+    image: "images/covers-gif/puzzle-type.gif",
     name: "Puzzle Type",
     categories: ['type','web'],
   },
@@ -19,8 +19,8 @@ const projects =[
 
   },
   {
-    image: "images/covers-gif/hope-and-anchor.gif",
-    name: "Project name"
+    image: "images/covers-gif/russian-avant-garde.png",
+    name: "Russian Avant-Garde"
   },
   {
     image: "images/covers-gif/after-party.gif",
