@@ -14,13 +14,10 @@
 	flex: 2;
 }
 .flex-container{
-	background-color: white;
-  border-style: solid ;
-  border-width: 1px;
-  border-color: black;
+  background-color: white;
+  border: 1px solid black;
   border-radius: 8px;
-  margin-left: -1px;
-  margin-bottom: -1px;
+  margin: -1px 0 0 -1px;
   transition: border-radius 0.7s ease;
 	display: none;
 }

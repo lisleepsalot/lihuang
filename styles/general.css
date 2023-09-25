@@ -75,3 +75,8 @@ body {
 .site-wide.active .effect {
 	opacity: 1;
 }
+
+.index-title{
+	text-decoration: none;
+  color: #333;
+}

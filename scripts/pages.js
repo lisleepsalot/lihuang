@@ -3,6 +3,6 @@ function goToAbout() {
 
   document.querySelectorAll('.js-afterParty').forEach((element) => {
     element.addEventListener('click', () => {
-      window.location.href = "about.html";
+      window.location.href = "pages/afterParty.html";
     });
   });

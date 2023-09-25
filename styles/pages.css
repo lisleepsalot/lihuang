@@ -1,0 +1,19 @@
+.main.project{
+  padding-top: 50px;
+	padding-left: 270px;
+	background-color: none;
+}
+
+.project-content{
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px 10px 10px 20px;
+  margin: -1px -1px 0 0;
+  min-height: calc(100vh - 70px);
+  transition: border-radius 0.7s ease;
+}
+
+.project-content:hover{
+  border-radius: 24px;
+}
