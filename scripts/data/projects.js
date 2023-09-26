@@ -6,7 +6,7 @@ const projects =[
     identifier: 'afterParty',
   },
   {
-    image: "images/covers-gif/puzzle-type.gif",
+    image: "images/covers-gif/puzzle-type1.gif",
     name: "Puzzle Type",
     categories: ['type','web','design'],
     identifier: 'puzzleType',
@@ -32,28 +32,38 @@ const projects =[
   {
     image: "images/covers-gif/hospital-navigation.gif",
     name: "Hospital Navigation",
-    categories: ['design'],
+    categories: ['design','web'],
     identifier: 'hospitalNavigation',
   },
   {
     image: "images/covers-gif/waterlily.gif",
-    name: "Waterlily Type"
+    name: "Waterlily Type",
+    categories: ['design','web'],
+    identifier: 'waterlily',
   },
   {
     image: "images/covers-gif/atlas-swing.gif",
-    name: "Atlas Swing"
+    name: "Atlas Swing",
+    categories: ['game','design'],
+    identifier: 'atlasSwing',
   },
   {
     image: "images/covers-gif/meowfia.gif",
-    name: "Meowfia"
+    name: "Meowfia",
+    categories: ['game','design'],
+    identifier: 'meowfia',
   },
   {
     image: "images/covers-gif/kebash.gif",
-    name: "kebash"
+    name: "kebash",
+    categories: ['game','design'],
+    identifier: 'meowfia',
   },
   {
-    image: "images/grid-covers/cover1.png",
-    name: "Project name"
+    image: "images/covers-gif/toCookInHere.gif",
+    name: "To Cook ___ in Here",
+    categories: ['game','design'],
+    identifier: 'toCookInHere',
   },
   {
     image: "images/grid-covers/cover1.png",
