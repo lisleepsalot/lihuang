@@ -6,7 +6,7 @@ const projects =[
     identifier: 'afterParty',
   },
   {
-    image: "images/covers-gif/hope-and-anchor.gif",
+    image: "images/covers-gif/puzzle-type.gif",
     name: "Puzzle Type",
     categories: ['type','web','design'],
     identifier: 'puzzleType',
@@ -36,20 +36,20 @@ const projects =[
     identifier: 'hospitalNavigation',
   },
   {
-    image: "images/covers-gif/puzzle-type.gif",
-    name: "Project name"
+    image: "images/covers-gif/waterlily.gif",
+    name: "Waterlily Type"
   },
   {
-    image: "images/covers-gif/hospital-navigation.gif",
-    name: "Project name"
+    image: "images/covers-gif/atlas-swing.gif",
+    name: "Atlas Swing"
   },
   {
-    image: "images/grid-covers/cover1.png",
-    name: "Project name"
+    image: "images/covers-gif/meowfia.gif",
+    name: "Meowfia"
   },
   {
-    image: "images/grid-covers/cover1.png",
-    name: "Project name"
+    image: "images/covers-gif/kebash.gif",
+    name: "kebash"
   },
   {
     image: "images/grid-covers/cover1.png",

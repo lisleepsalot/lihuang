@@ -4,7 +4,7 @@
   border-width: 1px;
   border-color: black;
   border-radius: 8px;
-  padding: 10px 10px 25px 10px;
+  padding: 20px 20px 25px 20px;
   margin-left: -1px;
   margin-bottom: -1px;
   transition: border-radius 0.7s ease;
@@ -33,4 +33,5 @@
 .grid-image {
   max-width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
