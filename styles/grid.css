@@ -11,8 +11,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap; 
 }
-
 
 .project-container:hover {
   border-radius: 28px;
@@ -32,6 +32,22 @@
 
 .grid-image {
   max-width: 600px;
-  height: auto;
-  margin-bottom: 20px;
+  max-height: 500px;
+  object-fit: cover;
 }
+
+/* 
+.image-tile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.image-tile img {
+  width: 200px; 
+  height: 200px; 
+  margin: 10px; 
+  object-fit: cover; 
+  border: 1px solid #ccc; 
+}
+ */
