@@ -60,7 +60,7 @@ const projects =[
     identifier: 'meowfia',
   },
   {
-    image: "images/covers-gif/toCookInHere.gif",
+    image: "images/covers-gif/toCookInHere.png",
     name: "To Cook ___ in Here",
     categories: ['game','design'],
     identifier: 'toCookInHere',

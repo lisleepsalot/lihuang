@@ -3,6 +3,9 @@
   padding-top: 50px;
 	padding-left: 290px;
 	background-color: none;
+  display: flex;      
+  justify-content: center;
+  align-items: center;
 }
 
 .project-content{
@@ -37,6 +40,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - 35px);
+  width: calc(100vw - 321px);
   
 }
 
@@ -91,7 +95,7 @@
 }
 
 .grid-toolbar:hover{
-  opacity: 0.6;
+  opacity: 1;
   z-index:2;
   left:30%;
   right:30%;
@@ -131,10 +135,10 @@
 }
 
 .project-title{
+  margin: 0 0 0 0;
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 2px;
-  margin: 0;
+  letter-spacing: 1px;
 }
 
 .project-credits{

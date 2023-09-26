@@ -80,4 +80,5 @@ body {
 	text-decoration: none;
   color: #333;
 	cursor: none;
+	transition: color 0.3s;
 }

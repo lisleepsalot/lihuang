@@ -70,7 +70,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: 80;
 
 }
 .header-right-section{
@@ -96,7 +96,7 @@
 }
 /*main page content*/
 .main-page-category{
-  padding: 3px 0 3px 20px;
+  padding: 3px 0 3px 0px;
 }
 .big-name {
   padding-left: 20px;

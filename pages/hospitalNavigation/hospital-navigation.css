@@ -1,0 +1,84 @@
+body{
+  padding-bottom: 100px;
+}
+
+.image{
+  width: 80vw;
+}
+
+.close-icon-container{
+position: absolute;
+right: 110px;
+top: 60px;
+}
+
+.close-icon {
+  width: 80px;
+  z-index: 20;
+  opacity: 70%;
+}
+
+.close-icon:hover {
+  opacity: 1;
+}
+
+
+.description-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.description{
+  width: 500px;
+  display: inline-block;
+  margin-right: 50px;
+  display: relative;
+}
+
+.skylar{
+  position: absolute;
+  left: 18%;
+  top: 10%;
+  width: 110px;
+  height: 40px;
+  opacity: 0;
+}
+
+.description-image{
+  width: 500px;
+
+}
+
+.big-grid{
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.grid-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.gird-image{
+  width: 1150px;
+  opacity: 60%;
+}
+
+.icon-container{
+  opacity: 50%;
+  transition: opacity 0.5s ease;
+  transition: z-index 0.5 ease;
+}
+
+.icon-container:hover{
+  opacity: 100%;
+  z-index: 10;
+}
+
+.icon-image {
+  max-height: 200px;
+}

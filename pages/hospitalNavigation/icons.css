@@ -1,0 +1,110 @@
+.icon1{
+  position: absolute;
+  transform: translateX(-1140px) translateY(100px);  
+}
+
+
+.icon2{
+  position: absolute;
+  transform: translateX(-780px) translateY(40px);
+}
+
+.icon3{
+  position: absolute;
+  transform: translateX(-380px);
+  top: 7%;
+}
+
+.icon4{
+  position: absolute;
+  transform: translateX(-580px);
+  top: 66%;
+}
+
+.icon5{
+  position: absolute;
+  transform: translateX(-1140px);
+  top: 38%;
+}
+
+.icon6{
+  position: absolute;
+  transform: translateX(-740px);
+  top: 40%;
+}
+
+.icon7{
+  position: absolute;
+  transform: translateX(-300px);
+  top: 73%;
+}
+
+.icon8{
+  position: absolute;
+  transform: translateX(-670px);
+  top: 50%;
+}
+
+.icon9{
+  position: absolute;
+  transform: translateX(-500px);
+  top: 78%;
+}
+
+.icon10{
+  position: absolute;
+  transform: translateX(-900px);
+  top: 20%;
+}
+
+.icon11{
+  position: absolute;
+  transform: translateX(-320px);
+  top: 60%;
+}
+
+.icon12{
+  position: absolute;
+  transform: translateX(-950px);
+  top: 60%;
+}
+
+.icon13{
+  position: absolute;
+  transform: translateX(-400px);
+  top: 73%;
+}
+
+.icon14{
+  position: absolute;
+  transform: translateX(-850px);
+  top: 50%;
+}
+
+.icon15{
+  position: absolute;
+  transform: translateX(-230px);
+  top: 42%;
+}
+
+.icon16{
+  position: absolute;
+  transform: translateX(-1000px);
+  top: 73%;
+}
+
+.icon17{
+  position: absolute;
+  transform: translateX(-1080px);
+  top: 66%;
+}
+
+.icon18{
+  position: absolute;
+  transform: translateX(-1130px);
+  top: 78%;
+}
+
+.smaller-size{
+  width: 200px;
+}
