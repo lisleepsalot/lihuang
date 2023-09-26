@@ -1,0 +1,4 @@
+const memes = [{
+  image: "",
+  name: "",
+}]

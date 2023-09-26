@@ -4,7 +4,7 @@
 	background-color: none;
 }
 
-.add-above{
+.add-above-info, .add-above-question, .add-above-plus{
 	display: flex;
 }
 .info{
@@ -20,12 +20,34 @@
   border-radius: 8px;
 }
 
+.function-explained{
+  margin-left: -1px;
+  margin-bottom: -1px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  font-family: Poppins;
+  font-size: 13px;
+  border: 1px solid black;
+  border-radius: 8px;
+  min-height: 100px;
+  transition: border-radius 0.6s;
+}
+
+.flex-text{
+  padding: 20px 20px 20px 20px;
+}
+
 .flex-1{
 	flex: 1;
 }
 .flex-2{
 	flex: 2;
 }
+
+.flex-1:hover, .flex-2:hover{
+  border-radius: 28px;
+}
+
 .flex-container{
   background-color: white;
   border: 1px solid black;
@@ -101,11 +123,12 @@
   width: 20px;
   height: 20px;
   text-align: center;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 .top-icon:hover{
   border-color: #f7b81c;
   background-color: #f7b81c;
+  color: white;
 }
 .header-right-section{
   font-family: Poppins;
