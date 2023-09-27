@@ -1,5 +1,9 @@
 body{
   padding-bottom: 100px;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  box-sizing: border-box;
 }
 
 .image{
@@ -27,6 +31,7 @@ top: 60px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  display: none;
 }
 
 .description{
@@ -54,6 +59,7 @@ top: 60px;
   display: flex;
   justify-content: center;
   z-index: 0;
+  height: calc(100vh - 70px);
 }
 
 .grid-container{
@@ -81,4 +87,86 @@ top: 60px;
 
 .icon-image {
   max-height: 200px;
+}
+
+.hospital-contents{
+  position: relative;
+}
+
+
+
+/* typography settings*/
+
+.h1 {
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 13px;
+  margin: 0;
+	letter-spacing: 1px;
+}
+
+.h1-center {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.hover-yellow:hover {
+	color: #f7b81c;
+}
+
+/* cursor setting*/
+
+
+.custom-cursor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.site-wide {
+  display: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+.site-wide .pointer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f7b81c;
+	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+.effect-image{
+	width: 80px;
+}
+
+.site-wide .effect{
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+
+.site-wide.active .pointer {
+	width: 30px;
+	height: 30px;
+}
+
+.site-wide.active .effect {
+	opacity: 1;
+}
+
+.index-title{
+	text-decoration: none;
+  color: #333;
+	cursor: none;
+	transition: color 0.3s;
 }

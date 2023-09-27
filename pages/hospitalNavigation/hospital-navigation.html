@@ -1,17 +1,83 @@
 <!doctype html>
+<!-- 
+
+
+I really need to use javascript to generate this
+lots of work indeed
+
+
+-->
 <html>
 <head>
   <title>Hospital Navigation</title>
+  <link rel="stylesheet" href="../../styles/pages.css">
+  <link rel="stylesheet" href="../../styles/main-page.css">
   <link rel="stylesheet" href="hospital-navigation.css">
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="images.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <!-- google fonts import-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
+  <div class="custom-cursor site-wide">
+    <div class="pointer">
+    </div>
+    <div class="effect">
+        <img class="effect-image"src="../../images/icons/effect.svg">
+    </div>
+</div>
 
-  <div class="image-container1 js-hide">
+<!-- This is where web cotents start-->
+<header class="header">
+    <div class="header-hospital">
+        <p class="big-name">
+            <a class="index-title hover-yellow" href="../../index.html">LI HUANG</a>
+        </p>
+        <div class="header-right-section hover-yellow">
+            contact
+        </div>
+    </div>
+</header>
+
+<!-- This is the side bar-->
+<nav class="sidebar">
+    <div class="sidebar-hospital">
+        <p class="project-title">
+            THE ANATOMY<br>OF FASCISM
+        </p>
+        <p class="project-description">
+            The brand book for a conceptual local soap shop featuring a designated color palette.
+
+        </p>
+        <p class="project-credits">
+            RISD 2023 Spring<br>
+            Color and Surface<br>
+            Instructed by Emily Rye
+        </p>
+
+    </div>
+</nav>
+  <div class="main-hospital">
+
+
+    <div class="description-container">
+      <div class="description">
+        <button class="skylar"><a href="https://www.skylarperez.com/" target="_blank">Skylar</a>></button>
+        <img class="description-image" src="about/description1.png"></div>
+      <div class="description"><img class="description-image" src="about/description2.png"></div>
+    </div>
+
+
+
+      <div class="image-container1 js-hide">
     <div>
       <img class="image" src="images/image-1.png">
       <div class="close-icon-container" onclick="hideImage(1);"> 
@@ -173,12 +239,7 @@
     </div>
   </div>
 
-  <div class="description-container">
-    <div class="description">
-      <button class="skylar"><a href="https://www.skylarperez.com/" target="_blank">Skylar</a>></button>
-      <img class="description-image" src="about/description1.png"></div>
-    <div class="description"><img class="description-image" src="about/description2.png"></div>
-  </div>
+
   <div class="big-grid">
     <div class="grid-container">
       <img class="gird-image" src="grid.png">
@@ -345,6 +406,9 @@
         </div>
       </div>
 
+  </div>
+
+
       
 
 </body>
@@ -406,4 +470,6 @@ elements.forEach(function (element) {
 
   </script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="../../scripts/cursor.js"></script>
+  <script src="../scripts/pages.js"></script>
 </html>

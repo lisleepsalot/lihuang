@@ -24,7 +24,7 @@ function showInfo(){
   } else {
     addAboveElement.innerHTML = existingHTML + `
       <div class="info">
-        Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! (Press 'i' again to close this tab)
+        Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! <br> (Click 'i' again or 'c' to close this tab, click '?' to know more about them)
       </div>
     `;
     infoCount = true;
@@ -42,7 +42,7 @@ function showq(){
       <div class="function-explained flex-2">
         <div class="flex-text">
         It seems like you've stumbled upon these nifty buttons...<br>
-        Indeed! These are functions being tested to incorporate modular elements into the display grid.<br>
+        Yes! These are functions being tested to incorporate modular elements into the display grid.<br>
         <br>
         Right now, you can:<br>
         Press '?' to access basic information about this function.<br>
@@ -55,7 +55,7 @@ function showq(){
       </div>
       <div class="function-explained flex-1">
         <div class="flex-text">
-        This is a new Feature! flex 1
+        Draw a cat and put it here!
         </div>
       </div>
     `;
