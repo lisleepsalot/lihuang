@@ -11,6 +11,7 @@ body {
   vertical-align: center;
 }
 
+
 @font-face {
   font-family: XOVF;
   src: url("XOVF.woff2");
@@ -69,19 +70,33 @@ body {
   animation-iteration-count: infinite;
 }
 
-
-.clear-button{
-  position: fixed;
-  bottom: 30px;
-  border: 2px solid;
-  border-color:#f7b81c;
-  background-color: white;
-  border-radius: 30px;
-  width: 100px;
-  height: 45px;
-  font-size: 20px;;
-  color: #f7b81c; 
+.vtext1 {
+  font-size: 70px;
+  font-family: XOVF;
+  line-height: 73px;
+  animation-name: test-animation-v;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  color: rgb(0, 0, 0);
+  animation-iteration-count: infinite;
 }
+.htext1 {
+  font-size: 70px;
+  font-family: XOVF;
+  line-height: 73px;
+  animation-name: test-animation-h;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  color: rgb(0, 0, 0);
+  animation-iteration-count: infinite;
+}
+
+
+
 
 .hide{
   display: none;
