@@ -30,3 +30,9 @@ function goToAbout() {
       window.location.href = "pages/puzzleType/puzzle-type.html";
     });
   });
+
+  document.querySelectorAll('.js-toCookInHere').forEach((element) => {
+    element.addEventListener('click', () => {
+      window.location.href = "pages/toCookInHere.html";
+    });
+  });

@@ -46,7 +46,7 @@
 }
 
 .flex-1:hover, .flex-2:hover{
-  border-radius: 28px;
+  border-radius: 18px;
 }
 
 .flex-container{
@@ -58,10 +58,10 @@
 	display: none;
 }
 .flex-container:hover {
-	border-radius: 28px;
+	border-radius: 18px;
 }
 .info:hover{
-  border-radius: 28px;
+  border-radius: 18px;
 }
 .flex-content {
 	padding: 20px;
@@ -90,8 +90,8 @@
   justify-content: space-between;
 }
 .side-bar-container:hover{
-  border-top-right-radius: 28px;
-  border-bottom-right-radius: 28px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 
 /*header*/
@@ -167,4 +167,23 @@
   letter-spacing: 3px;
   margin: 0;
   cursor: none;
+}
+.hidden-cat{
+  position: fixed;
+  left: 30%;
+  top: 26px;
+  z-index: -1;
+}
+.hidden-cat-image{
+  width: 200px;
+}
+.hidden-cat-text{
+  width: 80px;
+  position: fixed;
+  top: -12px;;
+  left: 600px;
+  font-family: Poppins;
+  color: white;
+  font-size: 13px;
+  padding-top: 70px;
 }

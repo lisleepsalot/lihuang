@@ -78,7 +78,7 @@
 }
 
 .project-content:hover{
-  border-radius: 24px;
+  border-radius: 18px;
 }
 
 .image-grid{
@@ -164,8 +164,8 @@
 }
 
 .project-side-bar-container:hover{
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .project-description{

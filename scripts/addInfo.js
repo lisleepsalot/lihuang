@@ -67,6 +67,7 @@ function clearAdd(){
   document.querySelector('.add-above-info').innerHTML = '';
   document.querySelector('.add-above-question').innerHTML = '';
   document.querySelector('.add-above-plus').innerHTML = '';
+  document.querySelector('.add-above-about').innerHTML = '';
   questionCount = false;
   infoCount = false;
 
