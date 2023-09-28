@@ -24,7 +24,6 @@ lots of work indeed
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-
 </head>
 <body>
   <div class="custom-cursor site-wide">
@@ -39,7 +38,7 @@ lots of work indeed
 <header class="header">
     <div class="header-hospital">
         <p class="big-name">
-            <a class="index-title hover-yellow" href="../../index.html">LI HUANG</a>
+            <a class="index-title hover-yellow" onclick="storeTrue()"href="../../index.html">LI HUANG</a>
         </p>
         <div class="header-middle-section" style="font-size: 13px;font-family: Poppins; font-weight: 400;">click and drag to interact</div>
         <div class="header-right-section hover-yellow">
@@ -414,8 +413,7 @@ lots of work indeed
 
 </body>
  
-
-
+<script src="../../scripts/refresh.js"></script>
 <script>
   $( function() {
     $( '.draggable' ).draggable();
@@ -473,4 +471,6 @@ elements.forEach(function (element) {
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="../../scripts/cursor.js"></script>
   <script src="../scripts/pages.js"></script>
+
+
 </html>

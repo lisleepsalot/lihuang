@@ -1,6 +1,9 @@
 function goToAbout() {
   window.location.href = "about.html";}
 
+function storeTrue(){
+  localStorage.setItem('shouldRefresh', 'true');}
+
   document.querySelectorAll('.js-afterParty').forEach((element) => {
     element.addEventListener('click', () => {
       window.location.href = "pages/afterParty.html";
@@ -21,6 +24,7 @@ function goToAbout() {
 
   document.querySelectorAll('.js-hospitalNavigation').forEach((element) => {
     element.addEventListener('click', () => {
+      storeTrue();
       window.location.href = "pages/hospitalNavigation/hospital-navigation.html";
     });
   });

@@ -32,3 +32,8 @@ function TrackCursor(evt) {
   site_wide_cursor.style.transform = 
     `translate(${evt.clientX - w / 2 + scrollX}px, ${evt.clientY - h / 2 + scrollY}px)`;
 }
+
+function refreshCursor(){
+  site_wide_cursor.style.transform = 
+    `translate(1px, 1px)`;
+}

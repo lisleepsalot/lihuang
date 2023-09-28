@@ -16,6 +16,7 @@ const keyMappings = {
 const renderText = function(letter) {
   //give span horizontal or vertical class
   if (letter !== 'Enter') {
+    event.preventDefault();
     const lineBreak = spanCount > 0 && (spanCount + 1) % 9 === 0 ? '<br>' : '';
     console.log(letter);
     html = `<span class="${spanCount % 2 === 0 ? 'vtext' : 'htext'}">${letter}</span>${lineBreak}`;
@@ -27,6 +28,7 @@ const renderText = function(letter) {
 
 //this thing assigns different functions when different keys were pressed
 document.body.addEventListener('keydown', function(event) {
+  event.preventDefault();
   console.log('Key pressed:', event.key);
   const pressedKey = event.key;
   if (event.key === 'Backspace') {
