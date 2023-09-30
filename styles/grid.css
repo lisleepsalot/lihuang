@@ -4,7 +4,7 @@
   border-width: 1px;
   border-color: black;
   border-radius: 5px;
-  padding: 15px;
+  padding: 15px 15px 22px 15px;
   margin-left: -1px;
   margin-bottom: -1px;
   transition: border-radius 0.7s ease;

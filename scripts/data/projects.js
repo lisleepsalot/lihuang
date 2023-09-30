@@ -72,6 +72,7 @@ const projects =[
     categories: ['design'],
     identifier: 'kirakira',
   },
+  /*
   {
     image: "images/covers-gif/russian-avant-garde.png",
     name: "Yellow City",
@@ -90,4 +91,5 @@ const projects =[
     categories: ['design'],
     identifier: 'mrJones',
   },
+  */
 ]

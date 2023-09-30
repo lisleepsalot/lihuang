@@ -157,6 +157,11 @@
 /*main page content*/
 .main-page-category{
   padding: 4px 2px 4px 2px;
+  margin: 0 0 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;;
+  letter-spacing: 1px;
 }
 .big-name {
   color: black;

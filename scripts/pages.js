@@ -87,3 +87,10 @@ function storeTrue(){
       window.location.href = "pages/russianAvantGarde.html";
     });
   });
+
+  document.querySelectorAll('.js-kirakira').forEach((element) => {
+    element.addEventListener('click', () => {
+      storeTrue();
+      window.location.href = "pages/kirakira.html";
+    });
+  });
