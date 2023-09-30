@@ -1,4 +1,4 @@
-const imageContainers = document.querySelectorAll('.image-container');
+const imageContainers = document.querySelectorAll('.bigg');
 
 // Add a click event listener to each "image-container" element
 imageContainers.forEach((container) => {

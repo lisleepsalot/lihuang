@@ -13,7 +13,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- title -->
-    <title>Waterlily</title>
+    <title>Russian Avant-Garde</title>
+    <style>
+        .russianAvantGarde-text{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            column-count: 3; /* Number of columns */
+            column-gap: 20px; /* Gap between columns */
+            column-width: 200px; /* Width of each column (optional) */
+        }
+        .timeline-title{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+        .timeline-number{
+            font-family: Poppins;
+            font-size: 9px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            display: inline-block;
+            padding: 0px 3px;
+            text-align: center;
+            border-radius: 20px;
+            min-width: 10px;
+            margin-right: 2px;
+        }
+    </style>
 
 </head>
 <body>
@@ -42,15 +72,18 @@
     <nav class="sidebar">
         <div class="project-side-bar-container">
             <p class="project-title">
-                ATLAS SWINGS
+                THE TIMELINE OF<br>
+                RUSSIAN AVANT-GARDE<br>
+                
             </p>
             <p class="project-description">
-                As an entry in the 2023 Geopipe NYC game jam, Atlas Swings is a golf game built using the Geopipe-provided model of New York City. The game won first place in the game jam. As the artist and graphic designer of the team, I collaborated with my team to research and explore art styles and game flow.
+                The final project for the Russian Revolution Seminar at Brown University, taught by Ethan M. Pollock. This project seeks to offer an exhaustive exploration of the dynamic explosion of the art movement during this era.
 
             </p>
             <p class="project-credits">
-                2023 Geopipe NYC Game Jam<br>
-                Atlas Swings Team<br>
+                Brown 2022 Fall<br>
+                Russian Revolution Seminar<br>
+                Instructed by Ethan M. Pollock
             </p>
     
         </div>
@@ -59,18 +92,16 @@
     <div class="main project">
         <div class="project-content">
             <div class="cover-container">
-                <div class="down-symbol">↓<br>scroll down for more</div>
-                <img style="max-width: 80%" src="../images/contents/waterlily/waterlily.svg">
+                <div class="down-symbol" style="padding-bottom: 20px;">↓<br>scroll down for more</div>
+                <img  class="content-image" style="margin-top: -10px;max-height: calc(100% - 80px)"src="../images/contents/russianAvantGarde/1.png">
             </div>
-            <img style="max-width: 66%; margin: 40px 0px;" class="content-image" src="../images/contents/waterlily/1.svg">
-            <img style="max-width: 66%; margin: 40px 0px;" class="content-image" src="../images/contents/waterlily/2.svg">
-            <img style="max-width: 66%; margin: 40px 0px;" class="content-image" src="../images/contents/waterlily/3.svg">
-            <img style="max-height: calc(100vh - 150px); margin: 80px 0px 0px 0px;" class="content-image" src="../images/contents/waterlily/4.svg">
+            <div class="russianAvantGarde-text"></div>
+            
         </div>
     </div>
 </body>
 <script src="../scripts/cursor.js"></script>
 <script src="../scripts/pages.js"></script>
 <script src="../scripts/hover.js"></script>
-
+<script src="../scripts/data/russianAvantGarde.js"></script>
 </html>

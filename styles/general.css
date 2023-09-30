@@ -25,6 +25,7 @@ body {
 }
 
 .hover-yellow:hover {
+	cursor: none;
 	color: #f7b81c;
 }
 

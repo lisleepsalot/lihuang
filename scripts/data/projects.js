@@ -68,9 +68,26 @@ const projects =[
   },
   {
     image: "images/covers-gif/russian-avant-garde.png",
-    name: "Russian Avant-Garde",
+    name: "KiraKira",
     categories: ['design'],
-    identifier: 'russianAg',
+    identifier: 'kirakira',
   },
-  
+  {
+    image: "images/covers-gif/russian-avant-garde.png",
+    name: "Yellow City",
+    categories: ['design'],
+    identifier: 'yellowCity',
+  },
+  {
+    image: "images/covers-gif/russian-avant-garde.png",
+    name: "To Cook with An Open Kitchen",
+    categories: ['design'],
+    identifier: 'kitchen',
+  },
+  {
+    image: "images/covers-gif/russian-avant-garde.png",
+    name: "Mr.Jones",
+    categories: ['design'],
+    identifier: 'mrJones',
+  },
 ]
