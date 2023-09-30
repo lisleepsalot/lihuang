@@ -58,7 +58,7 @@ const projects =[
     image: "images/covers-gif/kebash.gif",
     name: "kebash",
     categories: ['game','design'],
-    identifier: 'meowfia',
+    identifier: 'kebash',
   },
   {
     image: "images/covers-gif/russian-avant-garde.png",
@@ -67,8 +67,10 @@ const projects =[
     identifier: 'russianAg',
   },
   {
-    image: "images/grid-covers/cover1.png",
-    name: "Project name"
+    image: "images/covers-gif/russian-avant-garde.png",
+    name: "Russian Avant-Garde",
+    categories: ['design'],
+    identifier: 'russianAg',
   },
   
 ]
