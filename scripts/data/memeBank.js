@@ -1,4 +1,0 @@
-const memes = [{
-  image: "",
-  name: "",
-}]

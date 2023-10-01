@@ -113,6 +113,7 @@ function clearAdd(){
     questionCount = false;
     if (document.querySelector('.about-block')){document.querySelector('.about-block').remove();};
     document.querySelector('.memeBank-grid').innerHTML = '';
+    memeStatus = false;
 
 }
 

@@ -1,4 +1,5 @@
 // Sample 'memebank' array with objects
+let memeStatus = false;
 const memebank = [
   {
     name: "1",
@@ -315,28 +316,6 @@ const memebank = [
 // Initialize the 'selectedMemes' array
 const selectedMemes = [];
 
-// Function to select random objects from 'memebank'
-function getRandomMemes(arr, numMemes) {
-  const shuffled = arr.slice(); // Create a shallow copy of the array
-  let currentIndex = shuffled.length;
-  let temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (currentIndex > 0) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    temporaryValue = shuffled[currentIndex];
-    shuffled[currentIndex] = shuffled[randomIndex];
-    shuffled[randomIndex] = temporaryValue;
-  }
-
-  // Return the first 'numMemes' elements from the shuffled array
-  return shuffled.slice(0, numMemes);
-}
-
 
 // Shuffle the 'memebank' array
 function shuffleArray(array) {
@@ -355,6 +334,24 @@ function getMemes() {
   const randomlySelectedMemes = memebank.slice(0, numMemesToSelect);
 
   // Add the selected memes to '.memeBank-grid'
+
+  if(!memeStatus){
+    const reminderHTML = `
+    <div class="meme-container">
+    <p style="margin: 3px;font-family: Poppins; font-size: 13px;">
+    You have summoned memes by pressing "+" button.<br>
+    Have Fun.
+    </p>
+  </div>
+    `
+    document.querySelector('.memeBank-grid').innerHTML += reminderHTML;
+    memeStatus = true;
+  }else {
+    const reminderHTML = '';
+    document.querySelector('.memeBank-grid').innerHTML += reminderHTML;
+  }
+
+
   randomlySelectedMemes.forEach((meme) => {
     const memeHTML = `
       <div class="meme-container">
@@ -362,7 +359,7 @@ function getMemes() {
         <p style="margin: 3px;font-family: Poppins; font-size: 13px;">${meme.name}</p>
       </div>
     `;
+
     document.querySelector('.memeBank-grid').innerHTML += memeHTML;
   });
 }
-

@@ -27,7 +27,6 @@ function showDesign(){
 }
 
 function showIllustration() {
-  console.log('hello');
   const designCategoryElements = document.querySelectorAll('.illustration-category');
 
   designCategoryElements.forEach((element) => {
@@ -54,4 +53,6 @@ function clearSelectedColors(){
 
   designCategoryElements.forEach((element) => {
   element.classList.remove('selected-blue'); });
+
+  memeStatus = false;
 }
