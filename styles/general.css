@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   background-color: black;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 
@@ -14,7 +14,7 @@ body {
   font-family: Poppins;
   font-weight: 400;
   line-height: 16px;
-  font-size: 12px;
+  font-size: 13px;
   margin: 0;
 	letter-spacing: 1px;
 }
@@ -25,9 +25,11 @@ body {
 }
 
 .hover-yellow:hover {
-	cursor: none;
-	color: #f7b81c;
+  cursor: pointer;
+  color: black;
+  background-color:#f7d580;
 }
+
 
 /* cursor setting*/
 
@@ -81,6 +83,6 @@ body {
 .index-title{
 	text-decoration: none;
   color: #333;
-	cursor: none;
+	cursor: pointer;
 	transition: color 0.3s;
 }

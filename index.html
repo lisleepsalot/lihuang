@@ -18,7 +18,7 @@
         <img class="hidden-cat-image" src="images/cryCatMeme.png">
         <div class="hidden-cat-text">u saw me</div>
     </div>
-    <!-- This is my custom cursor-->
+    <!-- This is my custom cursor
     <div class="custom-cursor site-wide">
         <div class="pointer">
         </div>
@@ -26,6 +26,7 @@
             <img class="effect-image"src="images/icons/effect.svg">
         </div>
 	</div>
+    -->
 
     <!-- This is where web cotents start-->
 
@@ -49,7 +50,7 @@
                     c
                 </div>
             </div>
-            <div class="header-right-section hover-yellow">
+            <div class="header-right-section hover-yellow" onclick="goToAbout()">
                 contact
             </div>
         </div>
@@ -61,23 +62,17 @@
 
             <div class="work-categories">
 
-                <p class="main-page-category">
-                    <span class="hover-yellow">
-                        <a onclick="showAllWork();">DESIGN</a>
-                    </span>
+                <p class="main-page-category design-category hover-yellow1 selected-yellow">
+                    DESIGN
                 </p>
         
-                <p class="main-page-category">
-                    <span class="hover-yellow">
-                        <a onclick="showIllustration();">ILLUSTRATION</a>
-                    </span>
+                <p class="main-page-category illustration-category hover-red">
+                    ILLUSTRATION
                 </p>
         
 
-                <p class="main-page-category">
-                    <span class="hover-yellow">
-                        <a onclick="showPlay();">PLAY</a>
-                    </span>
+                <p class="main-page-category play-category hover-blue">
+                    PLAY
                 </p>
     
            
@@ -88,18 +83,18 @@
                     <img class="lurking-image lurking" style="z-index: 2"src="images/icons/lurking1.svg">
                     <img class="lurking-image"style="z-index: 1" src="images/icons/lurking2.svg">
                 </div>
-                <p class="main-page-category">
-                    <span class="hover-yellow">
+                <p class="main-page-category hover-yellow1">
+                    <span class="">
                         <a onclick="goToAbout();">ABOUT</a>
                     </span>
                 </p>
-                <p class="main-page-category">
-                    <span class="hover-yellow">
+                <p class="main-page-category hover-yellow1">
+                    <span class="">
                         <a onclick="">EMAIL</a>
                     </span>
                 </p>
-                <p class="main-page-category">
-                    <span class="hover-yellow">
+                <p class="main-page-category hover-yellow1">
+                    <span class="">
                         <a onclick="">LINKEDIN</a>
                     </span>
                 </p>
@@ -109,28 +104,67 @@
     </nav>
 
     <div class="main">
+        <!-- information HTML goes here-->
         <div class="add-above-info">
-            
+            <div class="info">
+                Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! <br> 
+                    <div class="top-icon top-icon-clear" style="display: inline-block" onclick = "clearAdd();">
+                    c
+                    </div>(Click 'i' again or 'c' to close this tab, click '?' to know more about them)
+              </div>
         </div>
+
+        <!-- information HTML goes here-->
         <div class="add-above-question">
             
+        </div> 
+
+        <!-- meme HTML goes here-->
+        <div class="memeBank-grid">
+            
         </div>
-        <div class="add-above-plus">
+
+        <!-- illustration HTML goes here-->
+        <div class="illustration-display-grid">
+            <div class="column">
+                <div class="illustration-container">
+                    <img style="width: 100%" src="images/contents/kirakira/7.png">
+                </div>
+                <div class="illustration-container">
+                    <img style="width: 100%" src="images/contents/kirakira/8.png">
+                </div>
+            </div>
+            <div class="column">
+                <div class="illustration-container">
+                    <img style="width: 100%" src="images/contents/kirakira/7.png">
+                </div>
+            </div>
+            <div class="column">
+                <div class="illustration-container">
+                    <img style="width: 100%" src="images/contents/kirakira/7.png">
+                </div>
+            </div>
 
         </div>
 
+        <!-- play HTML goes here-->
+        <div class="play-display-grid">  
+        </div>
+
+        <!-- play HTML goes here-->
         <div class="projects-display-grid">
-
 
         </div>
 
     </div>
 </body>
 <script src="scripts/refresh.js"></script>
-<script src="scripts/cursor.js"></script>
+<!--<script src="scripts/cursor.js"></script>-->
 <script src="scripts/data/projects.js"></script>
 <script src="scripts/projects-grid.js"></script>
 <script src="scripts/pages.js"></script>
 <script src="scripts/addInfo.js"></script>
-
+<script src="scripts/memebank.js"></script>
+<script src="scripts/categories.js"></script>
+<script> checkAndNavigate();</script>
 </html>

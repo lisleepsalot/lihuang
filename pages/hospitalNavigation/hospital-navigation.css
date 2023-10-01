@@ -2,7 +2,7 @@ body{
   padding-bottom: 100px;
   margin: 0;
   padding: 0;
-  cursor: none;
+  cursor: pointer;
   box-sizing: border-box;
 }
 
@@ -112,7 +112,9 @@ top: 60px;
 }
 
 .hover-yellow:hover {
-	color: #f7b81c;
+  cursor: pointer;
+  color: black;
+  background-color:#f7d580;
 }
 
 /* cursor setting*/
@@ -167,6 +169,6 @@ top: 60px;
 .index-title{
 	text-decoration: none;
   color: #333;
-	cursor: none;
+	cursor: pointer;
 	transition: color 0.3s;
 }
