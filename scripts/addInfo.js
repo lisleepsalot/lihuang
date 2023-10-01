@@ -21,7 +21,7 @@ function showInfo(){
   if (infoCount) {
     document.querySelector('.info').remove();
     infoCount = false;
-  } else {
+  } else if(!infoCount){
     addAboveElement.innerHTML = existingHTML + `
       <div class="info">
         Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! <br> (Click 'i' again or 'c' to close this tab, click '?' to know more about them)
@@ -29,6 +29,7 @@ function showInfo(){
     `;
     infoCount = true;
   }
+  console.log(infoCount);
 }
 
 function showq(){
@@ -53,9 +54,14 @@ function showq(){
         Stay tuned for future updates!
         </div>
       </div>
-      <div class="function-explained flex-1">
+      <div class="function-explained flex-1" style="align-items: center;">
         <div class="flex-text">
-        Draw a cat and put it here!
+          <div class="cat-container">
+            <img class="catloaf not-angry" style="z-index: 5" src="images/icons/catloaf.svg">
+            <img class="catloaf " src="images/icons/angryloaf.svg">
+            <img style="width: 170px;" src="images/icons/angryloaf.svg">
+          </div>
+          <p>This is Li's digital cat loaf Eric.</p>
         </div>
       </div>
     `;
@@ -63,12 +69,42 @@ function showq(){
   }
 }
 
+function goToAbout() {
+  const aboutHTML =
+  `<div class="about-block">
+  <div class="about-left">
+      <div class="about-animation-container">
+          <img class="stand-still-image"src="images/icons/standstill.svg">
+          <img class="sayhi-image" src="images/icons/sayhi.svg">
+      </div>
+  </div>
+  <div class="about-right">
+      <div> 
+          <p class="about-title">Hi! I'm Li.<br>Welcome to<br>my website!</p>
+          <p class="about-description">My name is Li. 
+          <br>I am a cat lover who enjoys things that are informative, interactive, and pretty.
+              I’m currently pursuing Graphic Design Degree at <a>Rhode Island School of Design</a>.<br>I love good food and good designs.<br>
+              <br>
+              <br>
+              <a class="about-links hover-yellow"href = "" target="_blank" >MY RESUME</a><br>
+              <a class="about-links hover-yellow"href = "https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">MY LINKEDIN</a><br>
+              <a class="about-links hover-yellow"href = "" target="_blank" >MY EMAIL</a><br><br>
+              
+          </p>
+      </div>
+     
+  </div>
+</div>`+gridHTML;
+document.querySelector('.projects-display-grid').innerHTML= aboutHTML;
+}
+
 function clearAdd(){
-  document.querySelector('.add-above-info').innerHTML = '';
-  document.querySelector('.add-above-question').innerHTML = '';
-  document.querySelector('.add-above-plus').innerHTML = '';
-  document.querySelector('.add-above-about').innerHTML = '';
-  questionCount = false;
-  infoCount = false;
+    if (infoCount){document.querySelector('.info').remove();
+    infoCount = false;}
+    document.querySelector('.add-above-question').innerHTML = '';
+    questionCount = false;
+    document.querySelector('.add-above-plus').innerHTML = '';
+    document.querySelector('.about-block').remove();
 
 }
+

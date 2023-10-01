@@ -1,5 +1,4 @@
-function goToAbout() {
-  window.location.href = "about.html";}
+
 
 function storeTrue(){
   localStorage.setItem('shouldRefresh', 'true');}
