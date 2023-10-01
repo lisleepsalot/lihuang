@@ -4,7 +4,7 @@ document.querySelector('.top-icon-info').addEventListener('click', function() {s
 document.querySelector('.top-icon-question').addEventListener('click', function() {showq();
 });
 
-document.querySelector('.top-icon-plus').addEventListener('click', function() {showRandom();
+document.querySelector('.top-icon-plus').addEventListener('click', function() {getThreeMemes();
 });
 
 document.querySelector('.top-icon-clear').addEventListener('click', function() {clearAdd();
@@ -89,6 +89,10 @@ function goToAbout() {
               <a class="about-links hover-yellow"href = "" target="_blank" >MY RESUME</a><br>
               <a class="about-links hover-yellow"href = "https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">MY LINKEDIN</a><br>
               <a class="about-links hover-yellow"href = "" target="_blank" >MY EMAIL</a><br><br>
+              <br>
+              <div class="top-icon top-icon-clear" style="display: inline-block" onclick = "clearAdd();">
+              c
+              </div><span class="about-description">click me to clear this block.<span>
               
           </p>
       </div>
@@ -104,7 +108,8 @@ function clearAdd(){
     document.querySelector('.add-above-question').innerHTML = '';
     questionCount = false;
     document.querySelector('.add-above-plus').innerHTML = '';
-    document.querySelector('.about-block').remove();
+    if (document.querySelector('.about-block')){document.querySelector('.about-block').remove();};
+    document.querySelector('.memeBank-grid').innerHTML = '';
 
 }
 
