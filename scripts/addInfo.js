@@ -4,14 +4,14 @@ document.querySelector('.top-icon-info').addEventListener('click', function() {s
 document.querySelector('.top-icon-question').addEventListener('click', function() {showq();
 });
 
-document.querySelector('.top-icon-plus').addEventListener('click', function() {getThreeMemes();
+document.querySelector('.top-icon-plus').addEventListener('click', function() {getMemes();
 });
 
 document.querySelector('.top-icon-clear').addEventListener('click', function() {clearAdd();
 });
 
 
-let infoCount = false;
+let infoCount = true;
 let questionCount = false;
 //defining all button functions here
 function showInfo(){
@@ -24,7 +24,11 @@ function showInfo(){
   } else if(!infoCount){
     addAboveElement.innerHTML = existingHTML + `
       <div class="info">
-        Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! <br> (Click 'i' again or 'c' to close this tab, click '?' to know more about them)
+        Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! <br> 
+        <div class="top-icon top-icon-clear" style="display: inline-block" onclick = "clearAdd();">
+        c
+        </div>(Click 'i' again or 'c' to close this tab, click '?' to know more about them)
+        
       </div>
     `;
     infoCount = true;
@@ -107,7 +111,6 @@ function clearAdd(){
     infoCount = false;}
     document.querySelector('.add-above-question').innerHTML = '';
     questionCount = false;
-    document.querySelector('.add-above-plus').innerHTML = '';
     if (document.querySelector('.about-block')){document.querySelector('.about-block').remove();};
     document.querySelector('.memeBank-grid').innerHTML = '';
 

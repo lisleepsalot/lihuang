@@ -25,17 +25,18 @@ const projects =[
 
   },
   {
-    image: "images/covers-gif/anatomy-of-fascism.gif",
-    name: "Anatomy of Fascism",
-    categories: ['editorial', 'design'],
-    identifier: 'anatomyOfFascism',
-  },
-  {
     image: "images/covers-gif/hope-and-anchor.gif",
     name: "Hope & Anchor Brandbook",
     categories: ['branding','editorial','design'],
     identifier: 'hopeAndAnchor',
   },
+  {
+    image: "images/covers-gif/anatomy-of-fascism.gif",
+    name: "Anatomy of Fascism",
+    categories: ['editorial', 'design'],
+    identifier: 'anatomyOfFascism',
+  },
+
   {
     image: "images/covers-gif/waterlily.gif",
     name: "Waterlily Type",

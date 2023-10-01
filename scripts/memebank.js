@@ -338,27 +338,31 @@ function getRandomMemes(arr, numMemes) {
 }
 
 
-// Initialize a variable to keep track of the starting index for adding memes
-let startIndex = 0;
+// Shuffle the 'memebank' array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
 
-function getThreeMemes() {
-  // Select 3 random memes from 'memebank' starting from the current index
-  const numMemesToSelect = 3;
-  const randomlySelectedMemes = memebank.slice(startIndex, startIndex + numMemesToSelect);
+function getMemes() {
+  // Shuffle the 'memebank' array
+  shuffleArray(memebank);
 
-  // Update the starting index for the next call
-  startIndex += numMemesToSelect;
+  // Select the first 3 memes (which are now random) from 'memebank'
+  const numMemesToSelect = 5;
+  const randomlySelectedMemes = memebank.slice(0, numMemesToSelect);
 
   // Add the selected memes to '.memeBank-grid'
   randomlySelectedMemes.forEach((meme) => {
     const memeHTML = `
       <div class="meme-container">
         <img class="grid-image" src="${meme.image}">
-        <p>${meme.name}</p>
+        <p style="margin: 3px;font-family: Poppins; font-size: 13px;">${meme.name}</p>
       </div>
     `;
     document.querySelector('.memeBank-grid').innerHTML += memeHTML;
   });
 }
-
 

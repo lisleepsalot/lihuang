@@ -159,28 +159,31 @@
   height: 20px;
   text-align: center;
   margin-right: 6px;
+  cursor: pointer;
 }
 .top-icon:hover{
-  border-color: #f7b81c;
-  background-color: #f7b81c;
-  color: white;
+  border-color: #f7d580;
+  background-color: #f7d580;
+  color: black;
 }
 .header-right-section{
   font-family: Poppins;
   font-size: 13px;
   font-weight: 400;
   text-align: center;
-  padding-right: 40px;
+  margin-right: 40px;
   transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 /*main page content*/
 .main-page-category{
-  padding: 4px 2px 4px 2px;
+  padding: 4px 3px 4px 3px;
   margin: 0 0 0 0;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 18px;;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 .big-name {
   color: black;
@@ -190,7 +193,7 @@
   font-weight: 600;
   letter-spacing: 3px;
   margin: 0;
-  cursor: none;
+  cursor: pointer;
 }
 .hidden-cat{
   position: fixed;
@@ -299,3 +302,18 @@
   height: 173px;
   margin-top: -20px;
 }
+.selected-yellow, .selected-red, .selected-blue{
+  color: black;
+  padding: 4px 13px;
+  margin-left: -10px;
+  background-color:#f7d580;
+}
+
+.hover-blue:hover, .hover-red:hover, .hover-yellow1:hover {
+  cursor: pointer;
+  color: black;
+  padding: 4px 13px;
+  margin-left: -10px;
+  background-color:#f7d580;
+}
+

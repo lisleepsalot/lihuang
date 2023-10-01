@@ -6,7 +6,7 @@ function makeGrid(){
   projects.forEach((project)=>{
     projectsHTML +=
     `
-    <div class="project-container js-${project.identifier}">
+    <div class="project-container js-${project.identifier}" onclick="goTo('${project.identifier}');">
       <img class="grid-image" src="${project.image}" alt="${project.image}">
       <p class="h1 h1-center">${project.name}</p>
     </div>
