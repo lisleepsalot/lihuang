@@ -1,4 +1,175 @@
-@media screen and (min-width: 800px) and (max-width: 2200px){
+@media screen and (max-width: 800px) {
+  .projects-display-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .illustration-display-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .play-display-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .project-container, .illustration-container,.play-container{
+    background-color: white;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    margin-left: -1px;
+    transition: border-radius 0.7s ease;
+  }
+  .play-container{
+    margin-left: -1px;
+    padding: 15px;
+    margin-bottom: -1px;
+    position: relative;
+  }
+  .illustration-container{
+    padding: 15px;
+    margin-bottom: -1px;
+    position: relative;
+  }
+  .project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px 22px 15px;
+    margin-bottom: -1px;
+  }
+  
+  .project-container:hover, .illustration-container:hover, .play-container:hover{
+    border-radius: 20px;
+    cursor: pointer;
+    /*
+    grid-column: span 2;
+    grid-row: span 2;
+    */
+  }
+  
+  
+  .projects-display-grid, .illustration-display-grid, .play-display-grid {
+    display: grid;
+    padding-bottom: 0px;
+    border-style: none;
+    background-color: black;
+    margin-left:1px;
+  }
+  .projects-display-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .illustration-display-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .play-display-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-image {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .meme-container{
+    background-color: white;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    transition: border-radius 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+  .meme-container:hover {
+    border-radius: 20px;
+    /*
+    grid-column: span 2;
+    grid-row: span 2;
+    */
+  }
+  .memeBank-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-style: none;
+    background-color: black;
+  }
+  
+  /* 
+  .image-tile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  
+  .image-tile img {
+    width: 200px; 
+    height: 200px; 
+    margin: 10px; 
+    object-fit: cover; 
+    border: 1px solid #ccc; 
+  }
+   */
+   .grid-description{
+    position: absolute; 
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.782);
+    font-family: Poppins;
+    font-size: 13px;
+    transition: opacity 0.7s ease;
+    opacity: 0;
+   }
+  
+   .grid-description:hover{
+    opacity: 1;
+   }
+   .illustration-piece{
+    opacity: 1;
+   }
+   .showIllustration{
+      position: absolute;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-left: 5%;
+      z-index: 101;
+      background-color: rgba(255, 255, 255, 0.753);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .illustration-image{
+    max-width: 100%;
+    max-height: 80%;
+    background-color: none;
+   }
+   .illustration-half{
+    max-width: 50%;
+   }
+   .illustration-image1{
+    height: 80%;
+   }
+   .disable-interaction {
+    pointer-events: none;
+  }
+  }
+@media screen and (min-width: 1100px) and (max-width: 2200px) {
 .project-container, .illustration-container,.play-container{
   background-color: white;
   border-style: solid ;
@@ -11,7 +182,7 @@
 .play-container{
   margin-left: -1px;
   padding: 15px;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
   position: relative;
 }
 .illustration-container{
@@ -42,6 +213,7 @@
   padding-bottom: 0px;
   border-style: none;
   background-color: black;
+  margin-left:1px;
 }
 .projects-display-grid{
   grid-template-columns: repeat(3, 1fr);
@@ -154,4 +326,7 @@
  .disable-interaction {
   pointer-events: none;
 }
+}
+@media screen and (min-width: 2200px) {
+
 }

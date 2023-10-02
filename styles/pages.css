@@ -1,6 +1,16 @@
+@media screen and (max-width: 800px) {
+.project-side-bar-container{
+  display: none;
+}
+.project-content{
+  display: none;
+}
+}
 @media screen and (min-width: 800px) and (max-width: 2200px) {
 
 /* main content */
+
+/*
 .main.project{
   padding-top: 50px;
 	padding-left: 290px;
@@ -9,15 +19,7 @@
   justify-content: center;
   align-items: center;
 }
-
-.main-hospital{
-	padding-left: 270px;
-	background-color: none;
-  display: flex;      
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
-}
+*/
 
 .project-content{
   background: white;
@@ -138,9 +140,9 @@
 
 .project-side-bar-container{
   position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
-  position: fixed;
   font-family: Poppins;
   left: 0;
   width: 210px;
@@ -156,25 +158,13 @@
   border-bottom-right-radius: 8px;
   transition: border-radius 0.7s ease;
 }
-.sidebar-hospital{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  font-family: Poppins;
-  left: 0;
-  width: 210px;
-  height: calc(100vh - 91px);
-  background-color: none;
-  padding: 40px;
-  margin-top: 50px;
-  margin-left: -1px;
-}
 
 .project-side-bar-container:hover{
   border-bottom-right-radius: 18px;
   border-top-right-radius: 18px;
 }
+
+
 
 .project-description{
   margin-top: 20px;
@@ -203,3 +193,12 @@
 
 
 }
+
+@media screen and (min-width: 2200px) {
+  .project-side-bar-container{
+    display: none;
+  }
+  .project-content{
+    display: none;
+  }
+  }
