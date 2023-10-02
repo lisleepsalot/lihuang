@@ -1,27 +1,32 @@
-.project-container, .illustration-container{
+.project-container, .illustration-container,.play-container{
   background-color: white;
   border-style: solid ;
   border-width: 1px;
   border-color: black;
   border-radius: 5px;
   margin-left: -1px;
-  margin-bottom: -1px;
   transition: border-radius 0.7s ease;
+}
+.play-container{
+  margin-left: -1px;
+  padding: 15px;
+  margin-bottom: -2px;
+  position: relative;
 }
 .illustration-container{
   padding: 15px;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
+  position: relative;
 }
 .project-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap; 
   padding: 15px 15px 22px 15px;
   margin-bottom: -1px;
 }
 
-.project-container:hover, .illustration-container:hover{
+.project-container:hover, .illustration-container:hover, .play-container:hover{
   border-radius: 20px;
   cursor: pointer;
   /*
@@ -31,9 +36,9 @@
 }
 
 
-.projects-display-grid, .illustration-display-grid {
+.projects-display-grid, .illustration-display-grid, .play-display-grid {
   display: grid;
-  padding-bottom: 1px;
+  padding-bottom: 0px;
   border-style: none;
   background-color: black;
 }
@@ -46,7 +51,7 @@
 }
 
 .play-display-grid{
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-image {
@@ -100,3 +105,51 @@
   border: 1px solid #ccc; 
 }
  */
+ .grid-description{
+  position: absolute; 
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.782);
+  font-family: Poppins;
+  font-size: 13px;
+  transition: opacity 0.7s ease;
+  opacity: 0;
+ }
+
+ .grid-description:hover{
+  opacity: 1;
+ }
+ .illustration-piece{
+  opacity: 1;
+ }
+ .showIllustration{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 5%;
+    z-index: 101;
+    background-color: rgba(255, 255, 255, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .illustration-image{
+  max-width: 100%;
+  max-height: 80%;
+  background-color: none;
+ }
+ .illustration-half{
+  max-width: 50%;
+ }
+ .illustration-image1{
+  height: 80%;
+ }
+ .disable-interaction {
+  pointer-events: none;
+}
