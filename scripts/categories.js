@@ -35,7 +35,7 @@ function showIllustrations() {
 <div class="column">
 <div class="illustration-container illustration-piece1" onclick="showIllustration('1')">
     <div class="grid-description">
-        High School YearBook, 2020
+        High School Yearbook, 2020
     </div>
     <img class="illustration-image illo" src="images/illustration/1.jpg">
 </div>
@@ -75,7 +75,7 @@ function showIllustrations() {
 </div>
 <div class="illustration-container illustration-piece6" onclick="showIllustration('6')">
     <div class="grid-description">
-        staying alive, forgot year
+        staying alive
     </div>
     <img class="illustration-image illo" src="images/illustration/12.jpg">
 </div>

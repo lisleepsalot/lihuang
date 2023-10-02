@@ -65,7 +65,7 @@ function showq(){
             <img class="catloaf " src="images/icons/angryloaf.svg">
             <img style="width: 170px;" src="images/icons/angryloaf.svg">
           </div>
-          <p>This is Li's digital cat loaf Eric.</p>
+          <p>This is Li's digital cat loaf Typo.</p>
         </div>
       </div>
     `;
