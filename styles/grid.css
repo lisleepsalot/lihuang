@@ -1,3 +1,4 @@
+@media screen and (min-width: 800px) and (max-width: 2200px){
 .project-container, .illustration-container,.play-container{
   background-color: white;
   border-style: solid ;
@@ -152,4 +153,5 @@
  }
  .disable-interaction {
   pointer-events: none;
+}
 }

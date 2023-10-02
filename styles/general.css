@@ -1,88 +1,91 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  background-color: black;
-  /*cursor: none;*/
-}
-
-
-/* typography settings*/
-
-.h1 {
-  font-family: Poppins;
-  font-weight: 400;
-  line-height: 16px;
-  font-size: 13px;
-  margin: 0;
-	letter-spacing: 1px;
-}
-
-.h1-center {
-	text-align: center;
-	padding-top: 15px;
-}
-
-.hover-yellow:hover {
-  cursor: pointer;
-  color: black;
-  background-color:#f7d580;
-}
-
-
-/* cursor setting*/
-
-
-.custom-cursor {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-  z-index: 999;
-  pointer-events: none;
-}
-
-.site-wide {
-  display: none;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: multiply;
-}
-.site-wide .pointer {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #f7b81c;
-	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
-}
-
-.effect-image{
-	width: 80px;
-}
-
-.site-wide .effect{
-	opacity: 0;
-	transition: opacity 0.2s ease-in-out;
-}
-
-
-.site-wide.active .pointer {
-	width: 30px;
-	height: 30px;
-}
-
-.site-wide.active .effect {
-	opacity: 1;
-}
-
-.index-title{
-	text-decoration: none;
-  color: #333;
-	cursor: pointer;
-	transition: color 0.3s;
+@media screen and (min-width: 800px) and (max-width: 2200px){
+	body {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		height: 100vh;
+		background-color: black;
+		/*cursor: none;*/
+	}
+	
+	
+	/* typography settings*/
+	
+	.h1 {
+		font-family: Poppins;
+		font-weight: 400;
+		line-height: 16px;
+		font-size: 13px;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	
+	.h1-center {
+		text-align: center;
+		padding-top: 15px;
+	}
+	
+	.hover-yellow:hover {
+		cursor: pointer;
+		color: black;
+		background-color:#f7d580;
+	}
+	
+	
+	/* cursor setting*/
+	
+	
+	.custom-cursor {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+		z-index: 999;
+		pointer-events: none;
+	}
+	
+	.site-wide {
+		display: none;
+		pointer-events: none;
+		transform: translate(-50%, -50%);
+		mix-blend-mode: multiply;
+	}
+	.site-wide .pointer {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #f7b81c;
+		transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+	}
+	
+	.effect-image{
+		width: 80px;
+	}
+	
+	.site-wide .effect{
+		opacity: 0;
+		transition: opacity 0.2s ease-in-out;
+	}
+	
+	
+	.site-wide.active .pointer {
+		width: 30px;
+		height: 30px;
+	}
+	
+	.site-wide.active .effect {
+		opacity: 1;
+	}
+	
+	.index-title{
+		text-decoration: none;
+		color: #333;
+		cursor: pointer;
+		transition: color 0.3s;
+	}
+	
 }
