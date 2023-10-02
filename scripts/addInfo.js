@@ -24,7 +24,7 @@ function showInfo(){
   } else if(!infoCount){
     addAboveElement.innerHTML = existingHTML + `
       <div class="info">
-        Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! <br> 
+      Li is working really hard to wrap up and fix this website. Make sure to drop by soon for some cool updates and new features! <br> 
         <div class="top-icon top-icon-clear" style="display: inline-block" onclick = "clearAdd();">
         c
         </div>(Click 'i' again or 'c' to close this tab, click '?' to know more about them)
