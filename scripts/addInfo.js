@@ -74,6 +74,8 @@ function showq(){
 }
 
 function goToAbout() {
+  showDesign();
+  
   const aboutHTML =
   `<div class="about-block">
   <div class="about-left">

@@ -53,7 +53,7 @@ const projects =[
     image: "images/covers-gif/russian-avant-garde.png",
     name: "Russian Avant-Garde",
     categories: ['design'],
-    identifier: 'russianAg',
+    identifier: 'russianAvantGarde',
   },
   {
     image: "images/covers-gif/kebash.gif",
