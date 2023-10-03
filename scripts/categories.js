@@ -50,7 +50,7 @@ function showIllustrations() {
     <div class="grid-description">
         I don't know what this is, 2021
     </div>
-    <img class="illustration-image illo" src="images/illustration/5.jpg">
+    <img class="illustration-image illo" src="images/illustration/5.png">
 </div>
 </div>
 <div class="column">
