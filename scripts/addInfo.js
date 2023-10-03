@@ -108,6 +108,8 @@ function goToAbout() {
 document.querySelector('.projects-display-grid').innerHTML= aboutHTML;
 }
 
+
+
 function clearAdd(){
     if (infoCount){document.querySelector('.info').remove();
     infoCount = false;}
