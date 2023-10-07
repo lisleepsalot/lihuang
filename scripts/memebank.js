@@ -310,7 +310,6 @@ const memebank = [
     image: "images/memeBank/77.png"
   }
 
-  // Add more meme objects as needed
 ];
 
 // Initialize the 'selectedMemes' array
@@ -329,12 +328,12 @@ function getMemes() {
   // Shuffle the 'memebank' array
   shuffleArray(memebank);
 
-  // Select the first 3 memes (which are now random) from 'memebank'
+  // Select the first 3 memes (random) from 'memebank'
   const numMemesToSelect = 5;
   const randomlySelectedMemes = memebank.slice(0, numMemesToSelect);
 
-  // Add the selected memes to '.memeBank-grid'
-
+  // Add memes to grid 
+  //check if memes exist
   if(!memeStatus){
     const reminderHTML = `
     <div class="meme-container">
@@ -346,12 +345,9 @@ function getMemes() {
     `
     document.querySelector('.memeBank-grid').innerHTML += reminderHTML;
     memeStatus = true;
-  }else {
-    const reminderHTML = '';
-    document.querySelector('.memeBank-grid').innerHTML += reminderHTML;
   }
 
-
+  //now add memes to grid
   randomlySelectedMemes.forEach((meme) => {
     const memeHTML = `
       <div class="meme-container">

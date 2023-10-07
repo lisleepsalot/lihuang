@@ -92,7 +92,7 @@ function goToAbout() {
               I’m currently pursuing Graphic Design Degree at <a>Rhode Island School of Design</a>.<br>I love good food and good designs.<br>
               <br>
               <br>
-              <a class="about-links hover-yellow"href = "file/resume2023.10.pdf" target="_blank" >MY RESUME</a><br>
+              <a class="about-links hover-yellow" target="_blank" >resume available upon request.</a><br>
               <a class="about-links hover-yellow"href = "https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">MY LINKEDIN</a><br>
               <a class="about-links hover-yellow"href = "" target="_blank" >MY EMAIL</a><br><br>
               <br>
