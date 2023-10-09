@@ -1,0 +1,10 @@
+.header-right-section{
+	font-family: Poppins;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	margin-right: 40px;
+	transition: color 0.3s;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
