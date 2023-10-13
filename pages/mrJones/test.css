@@ -1,0 +1,130 @@
+.body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  position: absolute;
+  height: 30px;
+  top: 0;
+  left:0;
+  right:0;
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  font-family: 'Archivo';
+  font-variation-settings: "WDTH" 90;
+
+}
+.header-left-section{
+  font-family: 'Archivo';
+  font-size: 9px;
+  font-variation-settings: "WDTH" 90;
+  letter-spacing: 2px;
+}
+.header-right-section{
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: auto;
+  height: 18px;
+  
+}
+.hover-text{
+  padding: 3px;
+}
+.header-right-section .hover-text::before {
+  content: "You can't";
+  display: none; /* Initially hide the content */
+}
+
+.header-right-section:hover .hover-text::before {
+  display: inline; /* Display the content when hovering */
+}
+
+.left-bar{
+  position: absolute;
+  left: 0;
+  margin-top: 111px;
+  margin-left: 4px;
+}
+.black-bar{
+  height: 8px;
+  width: 20px;
+  background-color: black;
+  z-index: 3;
+  margin: 8px 4px;
+}
+.content-container{
+  margin-top: -70px;
+  font-family: 'Archivo';
+  font-variation-settings: "WDTH" 90;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mid-container{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.left-part-container{
+  width: 220px;
+  height: 400px;
+  background-color: none;
+  padding: 20px;
+  line-height: 18px;
+}
+.right-part-container{
+  width: 220px;
+  height: 400px;
+  padding: 20px;
+  transition: margin 0.5s ease-in;
+}
+.choice{
+  margin-top: 10px;
+}
+.standard-choice{
+  height: 70px;
+  width: 100%;
+  background-color: blue;
+}
+.blank {
+  background-color: black;
+  color: white;
+  /*
+  font-size: 8px;
+  padding-right: 100%;
+  padding-bottom: 100%;
+  */
+  padding-right: 8px;
+  padding-bottom: 4px;
+}
+
+.word-bank{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0px 20px 0px 3px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.word-bank:hover{
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  color: black;
+  padding: -1;
+}
+.archive-container{
+  padding-left: 60px;
+}
+.nice{
+  height: 100vh;
+}

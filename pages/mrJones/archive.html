@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      THE UNFORSEEABLE FATE OF MR.JONES
+    </title>
+    <link rel="stylesheet" href="archive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--
+    <div style="
+      position: absolute;
+      bottom: 0;
+      right:0;
+      width: 70vw;
+      height: 20vh;
+      background-color: white;
+      z-index: 400;
+      ">
+      -->
+
+    </div>
+
+    <div class="header">
+      <div class="header-left-section" onclick="clearAll();">
+        THE UNFORSEEABLE FATE OF MR.JONES
+      </div>
+      <div class="header-right-section1">
+
+      </div>
+      
+    </div>
+
+    <div class="content-container">
+    <div class="text-description">
+      Double click to choose an archive and begin your test.<br>
+      Beds are warm and sheets are made.
+    </div>
+      <div class="archive-container archive-container1 reposition" onclick="moveArchive(1)">
+        <div class="black-theme-tag">
+          name:___________________<br>
+          date:____________________<br>
+          note:____________________
+        </div>
+        <div class="black-archive-item">
+          <p class="black-archive-text">This archive is not available.<br>
+          Double click to deselect this archive.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-container archive-container2 reposition" onclick="moveArchive(2)">
+        <div class="black-theme-tag">
+          name:___________________<br>
+          date:____________________<br>
+          note:____________________
+        </div>
+        <div class="black-archive-item">
+          <p class="black-archive-text">This archive is not available.<br>
+            Double click to deselect this archive.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-container archive-container3 reposition" onclick="moveArchive(3)">
+        <div class="black-theme-tag">
+          name:___________________<br>
+          date:____________________<br>
+          note:____________________
+        </div>
+        <div class="black-archive-item">
+          <p class="black-archive-text">This archive is not available.<br>
+            Double click to deselect this archive.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-container archive-container4 reposition" onclick="moveArchive(4)">
+        <div class="black-theme-tag">
+          name:___________________<br>
+          date:____________________<br>
+          note:____________________
+        </div>
+        <div class="black-archive-item">
+          <p class="black-archive-text">This archive is not available.<br>
+            Double click to deselect this archive.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-container archive-container5 reposition" onclick="moveArchive(5)">
+        <div class="black-theme-tag">
+          name:___________________<br>
+          date:____________________<br>
+          note:____________________
+        </div>
+        <div class="black-archive-item">
+          <p class="black-archive-text">This archive is not available.<br>
+            Double click to deselect this archive.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-container archive-container6 reposition" onclick="moveArchive(6)">
+        <div class="black-theme-tag">
+          name:___________________<br>
+          date:____________________<br>
+          note:____________________
+        </div>
+        <div class="black-archive-item">
+          <p class="black-archive-text">This archive is not available.<br>
+            Double click to deselect this archive.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-container archive-container7 reposition" onclick="moveArchive(7)">
+        <div class="tag">
+          name:___________________<br>
+          date:____________________<br>
+          note:____________________
+        </div>
+        <div class="archive-item">
+          <p class="archive-text">your name: <br>
+            <input type="text" class="nameInput" placeholder="Enter your name, press enter.">
+            <br>
+            <br>
+            <br>
+            <br>
+            press here to start → <a class ="start-button"onclick="goToTest()"> good luck </a><br>
+            <span class="name-reminder"></span>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <audio id="audio" src="sounds/drawer.wav"></audio>
+    <audio id="audioClick" src="sounds/click.mp3"></audio>
+
+  </body>
+  <script>
+    function gotoTest(){
+      document.getElementById('audio').play();
+      window.location.href = "page1.html";
+    }
+
+    function clearAll(){
+      namesArray = [];
+      localStorage.setItem('namesArray', JSON.stringify(namesArray));
+      localStorage.clear();
+      console.log('cleared local')
+    }
+  </script>
+  <script src="archive.js"></script>
+  <script src="start.js"></script>
+  <script>
+    localStorage.removeItem('accumulatedContent');
+  </script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      THE UNFORSEEABLE FATE OF MR.JONES
+    </title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="test2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left-section">
+        THE UNFORSEEABLE FATE OF MR.JONES
+      </div>
+      <div class="header-right-section">
+        <span class="hover-text"> quit</span>
+      </div>
+    </div>
+
+
+
+    <div class="left-bar">
+      <div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div><div class="black-bar"></div>
+
+
+    </div>
+
+    <div class="content-container">
+      <div class="voice-between not-shown">
+        <div class="voice">
+          Do you really have a choice?
+        </div>
+      </div>
+      <div class="mid-container">
+        <div class="container">
+          <div class="line">
+            <span class="item1">But he</span><span style="left: 44px;"class="item2">was at</span> 
+          </div>
+
+          <div class="line">
+            <span class="item4 empty-blank empty-blank1">1. noun &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+          </div>
+          
+          <div class="line">
+            <span class="item1">with himself</span><span style="left: 78px;"class="item2">and he lost it all</span> 
+          </div>
+
+          <div class="line">
+            <span class="item1">He was at home</span><span style="left: 98px;"class="item2">now feeling the</span> 
+          </div>
+
+          <div class="line">
+            <span class="item1">power of </span>
+          </div>
+
+          <div class="line">
+            <span class="item4 empty-blank empty-blank2">2. adj&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+          </div>
+
+          <div class="line">
+            <span class="item4 empty-blank empty-blank1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span><span class="item5" style="left: 135px">wall</span>
+          </div>
+
+          <div class="line">
+            
+          </div>
+        </div>
+        <div class="right-part-container">
+          <div class="choice">
+            <div>1. ______</div>
+            <span class="word-bank" onclick="fillBlank1('war');">WAR</span><br>
+            <span class="word-bank" onclick="fillBlank1('the bottom');">THE BOTTOM</span><br>
+            <span class="word-bank" onclick="fillBlank1('a crossroad');">A CROSSROAD</span><br>
+          </div>
+
+          <div class="choice">
+            <div>2. ______</div>
+            <span class="word-bank" onclick="fillBlank2('falling');">SUN</span><br>
+            <span class="word-bank" onclick="fillBlank2('burning');">BURNING</span><br>
+            <span class="word-bank" onclick="fillBlank2('crumbling');">CRUMBLING</span><br>
+          </div>
+
+          <div class="drop-button-container">
+            <span class="reminder">&nbsp;</span><br><br>
+            <span class="drop-button">SUBMIT</span> 
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+    <audio class="audioFall" src="sounds/fall.wav"></audio>
+    <audio class="audioClick" src="sounds/click.mp3"></audio>
+  </body>
+  <script src="test2.js"></script>
+  <script src="line.js"></script>
+  <script src="fillBlank.js"></script>
+  <script src="addVoice.js"></script>
+  <script>
+    document.querySelector('.drop-button').addEventListener('click', () => {
+    if (blank1Filled && blank2Filled) {
+        dropText();
+        retrieveAndAccumulateContent();
+        setTimeout(function() {
+          window.location.href = "page7.html";
+        }, 3800);
+        setTimeout(function() {
+          const contentContainer = document.querySelector('.right-part-container');
+          contentContainer.style.marginLeft = '100vw';
+        }, 1300);
+        setTimeout(function() {
+          addVoice();
+        }, 2000);
+
+        const audioElement = document.querySelector('.audioFall');
+        audioElement.play();
+    } else {
+        document.querySelector('.reminder').innerHTML =  'Fill in all the blanks.';
+    }
+});
+
+  </script>
+    <script src="containerData.js"></script>
+</html>
