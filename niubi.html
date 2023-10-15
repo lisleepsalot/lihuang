@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+.main {
+	padding-top: 50px;
+	padding-left: 290px;
+	background-color: none;}
+
+.illustration-display-grid{
+  columns:20rem;
+  gap:0px;
+
+}
+.illustration-image{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+ }
+ .illustration-container{
+    padding: 15px;
+    margin-bottom: -1px;
+    position: relative;
+    block-size: auto;
+    background-color: white;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    margin-left: -1px;
+    transition: border-radius 0.7s ease;
+  }
+  .grid-description{
+    position: absolute; 
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.782);
+    font-family: Poppins;
+    font-size: 13px;
+    transition: opacity 0.7s ease;
+    opacity: 0;
+   }
+   .grid-description{
+  position: absolute; 
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.782);
+  font-family: Poppins;
+  font-size: 13px;
+  transition: opacity 0.7s ease;
+  opacity: 0;
+ }
+
+ .grid-description:hover{
+  opacity: 1;
+ }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="illustration-display-grid">  
+           
+
+
+        <div class="illustration-container illustration-piece1" onclick="showIllustration('1')">
+            <div class="grid-description">
+                High School Yearbook, 2020
+            </div>
+            <img class="illustration-image illo" src="images/illustration/1.jpg">
+        </div>
+        <div class="illustration-container illustration-piece10" style="display: flex;" onclick="showIllustration('10')">
+            <div class="grid-description">
+                mobile wallpaper for luckin tea, 2020
+            </div>
+            <img class="illustration-image illo illustration-half" src="images/illustration/2.jpg">
+        </div>
+        <div class="illustration-container illustration-piece2" onclick="showIllustration('2')">
+            <div class="grid-description">
+                I don't know what this is, 2021
+            </div>
+            <img class="illustration-image illo" src="images/illustration/5.png">
+        </div>
+      
+      
+        <div class="illustration-container illustration-piece3" onclick="showIllustration('3')">
+            <div class="grid-description">
+                my dorm, 2021
+            </div>
+            <img class="illustration-image illo" src="images/illustration/4.jpg">
+        </div>
+        <div class="illustration-container illustration-piece4" onclick="showIllustration('4')">
+            <div class="grid-description">
+                card face for luckin coffee, 2021
+            </div>
+            <img class="illustration-image illo" src="images/illustration/8.jpg">
+        </div>
+        <div class="illustration-container illustration-piece5" style="display: flex;"onclick="showIllustration('5')">
+            <div class="grid-description">
+                more luckin coffee, 2021
+            </div>
+            <img class="illustration-image illo illustration-half" src="images/illustration/10.gif">
+        </div>
+        <div class="illustration-container illustration-piece6" onclick="showIllustration('6')">
+            <div class="grid-description">
+                staying alive
+            </div>
+            <img class="illustration-image illo" src="images/illustration/12.jpg">
+        </div>
+      
+      
+        <div class="illustration-container illustration-piece7" onclick="showIllustration('7')">
+            <div class="grid-description">
+                social media post for luckin coffee, 2021
+            </div>
+            <img class="illustration-image illo" src="images/illustration/7.jpg">
+            <div class="grid-description">
+            social media post for luckin coffee, 2021
+            </div>
+        </div>
+        <div class="illustration-container illustration-piece8" onclick="showIllustration('8')">
+            <div class="grid-description">
+                game art, 2021
+            </div>
+            <img class="illustration-image illo" src="images/illustration/3.jpg">
+        </div>
+        <div class="illustration-container illustration-piece9" onclick="showIllustration('9')">
+        <div class="grid-description">
+        social media post for luckin coffee, 2021
+        </div>
+            <img class="illustration-image illo" src="images/illustration/6.jpg">
+        </div>
+      
+      
+      
+      
+      </div>
+    </div>
+
+  </body>
+</html>

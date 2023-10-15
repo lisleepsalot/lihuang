@@ -32,7 +32,10 @@ function showIllustrations() {
   clearRest();
   document.querySelector('.illustration-display-grid').innerHTML=
 `
-<div class="column">
+<div class="illustration-display-grid">  
+           
+
+
 <div class="illustration-container illustration-piece1" onclick="showIllustration('1')">
     <div class="grid-description">
         High School Yearbook, 2020
@@ -44,7 +47,6 @@ function showIllustrations() {
         mobile wallpaper for luckin tea, 2020
     </div>
     <img class="illustration-image illo illustration-half" src="images/illustration/2.jpg">
-    <img class="illustration-image illo illustration-half" src="images/illustration/9.jpg">
 </div>
 <div class="illustration-container illustration-piece2" onclick="showIllustration('2')">
     <div class="grid-description">
@@ -52,8 +54,8 @@ function showIllustrations() {
     </div>
     <img class="illustration-image illo" src="images/illustration/5.png">
 </div>
-</div>
-<div class="column">
+
+
 <div class="illustration-container illustration-piece3" onclick="showIllustration('3')">
     <div class="grid-description">
         my dorm, 2021
@@ -71,7 +73,6 @@ function showIllustrations() {
         more luckin coffee, 2021
     </div>
     <img class="illustration-image illo illustration-half" src="images/illustration/10.gif">
-    <img class="illustration-image illo illustration-half" src="images/illustration/13.jpg">
 </div>
 <div class="illustration-container illustration-piece6" onclick="showIllustration('6')">
     <div class="grid-description">
@@ -79,8 +80,8 @@ function showIllustrations() {
     </div>
     <img class="illustration-image illo" src="images/illustration/12.jpg">
 </div>
-</div>
-<div class="column">
+
+
 <div class="illustration-container illustration-piece7" onclick="showIllustration('7')">
     <div class="grid-description">
         social media post for luckin coffee, 2021
@@ -102,6 +103,10 @@ social media post for luckin coffee, 2021
 </div>
     <img class="illustration-image illo" src="images/illustration/6.jpg">
 </div>
+
+
+
+
 </div>
 `;
 
