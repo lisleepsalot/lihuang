@@ -66,6 +66,7 @@
 .illustration-image{
   width: 100%;
   height: auto;
+  max-height: 80%;
   object-fit: contain;
  }
  .disable-interaction {
@@ -140,7 +141,6 @@ border-radius: 4px;
       bottom: 0;
       left: 0;
       right: 0;
-      padding-left: 5%;
       z-index: 101;
       background-color: rgba(255, 255, 255, 0.753);
       display: flex;
