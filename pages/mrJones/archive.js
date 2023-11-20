@@ -1,18 +1,21 @@
 let inputName = false;
 let namesArray = JSON.parse(localStorage.getItem('namesArray')) || [];
 
-
-function moveArchive(number){
-  const repositionDiv = document.querySelector(`.archive-container${number}`);
-
-  repositionDiv.addEventListener('click', () => {
+function moveArchive(){
+  const repositionDiv = document.querySelector(`.archive-container7`);
     repositionDiv.classList.toggle('selected');
-    document.getElementById('audio').play();
-  });
-}
+  }
+
+
+  function isNameInputNotEmpty() {
+    const inputText = document.querySelector('.nameInput').value;
+    return inputText.trim() !== ''; // Check if the trimmed input is not an empty string
+  }
 
 function goToTest(){
-  if(inputName){
+  updateText();
+  if(isNameInputNotEmpty()){
+    moveArchive();
     audio.play();
     setTimeout(function() {
       window.location.href = 'page1.html'; 
@@ -31,19 +34,22 @@ function goToTest(){
   
 }
 
-
 const archiveContainers = document.querySelectorAll('.archive-container');
 archiveContainers.forEach((container) => {
-  container.addEventListener('keydown', (event) => {
+  container.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
       updateText();
       checkName();
-      inputName = true;
-      // Prevent the default Enter key behavior (e.g., form submission)
+      setTimeout(function() {
+        goToTest();; 
+      }, 300);
+      
       event.preventDefault();
     }
   });
 });
+
+
 
 function updateText(){
   document.getElementById('audioClick').play();
