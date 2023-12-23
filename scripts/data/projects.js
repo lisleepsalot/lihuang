@@ -1,5 +1,23 @@
 const projects =[
   {
+    image: "images/covers-gif/empty.png",
+    name: "Clean Wipes",
+    categories: ['design','web'],
+    identifier: 'cleanWipes',
+  },
+  {
+    image: "images/covers-gif/empty.png",
+    name: "To Cook With An Open Kitchen",
+    categories: ['design','web'],
+    identifier: 'openKitchen',
+  },
+  {
+    image: "images/covers-gif/empty.png",
+    name: "CloudHopper",
+    categories: ['design','web'],
+    identifier: 'cloudHopper',
+  },
+  {
     image: "images/covers-gif/hospital-navigation.gif",
     name: "Hospital Navigation",
     categories: ['design','web'],
