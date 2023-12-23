@@ -42,6 +42,12 @@ const projects =[
     identifier: 'cloudHopper',
   },
   {
+    image: "images/covers-gif/mrJones.gif",
+    name: "Mr.Jones",
+    categories: ['design'],
+    identifier: 'mrJones',
+  },
+  {
     image: "images/covers-gif/after-party.gif",
     name: "After Party Zine",
     categories: ['editorial','design'],
@@ -86,30 +92,10 @@ const projects =[
     categories: ['game','design'],
     identifier: 'meowfia',
   },
-  {
-    image: "images/covers-gif/kirakira.png",
-    name: "KiraKira",
-    categories: ['design'],
-    identifier: 'kirakira',
-  },
-  /*
-  {
-    image: "images/covers-gif/russian-avant-garde.png",
-    name: "Yellow City",
-    categories: ['design'],
-    identifier: 'yellowCity',
-  },
-  {
-    image: "images/covers-gif/russian-avant-garde.png",
-    name: "To Cook with An Open Kitchen",
-    categories: ['design'],
-    identifier: 'kitchen',
-  },
-  {
-    image: "images/covers-gif/russian-avant-garde.png",
-    name: "Mr.Jones",
-    categories: ['design'],
-    identifier: 'mrJones',
-  },
-  */
+  // {
+  //   image: "images/covers-gif/kirakira.png",
+  //   name: "KiraKira",
+  //   categories: ['design'],
+  //   identifier: 'kirakira',
+  // },
 ]
