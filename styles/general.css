@@ -193,13 +193,13 @@ body {
 	flex-direction: column;
 	font-family: Poppins;
 	left: 0;
-	width: 210px;
-	height: calc(100vh - 111px);
+	width: 230px;
+	height: calc(100vh - 107px);
 	background-color: rgb(255, 255, 255);
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
-	padding: 40px;
+	padding: 40px 30px 40px 30px;
 	margin-top: 46px;
 	margin-left: -1px;
 	border-top-right-radius: 8px;
@@ -237,7 +237,7 @@ body {
 	/* layout setting */
 .main {
 	padding-top: 50px;
-	padding-left: 290px;
+	padding-left: 310px;
 	background-color: none;
 }
 }

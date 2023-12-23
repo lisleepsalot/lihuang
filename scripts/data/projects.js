@@ -1,21 +1,21 @@
 const projects =[
   {
     image: "images/covers-gif/empty.png",
+    name: "Leaving Design Center",
+    categories: ['design','web'],
+    identifier: 'leavingDC',
+  },
+  {
+    image: "images/covers-gif/cleanWipes.png",
     name: "Clean Wipes",
     categories: ['design','web'],
     identifier: 'cleanWipes',
   },
   {
-    image: "images/covers-gif/empty.png",
+    image: "images/covers-gif/openKitchen.png",
     name: "To Cook With An Open Kitchen",
     categories: ['design','web'],
     identifier: 'openKitchen',
-  },
-  {
-    image: "images/covers-gif/empty.png",
-    name: "CloudHopper",
-    categories: ['design','web'],
-    identifier: 'cloudHopper',
   },
   {
     image: "images/covers-gif/hospital-navigation.gif",
@@ -34,6 +34,12 @@ const projects =[
     name: "Puzzle Type",
     categories: ['type','web','design'],
     identifier: 'puzzleType',
+  },
+  {
+    image: "images/covers-gif/cloudHopper.png",
+    name: "CloudHopper",
+    categories: ['design','web'],
+    identifier: 'cloudHopper',
   },
   {
     image: "images/covers-gif/after-party.gif",
@@ -56,12 +62,6 @@ const projects =[
   },
 
   {
-    image: "images/covers-gif/waterlily.gif",
-    name: "Waterlily Type",
-    categories: ['design','web'],
-    identifier: 'waterlily',
-  },
-  {
     image: "images/covers-gif/atlas-swing.gif",
     name: "Atlas Swing",
     categories: ['game','design'],
@@ -74,7 +74,7 @@ const projects =[
     identifier: 'russianAvantGarde',
   },
   {
-    image: "images/covers-gif/kebash.gif",
+    image: "images/covers-gif/kebash.png",
     name: "kebash",
     categories: ['game','design'],
     identifier: 'kebash',
