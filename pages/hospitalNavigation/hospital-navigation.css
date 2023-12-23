@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
 	.header-hospital{
 		display: none;
 	}
@@ -19,7 +19,7 @@
 		transform: translate(-50%, -50%);
 	}
 }
-@media screen and (min-width: 800px) and (max-width: 2200px){
+@media screen and (min-width: 1100px) and (max-width: 2200px){
 body{
   padding-bottom: 100px;
   margin: 0;
