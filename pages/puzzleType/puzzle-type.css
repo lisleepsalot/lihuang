@@ -1,20 +1,17 @@
 body {
   margin: 0;          
   padding: 0;         
-  background-color: #ffffff;
+  background-color: #000000;
 
 }
 
-.text-display-container{
-  
-  justify-content: center;
-  vertical-align: center;
+[contenteditable="true"] {
+  outline: none; /* Remove the default outline/border */
 }
-
 
 @font-face {
   font-family: XOVF;
-  src: url("XOVF.woff2");
+  src: url("space.woff2");
 }
 
 /* This is where you set up your variable animation */
@@ -56,6 +53,7 @@ body {
   animation-direction: alternate;
   color: rgb(0, 0, 0);
   animation-iteration-count: infinite;
+  text-transform: lowercase;
 }
 .htext {
   font-size: 100px;
@@ -68,6 +66,7 @@ body {
   animation-direction: alternate;
   color: rgb(0, 0, 0);
   animation-iteration-count: infinite;
+  text-transform: lowercase;
 }
 
 .vtext1 {
@@ -100,4 +99,100 @@ body {
 
 .hide{
   display: none;
+}
+
+@media screen and (max-width:400px){
+  .htext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  .vtext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  .text-display-container{
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px){
+  .htext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  .vtext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+
+  .text-display-container{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px){
+  .htext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  .vtext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+
+  .text-display-container{
+    width: 500px;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 700px){
+  .htext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  .vtext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+
+  .text-display-container{
+    width: 600px;
+  }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 800px){
+  .htext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+  .vtext{
+    font-size: 50px;
+    line-height: 51.5px;
+  }
+
+  .text-display-container{
+    width: 600px;
+  }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1100px){
+  .text-display-container{
+    width: 750px;
+  }
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1350px){
+  .text-display-container{
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 1350px){
+  .text-display-container{
+    width: 1000px;
+  }
 }

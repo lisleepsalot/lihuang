@@ -138,13 +138,13 @@
   opacity: 1;
  }
 
- @media screen and (max-width: 430px) {
+ @media screen and (max-width: 520px) {
   .projects-display-grid{
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (min-width: 430px) and (max-width: 800px) {
+@media screen and (min-width: 520px) and (max-width: 800px) {
   .projects-display-grid{
     grid-template-columns: repeat(2, 1fr);
   }
