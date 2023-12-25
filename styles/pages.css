@@ -7,9 +7,9 @@
   background: white;
   border: 1px solid black;
   border-radius: 8px;
-  padding: 20px 20px 60px 20px;
+  padding: 20px;
   margin: -1px 0 0 0;
-  min-height: calc(100vh - 127px);
+  min-height: calc(100vh - 86px);
   transition: border-radius 0.7s ease;
   display: flex; 
   flex-direction: column;
@@ -22,6 +22,15 @@
 iframe{
   height: 40vw;
   width: 70vw;
+}
+
+.copyRight{
+  text-align: left;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 
 .cover-container{
@@ -110,6 +119,7 @@ iframe{
   text-transform: uppercase;
   border-bottom: 1px solid black;
   margin-bottom: 8px;
+  /* max-width: 550px; */
 }
 
 .credit-link{
@@ -120,6 +130,11 @@ iframe{
 .project-basics{
   grid-column: span 2;
 }
+
+.project-explained{
+  /* max-width: 500px; */
+}
+
 .project-credits{
   grid-column: span 1;
 }

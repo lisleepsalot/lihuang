@@ -49,7 +49,7 @@ const projects =[
   },
   {
     image: "images/covers-gif/after-party.gif",
-    name: "After Party Zine",
+    name: "After Party",
     categories: ['editorial','design'],
     identifier: 'afterParty',
 
