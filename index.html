@@ -16,10 +16,10 @@
 
 </head>
 <body>
-    <div class="reponsive-reminder" style="width: 150px;">
+    <!-- <div class="reponsive-reminder" style="width: 150px;">
         <img src="images/icons/cry.jpg" style="width: 150px;">
         <p style="font-family: poppins; font-size: 13px; text-align: center;">Unfortunately, Li is currently debugging the responsive design. To view the website, please use a landscape screen with a width between 800px and 2200px.</p>
-    </div>
+    </div> -->
     <div class="hidden-cat">
         <img class="hidden-cat-image" src="images/cryCatMeme.png">
         <div class="hidden-cat-text">u saw me</div>
@@ -40,15 +40,15 @@
     <header class="header">
         <div class="header-container">
             <p class="big-name ">
-                <a class="index-title hover-yellow" href="index.html">LI HUANG</a>
+                <a class="index-title hover-yellow" href="index.html">Li HUANG</a>
             </p>
             <div class="header-middle-section">
                 <div class="top-icon top-icon-question">
                     ?
                 </div>
-                <div class="top-icon top-icon-info">
+                <!-- <div class="top-icon top-icon-info">
                     i
-                </div>
+                </div> -->
                 <div class="top-icon top-icon-plus">
                     +
                 </div>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="header-right-section-index hover-yellow" onclick="goToAbout()">
-                contact 
+                about
             </div>
         </div>
     </header>
@@ -71,17 +71,65 @@
                 <p class="main-page-category design-category hover-yellow1 selected-yellow">
                     DESIGN
                 </p>
+                <br>
+                <p class="main-page-project" onclick = "" style="color: gray;">
+                    → Leaving Design Center <br>
+                </p>
+                <p class="main-page-project" onclick = "goTo('cleanWipes')">
+                    → Clean Wipes
+                </p>
+                <p class="main-page-project" onclick = "goTo('openKitchen')">
+                    → Open Kitchen
+                </p>
+                <p class="main-page-project" onclick = "goTo('hospitalNavigation')">
+                    → Hospital Navigation
+                </p>
+                <p class="main-page-project" onclick = "goTo('toCookInHere')">
+                    → To Cook ___ In Here
+                </p>
+                <p class="main-page-project" onclick = "goTo('puzzleType')">
+                    → Puzzle Type
+                </p>
+                <p class="main-page-project" onclick = "goTo('cloudHopper')">
+                    → CloudHopper
+                </p>
+                <p class="main-page-project" onclick = "goTo('mrJones')">
+                    → Mr.Jones
+                </p>
+                <p class="main-page-project" onclick = "goTo('afterParty')">
+                    → After Party
+                </p>
+                <p class="main-page-project" onclick = "goTo('hopeAndAnchor')">
+                    → Hope & Anchor
+                </p>
+                <p class="main-page-project" onclick = "goTo('anatomyOfFascism')">
+                    → Anatomy of Fascism
+                </p>
+                <p class="main-page-project" onclick = "goTo('atlasSwing')">
+                    → Atlas Swing
+                </p>
+                <p class="main-page-project" onclick = "goTo('russianAvantGarde')">
+                    → Russian Avant Garde
+                </p>
+                <p class="main-page-project" onclick = "goTo('meowfia')">
+                    → Kebash
+                </p>
+                <p class="main-page-project" onclick = "goTo('kebash')">
+                    → Meowfia
+                </p>
+                <p class="main-page-project" onclick = "goTo('kirakira')">
+                    → KiraKira
+                </p>
+                <br>
         
-                <p class="main-page-category illustration-category hover-red">
+                <p class="main-page-category illustration-category hover-yellow1">
                     ILLUSTRATION
                 </p>
         
 
-                <p class="main-page-category play-category hover-blue">
+                <p class="main-page-category play-category hover-yellow1">
                     PLAY
                 </p>
-    
-           
             </div>
             
             <div class="info-categories">
@@ -91,20 +139,17 @@
                     <img class="lurking-image"style="z-index: 1" src="images/icons/lurking2.svg">
                 </div>
                 -->
-                <p class="main-page-category hover-yellow1" onclick="goToAbout();">
+                <p class="main-page-contact hover-yellow1" onclick="goToAbout();">
                     <span class="">
                         <a >ABOUT</a>
                     </span>
                 </p>
-                <p class="main-page-category hover-yellow1">
-                    <span class="">
-                        <a href="lhuang02@risd.edu" style="color: black; text-decoration: none;" target="blank">EMAIL</a>
-                    </span>
+                <p class="main-page-contact hover-yellow1" onclick="window.open('https://www.instagram.com/liworksalittlebit/', '_blank')">
+                    INSTAGRAM
                 </p>
-                <p class="main-page-category hover-yellow1">
-                    <span class="">
-                        <a style="color: black; text-decoration: none;"href="https://www.linkedin.com/in/li-huang-7810231b8/" target="blank">LINKEDIN</a>
-                    </span>
+
+                <p class="main-page-contact hover-yellow1" onclick="window.open('https://www.linkedin.com/in/li-huang-7810231b8/', '_blank')">
+                    LINKEDIN
                 </p>
             </div>
     
@@ -114,12 +159,6 @@
     <div class="main">
         <!-- information HTML goes here-->
         <div class="add-above-info">
-            <div class="info">
-                Li is currently hard at work finishing and debugging this website. Be sure to check back soon for exciting updates and new features! <br> 
-                    <div class="top-icon top-icon-clear" style="display: inline-block" onclick = "clearAdd();">
-                    c
-                    </div>(Click 'i' again or 'c' to close this tab, click '?' to know more about them)
-              </div>
         </div>
 
         <!-- information HTML goes here-->
@@ -146,7 +185,6 @@
         <div class="projects-display-grid">
 
         </div>
-
     </div>
 </body>
 <script src="scripts/refresh.js"></script>
