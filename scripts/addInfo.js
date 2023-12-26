@@ -1,5 +1,5 @@
-document.querySelector('.top-icon-info').addEventListener('click', function() {showInfo();
-});
+// document.querySelector('.top-icon-info').addEventListener('click', function() {showInfo();
+// });
 
 document.querySelector('.top-icon-question').addEventListener('click', function() {showq();
 });
@@ -77,42 +77,40 @@ function goToAbout() {
   showDesign();
   
   const aboutHTML =
-  `<div class="about-block">
+  `
+  <div class="about-block">
   <div class="about-left">
       <div class="about-animation-container">
-          <img class="stand-still-image"src="images/icons/standstill.svg">
-          <img class="sayhi-image" src="images/icons/sayhi.svg">
+          <img class="stand-still-image"src="images/icons/sit.svg">
       </div>
   </div>
-  <div class="about-right">
-      <div> 
-          <p class="about-title">Hi! I'm Li.<br>Welcome to<br>my website!</p>
-          <p class="about-description">My name is Li. 
-          <br>I am a cat lover who enjoys things that are informative, interactive, and pretty.
-              I’m currently pursuing Graphic Design Degree at <a>Rhode Island School of Design</a>.<br>I love good food and good designs.<br>
-              <br>
-              <br>
-              <a class="about-links hover-yellow" target="_blank" >resume available upon request.</a><br>
-              <a class="about-links hover-yellow"href = "https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">MY LINKEDIN</a><br>
-              <a class="about-links hover-yellow"href = "" target="_blank" >MY EMAIL</a><br><br>
-              <br>
-              <div class="top-icon top-icon-clear" style="display: inline-block" onclick = "clearAdd();">
-              c
-              </div><span class="about-description">click me to clear this block.<span>
-              
-          </p>
-      </div>
-     
+      <div class="about-right">
+              <div class="about-description"><span style="font-size: 20px;">Hi! I'm Li. Welcome!</span><br>
+              <br>I am a cat lover who enjoys things that are informative, interactive, and fun.
+                  I am currently pursuing Graphic Design BFA at <a style="color:black" href="https://risd.gd/">Rhode Island School of Design</a>. I love good food and good designs.<br>
+                  <br>
+                  <a class="about-links hover-yellow " target="_blank" >RESUME AVAILABLE UPON REQUEST</a><br>
+                  <a class="about-links hover-yellow" href = "https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">MY LINKEDIN</a><br>
+                  <a class="about-links hover-yellow" href = "https://www.instagram.com/liworksalittlebit/" target="_blank" >MY INSTAGRAM</a><br>
+                  <br>
+                  <div class="top-icon top-icon-clear" style="display: inline-block" onclick = "clearAdd();">
+                  c
+                  </div><span class="about-description">click me to clear this block.<span>
+                  
+              </div>
   </div>
-</div>`+gridHTML;
+</div>
+  
+  `+gridHTML;
 document.querySelector('.projects-display-grid').innerHTML= aboutHTML;
+scrollToTop();
 }
 
 
 
 function clearAdd(){
-    if (infoCount){document.querySelector('.info').remove();
-    infoCount = false;}
+    // if (infoCount){document.querySelector('.info').remove();
+    // infoCount = false;}
     document.querySelector('.add-above-question').innerHTML = '';
     questionCount = false;
     if (document.querySelector('.about-block')){document.querySelector('.about-block').remove();};
