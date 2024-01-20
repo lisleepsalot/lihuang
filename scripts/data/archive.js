@@ -1,78 +1,73 @@
 const archives =[
   {
-    index:'1',
+    index:'yb',
     image: 'images/illustration/1.png',
     description:'High School Yearbook, 2020'
   },
   {
     index:'mh',
     image: 'images/illustration/mh.png',
-    description:'High School Yearbook, 2020'
+    description:`Poster series designed for RISD Professor Min Hee Lee's portfolio sessions, 2023`
   },
   {
-    index:'10',
+    index:'lt1',
     image: 'images/illustration/2.jpg',
-    description:'mobile wallpaper for luckin tea, 2020'
+    description:'Mobile wallpaper for luckin tea, 2020'
   },
   {
-    index:'2',
-    image: 'images/illustration/5.png',
-    description:`I don't know what this is, 2021`
-  },
-  {
-    index:'3',
+    index:'cards',
     image: 'images/illustration/cards.png',
-    description:`I don't know what this is, 2021`
+    description:`Member card covers designed for Luckin Coffee, 2021`
   },
   {
-    index:'3',
+    index:'cloud',
     image: 'images/illustration/cloud.png',
-    description:`I don't know what this is, 2021`
+    description:`Poster designed for RISD Artist Ball <br> (RISD Design Guild Challenge), 2023`
   },
   {
-    index:'2',
+    index:'cook',
     image: 'images/illustration/cook1.png',
-    description:`I don't know what this is, 2021`
+    description:`Poster for 'To Cook___In Here' Project`
   },
   {
-    index:'8',
+    index:'lt2',
     image: 'images/illustration/10.gif',
-    description:`I don't know what this is, 2021`
+    description:`Mobile holiday wallpaper for luckin tea, 2020`
   },
   {
-    index:'4',
+    index:'donut',
     image: 'images/illustration/donut.png',
-    description:`I don't know what this is, 2021`
+    description:`Poster designed for 'Pardoy Music Festival' for Design Studio 1, 2022`
   },
   {
-    index:'6',
+    index:'hospital',
     image: 'images/illustration/hospital.png',
-    description:`I don't know what this is, 2021`
+    description:`Process sheets for 'Hospital Navigation' `
   },
   {
-    index:'6',
+    index:'pradoy',
     image: 'images/illustration/yellowCity.png',
-    description:`I don't know what this is, 2021`
+    description:`Poster designed for 'Pardoy Music Festival' for Design Studio 1, 2022`
   },
   {
-    index:'7',
+    index:'charms',
     image: 'images/illustration/charms.png',
-    description:`I don't know what this is, 2021`
+    description:`Monthly social medai post for Luckin Coffee, 2021`
   },
   {
-    index:'6',
+    index:'kira',
     image: 'images/illustration/kira.png',
-    description:`I don't know what this is, 2021`
+    description:`Identity design and peripheral design for KiraKira, a car detailing studio in Shanghai, 2021`
   },
   {
-    index:'7',
+    index:'russ',
     image: 'images/illustration/russ.png',
-    description:`I don't know what this is, 2021`
+    description:`Infographic designed for Russian Revolution Seminar at Brown, 2022`
   },
   {
     index:'9',
     image: 'images/illustration/pixels.png',
-    description:`I don't know what this is, 2021`
+    description:`Background art for the game Meowfia, 2022`
   },
 
 
