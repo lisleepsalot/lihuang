@@ -65,7 +65,7 @@ const archives =[
     description:`Infographic designed for Russian Revolution Seminar at Brown, 2022`
   },
   {
-    index:'9',
+    index:'meowfia',
     image: 'images/illustration/pixels.png',
     description:`Background art for the game Meowfia, 2022`
   },
