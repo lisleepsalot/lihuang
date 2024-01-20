@@ -21,7 +21,7 @@ const archives =[
   },
   {
     index:'3',
-    image: 'images/illustration/4.jpg',
+    image: 'images/illustration/cards.png',
     description:`I don't know what this is, 2021`
   },
   {
@@ -46,11 +46,6 @@ const archives =[
   },
   {
     index:'6',
-    image: 'images/illustration/12.jpg',
-    description:`I don't know what this is, 2021`
-  },
-  {
-    index:'6',
     image: 'images/illustration/hospital.png',
     description:`I don't know what this is, 2021`
   },
@@ -61,7 +56,7 @@ const archives =[
   },
   {
     index:'7',
-    image: 'images/illustration/7.jpg',
+    image: 'images/illustration/charms.png',
     description:`I don't know what this is, 2021`
   },
   {
@@ -75,13 +70,8 @@ const archives =[
     description:`I don't know what this is, 2021`
   },
   {
-    index:'8',
-    image: 'images/illustration/3.jpg',
-    description:`I don't know what this is, 2021`
-  },
-  {
     index:'9',
-    image: 'images/illustration/6.jpg',
+    image: 'images/illustration/pixels.png',
     description:`I don't know what this is, 2021`
   },
 
