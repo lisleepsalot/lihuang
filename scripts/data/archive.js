@@ -1,7 +1,7 @@
 const archives =[
   {
     index:'1',
-    image: 'images/illustration/1.jpg',
+    image: 'images/illustration/1.png',
     description:'High School Yearbook, 2020'
   },
   {
@@ -54,10 +54,24 @@ const archives =[
     image: 'images/illustration/12.jpg',
     description:`I don't know what this is, 2021`
   },
-
+  {
+    index:'6',
+    image: 'images/illustration/hospital.png',
+    description:`I don't know what this is, 2021`
+  },
+  {
+    index:'6',
+    image: 'images/illustration/yellowCity.png',
+    description:`I don't know what this is, 2021`
+  },
   {
     index:'7',
     image: 'images/illustration/7.jpg',
+    description:`I don't know what this is, 2021`
+  },
+  {
+    index:'6',
+    image: 'images/illustration/kira.png',
     description:`I don't know what this is, 2021`
   },
   {
@@ -70,7 +84,11 @@ const archives =[
     image: 'images/illustration/3.jpg',
     description:`I don't know what this is, 2021`
   },
-
+  {
+    index:'6',
+    image: 'images/illustration/imagined.jpg',
+    description:`I don't know what this is, 2021`
+  },
   {
     index:'9',
     image: 'images/illustration/6.jpg',
