@@ -30,11 +30,6 @@ const archives =[
     description:`I don't know what this is, 2021`
   },
   {
-    index:'4',
-    image: 'images/illustration/8.jpg',
-    description:`I don't know what this is, 2021`
-  },
-  {
     index:'2',
     image: 'images/illustration/cook1.png',
     description:`I don't know what this is, 2021`
@@ -82,11 +77,6 @@ const archives =[
   {
     index:'8',
     image: 'images/illustration/3.jpg',
-    description:`I don't know what this is, 2021`
-  },
-  {
-    index:'6',
-    image: 'images/illustration/imagined.jpg',
     description:`I don't know what this is, 2021`
   },
   {
