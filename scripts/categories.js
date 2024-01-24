@@ -1,18 +1,11 @@
 //these functions could protentially merge into one;
 document.querySelector('.design-category').addEventListener('click', function() {
-  clearSelectedColors();
   showDesign();
 });
 //this is the archive category
 document.querySelector('.archive-category').addEventListener('click', function() {
-  clearSelectedColors();
   showArchives();
 });
-
-// document.querySelector('.play-category').addEventListener('click', function() {
-//   clearSelectedColors();
-//   showPlay();
-// });
 
 function showDesign(){
   const designCategoryElements = document.querySelectorAll('.design-category');
@@ -41,20 +34,6 @@ function showArchives() {
 ;
 }
 
-function clearSelectedColors(){
-  const designCategoryElements = document.querySelectorAll('.main-page-category');
-
-  designCategoryElements.forEach((element) => {
-  element.classList.remove('selected-yellow'); });
-
-  designCategoryElements.forEach((element) => {
-  element.classList.remove('selected-red');  });
-
-  designCategoryElements.forEach((element) => {
-  element.classList.remove('selected-blue'); });
-
-  memeStatus = false;
-}
 function clearRest(){
   document.querySelector('.projects-display-grid').innerHTML='';
   document.querySelector('.archive-display-grid').innerHTML = '';

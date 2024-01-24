@@ -86,7 +86,7 @@ function goToAbout() {
   </div>
       <div class="about-right">
               <div class="about-description"><span style="font-size: 20px;">Hi! I'm Li. Welcome!</span><br>
-              <br>I am a cat lover who enjoys things that are informative, interactive, and fun.
+              <br>I am a graphic designer and illustrator who enjoys things that are informative, interactive, and fun.
                   I am currently pursuing Graphic Design BFA at <a style="color:black" href="https://risd.gd/">Rhode Island School of Design</a>. I love good food and good designs.<br>
                   <br>
                   <a class="about-links hover-yellow " target="_blank" >RESUME AVAILABLE UPON REQUEST</a><br>
@@ -105,7 +105,6 @@ function goToAbout() {
 document.querySelector('.projects-display-grid').innerHTML= aboutHTML;
 scrollToTop();
 }
-
 
 
 function clearAdd(){
