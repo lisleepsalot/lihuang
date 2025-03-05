@@ -70,7 +70,7 @@
   position: relative;
 }
 .project-container:hover, .archive-container:hover, .play-container:hover{
-  border-radius: 20px;
+  border-radius: 13px;
   cursor: pointer;
 }
 .illustration-image{
@@ -87,7 +87,7 @@
   max-width: 100%;
   max-height: 470px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .memeBank-grid {

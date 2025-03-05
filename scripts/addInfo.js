@@ -1,13 +1,13 @@
 // document.querySelector('.top-icon-info').addEventListener('click', function() {showInfo();
 // });
 
-document.querySelector('.top-icon-question').addEventListener('click', function() {showq();
+document.querySelector('.question-button').addEventListener('click', function() {showq();
 });
 
-document.querySelector('.top-icon-plus').addEventListener('click', function() {getMemes();
+document.querySelector('.info-button').addEventListener('click', function() {getMemes();
 });
 
-document.querySelector('.top-icon-clear').addEventListener('click', function() {clearAdd();
+document.querySelector('.clear-button').addEventListener('click', function() {clearAdd();
 });
 
 

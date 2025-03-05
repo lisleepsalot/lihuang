@@ -254,24 +254,26 @@
   line-height: 16px;
 }
 
-.top-icon{
-  font-family: Poppins;
-  font-size: 13px;
-  font-weight: 400;
-  border-radius: 50%;
+.question-button, .info-button, .clear-button{
+  display: inline-block;
   border-style: solid;
   border-color: black;
   border-width: 1px;
   width: 20px;
   height: 20px;
   text-align: center;
-  margin-right: 6px;
   cursor: pointer;
 }
-.top-icon:hover{
+.question-button:hover, .info-button:hover, .clear-button:hover{
   border-color: #f7d580;
   background-color: #f7d580;
   color: black;
+}
+.archive-icon{
+  height: 80px;
+  width: 200px;
+  margin-top: 12px;
+  background-color: gray;
 }
 
 @media screen and (max-width: 520px) {

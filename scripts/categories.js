@@ -7,6 +7,7 @@ document.querySelector('.archive-category').addEventListener('click', function()
   showArchives();
 });
 
+//this method generates the projects
 function showDesign(){
   const designCategoryElements = document.querySelectorAll('.design-category');
   clearRest();
