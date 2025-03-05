@@ -83,9 +83,9 @@
 .disable-interaction {
   pointer-events: none;
 }
-.grid-image {
-  max-width: 100%;
-  max-height: 470px;
+.grid-cover {
+  width: 100%;
+  max-height: 45vh;
   object-fit: cover;
   border-radius: 2px;
 }
