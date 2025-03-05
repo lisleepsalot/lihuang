@@ -22,7 +22,7 @@
 		display: none;
 	}
 	.main {
-		padding-top: 308px;
+		padding-top: 337px;
 		padding-left: 0px;
 		background-color: none;
 	}
@@ -45,7 +45,7 @@
 	}
 	/* layout setting */
 	.main {
-		padding-top: 308px;
+		padding-top: 337px;
 		background-color: none;
 	}
 	/* typography settings*/
@@ -125,14 +125,15 @@ body {
 	opacity: 1;
 	position: fixed;
 	z-index: 80;
-	padding: 16px 24px;
 	background-color: white;
-	width: 100vw;
+	width: 100%;
 	border-width: 1px;
 	border-color: black;
 	border-bottom: 1px solid #000;
 }
 .header-upper{
+	position: relative;
+	padding: 16px 8px;
 	left: 0;
 	width: 100%;
 	display: grid;
@@ -143,17 +144,26 @@ body {
 	border-width: 1px;
 	border-color: black;
 	border-bottom: 1px solid #000;
+	z-index: 81;
+	background-color: white;
 }
-.header-lower{
+.header-lower {
+	padding: 16px 8px;
+	position: relative;
 	padding-top: 24px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr); 
-
+	grid-template-columns: repeat(3, 1fr);
+	transition: height 0.3s ease, padding-top 0.3s ease;
+	overflow: hidden;
+	z-index: 0;
 }
 .header-text{
 	font-family: 'Heap', sans-serif;
 	font-size: 12px;
 	line-height: 20px;
+}
+.header-block{
+	padding: 0px 16px;
 }
 .h1 {
 	font-family: 'Heap', sans-serif;
@@ -207,4 +217,7 @@ body {
 	transition: color 0.3s;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
+}
+video {
+	clip-path: inset(1px 1px);
 }

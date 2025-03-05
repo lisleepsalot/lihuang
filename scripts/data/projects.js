@@ -12,24 +12,6 @@ const projects =[
     identifier: 'calvino',
   },
   {
-    image: "images/covers/struve-geodetic-arc.mp4",
-    name: "Struve Geodetic Arc",
-    categories: ['design','web'],
-    identifier: 'StruveGeodeticArc',
-  },
-  {
-    image: "images/covers/yearbook2024.jpg",
-    name: "RISD Yearbook 2024",
-    categories: ['design'],
-    identifier: 'yearbook2024',
-  },
-  {
-    image: "images/covers/risd-museum.mp4",
-    name: "RISD Museum",
-    categories: ['editorial', 'design'],
-    identifier: 'risdMuseum',
-  },
-  {
     image: "images/covers/instructional-type.jpg",
     name: "Instructional Typography",
     categories: ['design'],
@@ -40,6 +22,24 @@ const projects =[
     name: "The Unforseeable Fate of Mr.Jones",
     categories: ['design','web'],
     identifier: 'mrJones',
+  },
+  {
+    image: "images/covers/risd-museum.mp4",
+    name: "RISD Museum",
+    categories: ['editorial', 'design'],
+    identifier: 'risdMuseum',
+  },
+  {
+    image: "images/covers/yearbook2024.jpg",
+    name: "RISD Yearbook 2024",
+    categories: ['design'],
+    identifier: 'yearbook2024',
+  },
+  {
+    image: "images/covers/struve-geodetic-arc.mp4",
+    name: "Struve Geodetic Arc",
+    categories: ['design','web'],
+    identifier: 'StruveGeodeticArc',
   },
   {
     image: "images/covers/openKitchen.jpg",
