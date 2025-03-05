@@ -1,6 +1,6 @@
 //these functions could protentially merge into one;
 document.querySelector('.design-category').addEventListener('click', function() {
-  showDesign();
+  // showDesign();
 });
 //this is the archive category
 document.querySelector('.archive-category').addEventListener('click', function() {

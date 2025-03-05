@@ -35,7 +35,7 @@ function makeGrid(){
   innerHTML = currentHTML + projectsHTML;
   return currentHTML + projectsHTML;
 }
-const gridHTML = makeGrid();
+// const gridHTML = makeGrid();
 
 function clearGrid(){
   document.querySelector('.projects-display-grid').innerHTML='';

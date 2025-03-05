@@ -22,7 +22,7 @@
 		display: none;
 	}
 	.main {
-		padding-top: 46px;
+		padding-top: 116px;
 		padding-left: 0px;
 		background-color: none;
 	}
@@ -45,8 +45,7 @@
 	}
 	/* layout setting */
 	.main {
-		padding-top: 46px;
-		padding-left: 310px;
+		padding-top: 116px;
 		background-color: none;
 	}
 	/* typography settings*/
@@ -109,12 +108,6 @@
 	}
 }
 
-/* layout setting */
-/* .main {
-	padding-top: 50px;
-	padding-left: 290px;
-	background-color: none;
-} */
 body {
 	margin: 0;
 	padding: 0;
@@ -193,10 +186,10 @@ body {
 	border-color: black;
 	background-color: white;
 	padding-left: 20px;
-	padding: 20px 32px;
+	padding: 16px 24px;
 	border-bottom: 1px solid #000;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr); 
+	grid-template-columns: repeat(3, 1fr); 
 	gap: 0; 
 	align-items: top;
 	z-index: 80;
