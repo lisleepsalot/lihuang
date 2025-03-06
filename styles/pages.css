@@ -1,6 +1,10 @@
 .content-image.cover-gif{
-  max-width: 85%;
   height: auto;
+  width: 100%;
+}
+
+.project-main{
+  padding-top: 53px;
 }
 
 .project-content, .pz-content{
@@ -19,6 +23,29 @@
   align-items: center;
 }
 
+.wide-content{
+  width: 100vw;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+
+.narrow-content{
+  max-width: 80vw;
+  height: auto;
+  padding: 0 100px 100px 100px;
+}
+
+.extra-narrow-content{
+  max-width: 45vw;
+  height: auto;
+ padding: 0 100px 100px 100px;
+}
+
+.space-80px{
+  width: 100vw;
+  height: 80px;
+}
+
 iframe{
   height: 40vw;
   width: 70vw;
@@ -33,102 +60,34 @@ iframe{
   width: 100%;
 }
 
-.cover-container{
-  /* margin-top: -30px; */
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  max-height: 80vh;
-  max-width: 85%;
-  margin-bottom: 20vh;
-  font-family: Poppins;
-  font-size: 13px;
-  font-weight: 400;
-}
 
-.presentation-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 15px; /* Consolidated column-gap and row-gap */
-  width:100%;
-  max-width:1200px;
-  margin-bottom: 10%;
-}
-
-.content-image,
-.content-image-tall img {
+.content-image {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure images cover the container without distortion */
 }
 
-.content3x6 {
-  grid-row: span 6;
-  grid-column: span 3;
-}
-
-.content3x3 {
-  grid-row: span 3;
-  grid-column: span 3;
-}
-
-.content4x6 {
-  grid-row: span 6;
-  grid-column: span 4;
-}
-
-.content2x2 {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
-.content3x4{
-  grid-row: span 4;
-  grid-column: span 3;
-}
-
-.content6x4{
-  grid-row: span 4;
-  grid-column: span 6;
-}
-
-.content4x4{
-  grid-row: span 4;
-  grid-column: span 4;
-}
 
 .project-info-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width:100%;
   /* max-width:1200px; */
-  margin: 0px 0px 10vh 0px;
-  font-family: Poppins;
-  font-size: 13px;
-  font-weight: 400;
+  margin: 5px 0px 10vh 0px;
+	font-family: 'Heap', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
 }
 
 .project-title{
-  margin: 0 0 0 0;
   padding: 5px 0px;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-bottom: 1px solid black;
   margin-bottom: 8px;
-  /* max-width: 550px; */
 }
 
 .credit-link{
   text-decoration: underline; 
   color: black;
-}
-
-.project-basics{
-  grid-column: span 2;
 }
 
 .project-explained{
