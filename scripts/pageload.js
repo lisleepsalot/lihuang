@@ -1,8 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
+let isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
 
+document.addEventListener("DOMContentLoaded", function () {
+  
   // Insert header content
   document.querySelectorAll(".header").forEach(header => {
+    let isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
       if (isIndexPage) {
           header.innerHTML = headerUpperHTML + headerLowerHTML;
       } else {
@@ -27,10 +29,14 @@ let length = fullString.length;
 let index = 0;
 
 function animateText() {
-    let shiftedText = fullString.substring(length - index) + fullString.substring(0, length - index);
-    document.getElementById("animation1").textContent = shiftedText;
+    let isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
+    if(isIndexPage){
+        let shiftedText = fullString.substring(length - index) + fullString.substring(0, length - index);
+        document.getElementById("animation1").textContent = shiftedText;
+    
+        index = (index + 1) % length;
 
-    index = (index + 1) % length;
+    }
 }
 
 setInterval(animateText, 100); 

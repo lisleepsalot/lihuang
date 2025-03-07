@@ -46,6 +46,12 @@
   height: 80px;
 }
 
+.duo-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+
 iframe{
   height: 40vw;
   width: 70vw;
@@ -70,19 +76,27 @@ iframe{
 
 .project-info-grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 20px;
   width:100%;
-  /* max-width:1200px; */
-  margin: 5px 0px 10vh 0px;
+  max-width:1200px;
+  margin: 60px 0 180px 0;
 	font-family: 'Heap', sans-serif;
 	font-size: 12px;
 	line-height: 20px;
 }
 
 .project-title{
+  text-transform: uppercase;
+  letter-spacing: 2px;
   padding: 5px 0px;
   margin-bottom: 8px;
+  grid-column: span 4;
+  border-bottom: 1px solid black;
+}
+
+.project-brief{
+  grid-column: span 2;
 }
 
 .credit-link{
