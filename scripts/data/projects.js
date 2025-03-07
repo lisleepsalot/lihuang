@@ -51,7 +51,7 @@ const projects =[
     image: "images/covers/heap.mp4",
     name: "Heap Mono",
     categories: ['design','web'],
-    identifier: 'openKitchen',
+    identifier: 'heapMono',
   },
   {
     image: "images/covers/toCookInHere.jpg",
