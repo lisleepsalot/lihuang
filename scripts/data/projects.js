@@ -54,6 +54,12 @@ const projects =[
     identifier: 'heapMono',
   },
   {
+    image: "images/covers/cleanWipes.jpg",
+    name: "Clean Wipes",
+    categories: ['game','design'],
+    identifier: 'cleanWipes',
+  },
+  {
     image: "images/covers/toCookInHere.jpg",
     name: "To Cook ___ in Here",
     categories: ['game','design'],
@@ -79,7 +85,7 @@ const projects =[
     name: "Debates in AI",
     categories: ['editorial', 'design'],
     status:'done',
-    identifier: 'debates in AI',
+    identifier: 'debatesInAI',
   },
   {
     image: "images/covers/atlas-swing.jpg",
@@ -89,7 +95,7 @@ const projects =[
     identifier: 'atlasSwing',
   },
   {
-    image: "images/covers/meowfia.jpg",
+    image: "images/covers/meowfia.mp4",
     name: "Meowfia",
     categories: ['game','design'],
     status:'done',
@@ -99,7 +105,7 @@ const projects =[
     image: "images/covers/hospital-navigation.jpg",
     name: "Hospital Navigation",
     categories: ['game','design'],
-    identifier: 'hospital Navigation',
+    identifier: 'hospitalNavigation',
   },
   // {
   //   image: "images/covers-gif/kirakira.png",

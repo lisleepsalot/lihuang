@@ -33,6 +33,8 @@ function makeGrid() {
   return currentHTML + projectsHTML;
 }
 
+const gridHTML = makeGrid();
+
 function clearGrid(){
   document.querySelector('.projects-display-grid').innerHTML='';
 }

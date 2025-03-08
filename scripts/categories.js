@@ -1,9 +1,9 @@
-//these functions could protentially merge into one;
-document.querySelector('.design-category').addEventListener('click', function() {
-  // showDesign();
-});
+// //these functions could protentially merge into one;
+// document.querySelector('.design-category').addEventListener('click', function() {
+//   // showDesign();
+// });
 //this is the archive category
-document.querySelector('.archive-category').addEventListener('click', function() {
+document.querySelector('.archive-animation').addEventListener('click', function() {
   showArchives();
 });
 
