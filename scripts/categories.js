@@ -3,8 +3,12 @@
 //   // showDesign();
 // });
 //this is the archive category
-document.querySelector('.archive-animation').addEventListener('click', function() {
-  showArchives();
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".header-lower").addEventListener("click", function (event) {
+      if (event.target.closest(".archive-animation")) {
+          showArchives();
+      }
+  });
 });
 
 //this method generates the projects
