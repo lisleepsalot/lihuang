@@ -69,7 +69,7 @@ const projects =[
     credits:`          Grad Type III <br>
           RISD 2024 Fall <br>
           Instructed by: Doug Scott <br>`,
-    identifier: 'StruveGeodeticArc',
+    identifier: 'struveGeodeticArc',
     year: '2024'
   },
   {
