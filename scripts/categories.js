@@ -49,7 +49,7 @@ function showArchives() {
     if (archive.image.endsWith('.mp4')) {
       mediaElement = `
         <video class="archive-video illo" autoplay muted loop>
-          <source src="${archive.image}" type="video/mp4">
+          <source src="images/placeholder.jpg" srcset="${archive.image}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       `;

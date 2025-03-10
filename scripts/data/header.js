@@ -64,7 +64,7 @@ const pageHeaderUpperHTML = `
         <div class="header-block utility-display">
             <p class="header-text underline-div">Display</p>
             <div class="display-type">grid</div>
-            <div class="display-type">list</div>
+            <div class="display-type" style = "color:lightgray"><s>list (unavailable)</s></div>
         </div>
 
         <div class="header-block">

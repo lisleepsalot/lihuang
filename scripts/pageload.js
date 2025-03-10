@@ -68,46 +68,40 @@ setInterval(updateDateTime, 1000);
 function makeBottomButtons(){
     const bottomButtonsContainer = document.querySelector('.bottom-buttons-container');
 
-// Check if the container exists before inserting content
-if (bottomButtonsContainer) {
-    bottomButtonsContainer.innerHTML = `
-    <div class="return-home-button hover-yellow">
-        <a class="removeA hover-yellow" href="../index.html">← return home</a>
-    </div>
-    <div class="next-project-button hover-yellow">
-        next project →
-    </div>
-    `;
-} else {
-  console.error("The .bottom-buttons-container element was not found.");
-}
-}
+    if (bottomButtonsContainer) {
+        bottomButtonsContainer.innerHTML = `
+        <div class="return-home-button hover-yellow">
+            <a class="removeA hover-yellow" href="../index.html">← return home</a>
+        </div>
+        <div class="next-project-button hover-yellow">
+            next project →
+        </div>
+        `;
 
+        // Now that the button exists, add event listener
+        const nextProjectButton = document.querySelector(".next-project-button");
+        if (nextProjectButton) {
+            nextProjectButton.addEventListener("click", function() {
+                const currentIdentifier = window.location.pathname.split("/").pop().replace(".html", "");
 
-// Add click event listener to the next project button
-const nextProjectButton = document.querySelector(".next-project-button");
-
-if (nextProjectButton) {
-  nextProjectButton.addEventListener("click", function() {
-    const currentIdentifier = window.location.pathname.split("/").pop().replace(".html", "");
-    
-    // Find the index of the current project in the projects array
-    let currentIndex = projects.findIndex(project => project.identifier === currentIdentifier);
-    
-    if (currentIndex === -1) {
-      console.error(`Current project with identifier "${currentIdentifier}" not found.`);
-      return;
+                let currentIndex = projects.findIndex(project => project.identifier === currentIdentifier);
+                
+                if (currentIndex === -1) {
+                    console.error(`Current project with identifier "${currentIdentifier}" not found.`);
+                    return;
+                }
+                
+                const nextIndex = (currentIndex + 1) % projects.length;
+                const nextProject = projects[nextIndex];
+                
+                window.location.href = nextProject.identifier + ".html";
+            });
+        } else {
+            console.error("Error: .next-project-button element not found after adding HTML.");
+        }
+    } else {
+        console.error("The .bottom-buttons-container element was not found.");
     }
-    
-    // Determine the next project's index (wrap around to 0 if at the end)
-    const nextIndex = (currentIndex + 1) % projects.length;
-    const nextProject = projects[nextIndex];
-    
-    // Redirect to the next project's HTML page
-    window.location.href = nextProject.identifier + ".html";
-  });
-} else {
-  console.warn("The .next-project-button element was not found.");
 }
 
 

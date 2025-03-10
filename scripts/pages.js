@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all images and iframes
+  const lazyElements = document.querySelectorAll("img, iframe");
+  
+  // Set loading attribute to lazy for each element
+  lazyElements.forEach(el => {
+    el.loading = "lazy";
+  });
+});
+
 function goTo(pageName) {
   window.location.href = `pages/${pageName}.html`;
   // console.log(`${pageName}`);
@@ -18,8 +28,6 @@ function scrollToTop() {
     behavior: 'smooth', // You can use 'auto' instead of 'smooth' for instant scrolling
   });
 }
-
-
 
   function goToIndexAbout() {
     localStorage.setItem('shouldAbout', 'true');

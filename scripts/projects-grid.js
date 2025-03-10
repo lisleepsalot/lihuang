@@ -79,7 +79,7 @@ editorialCheckbox.addEventListener('change', function(e) {
         `;
       } else {
         mediaElement = `
-          <img class="grid-cover" src="${project.image}" alt="${project.name}">
+          <img class="grid-cover" src="images/placeholder.jpg"srcset="${project.image}" alt="${project.name}">
         `;
       }
       
