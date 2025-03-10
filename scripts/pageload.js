@@ -6,24 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".header").forEach(header => {
     let isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
       if (isIndexPage) {
-          header.innerHTML = headerUpperHTML + headerLowerHTML;
+          header.innerHTML = headerUpperHTML;
       } else {
           header.innerHTML = pageHeaderUpperHTML;
       }
   });
-
-  // Remove border/outline if not index.html
-  if (!isIndexPage) {
-      document.querySelectorAll(".header-upper").forEach(headerUpper => {
-          headerUpper.style.border = "none";
-          headerUpper.style.outline = "none";
-      });
-  }
 });
 
 //this method blinks the text div
-let text = "hello!";
-let prefix = "------------"; 
+let text = "hello there!";
+let prefix = "*.*.*.*.*.*.*.*.*."; 
 let fullString = text + prefix;
 let length = fullString.length;
 let index = 0;
@@ -39,7 +31,7 @@ function animateText() {
     }
 }
 
-setInterval(animateText, 100); 
+setInterval(animateText, 200); 
 
 //this method blinks my title
 function updateDateTime() {

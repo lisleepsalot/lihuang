@@ -4,23 +4,22 @@ const headerUpperHTML = `
             <p style="margin: 0;">
                 <a class="removeA hover-yellow" href="index.html" target="_blank">Li Huang</a>
                 <div id="animation1">-->-->-->-->-->--> </div>
-                <span id="current-datetime"></span><br>
-                (last updated on 03/2025)<br> 
+                <span class = "responsive-1" id="current-datetime"> <br></span>
+                <span class = "responsive-1">(last updated on 03/2025)<br></span>
             </p>
         </div>
         <div class="header-block">
             <p class="header-text" style="margin: 0;">
-                <span id="title">Graphic Designer</span> <br>
-                Pursuing <a class="removeA hover-yellow" href="https://risd.gd/" target="_blank">BFA @RISD.GD</a>, <br>
+                <span class="responsive-2">Pursuing <a class="removeA hover-yellow" href="https://risd.gd/" target="_blank">BFA @RISD.GD</a>, <br>
                 Currently @<a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a> <br>
-                Previously @<a class="removeA hover-yellow" href="https://www.apple.com/" target="_blank">Apple</a>
+                Previously @<a class="removeA hover-yellow" href="https://www.apple.com/" target="_blank">Apple</a> </span>
             </p>
         </div>
-        <div class="header-block">
+        <div class="header-block header-contact">
             <p class="header-text" style="margin: 0;">
-                <a class="removeA hover-yellow" href="https://www.instagram.com/lihuang.space/" target="_blank">Instagram</a>, <br> 
-                <a class="removeA hover-yellow" href="https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">LinkedIn</a>, <br> 
-                <a class="removeA hover-yellow" href="mailto:lhuang02@risd.edu">E-mail</a>
+                <a class="removeA hover-yellow header-social-links" href="https://www.instagram.com/lihuang.space/" target="_blank">Instagram,</a>
+                <a class="removeA hover-yellow header-social-links" href="https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">LinkedIn,</a>
+                <a class="removeA hover-yellow header-social-links" href="mailto:lhuang02@risd.edu">E-mail</a>
             </p>
         </div>
     </div>`;
@@ -44,8 +43,8 @@ const pageHeaderUpperHTML = `
         </div>
     </div>`;
 
-const headerLowerHTML = `
-    <div class="header-lower header-text">
+    const utilitySectionHTML = `
+       <div class="utlity header-text">
         <div class="header-block">
             <p class="underline-div">My projects</p>
             <div class="type-checkbox">editorial</div>
@@ -53,14 +52,14 @@ const headerLowerHTML = `
             <div class="type-checkbox">type design</div>
         </div>
 
-        <div class="header-block">
+        <div class="header-block utility-display">
             <p class="header-text underline-div">Display</p>
             <div class="display-type">grid</div>
             <div class="display-type">list</div>
         </div>
 
         <div class="header-block">
-            <p class="header-text underline-div">Random Buttons</p>
+            <p class="header-text underline-div">Archive of "MISC"</p>
             <div class="button-container">
                 <div class="question-button">i</div> 
                 <div class="info-button">?</div>
@@ -73,4 +72,5 @@ const headerLowerHTML = `
                 </video>
             </div>
         </div>
-    </div>`;
+    </div>
+    `

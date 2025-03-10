@@ -5,115 +5,17 @@
 	font-style: normal;
 }
 
-@media screen and (max-width: 1100px) {
-	/* .header{
-		display: none;
-	}
-	.side-bar-container{
-		display: none;
-	}
-	.sidebar{
-		display: none;
-	} */
-	.side-bar-container{
-		display: none;
-	}
-	.sidebar{
-		display: none;
-	}
-	.main {
-		padding-top: 337px;
-		background-color: none;
-	}
-	
-	.reponsive-reminder{
-		position: absolute;
-		display: none;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-
-@media screen and (min-width: 1100px){
-	.reponsive-reminder{
-		display: none;
-	}
-	/* layout setting */
-	.main {
-		padding-top: 337px;
-		background-color: none;
-	}
-	/* typography settings*/
-	
-	
-	.hover-yellow:hover {
-		cursor: pointer;
-		color: black;
-		background-color:#f7d580;
-	}
-	
-	
-	/* cursor setting*/
-	
-	
-	.custom-cursor {
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: none;
-		z-index: 999;
-		pointer-events: none;
-	}
-	
-	.site-wide {
-		display: none;
-		pointer-events: none;
-		transform: translate(-50%, -50%);
-		mix-blend-mode: multiply;
-	}
-	.site-wide .pointer {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: #f7b81c;
-		transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
-	}
-	
-	.effect-image{
-		width: 80px;
-	}
-	
-	.site-wide .effect{
-		opacity: 0;
-		transition: opacity 0.2s ease-in-out;
-	}
-	
-	
-	.site-wide.active .pointer {
-		width: 30px;
-		height: 30px;
-	}
-	
-	.site-wide.active .effect {
-		opacity: 1;
-	}
-}
-
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	background-color: black;
-
 }
+
+.main {
+	background-color: none;
+}
+
 .index-title{
 	text-decoration: none;
 	color: #333;
@@ -126,8 +28,6 @@ body {
 	z-index: 80;
 	background-color: white;
 	width: 100%;
-	border-width: 1px;
-	border-color: black;
 	border-bottom: 1px solid #000;
 }
 .header-upper{
@@ -136,25 +36,11 @@ body {
 	left: 0;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr); 
 	gap: 0; 
 	align-items: top;
 	z-index: 80;
-	border-width: 1px;
-	border-color: black;
-	border-bottom: 1px solid #000;
 	z-index: 81;
 	background-color: white;
-}
-.header-lower {
-	padding: 16px 8px;
-	position: relative;
-	padding-top: 24px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	transition: height 0.3s ease, padding-top 0.3s ease;
-	overflow: hidden;
-	z-index: 0;
 }
 .header-text{
 	font-family: 'Heap', sans-serif;
@@ -191,10 +77,20 @@ body {
   color: inherit; 
 }
 
+.hover-yellow{
+	transition: background-color 0.3 ease;
+}
+
+.hover-yellow:hover{
+	background-color: #f7d580;
+}
+
 .underline-div{
 	width: calc(100% - 40px);
 	padding-bottom: 8px;
 	border-bottom: 1px solid black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .header-right-section{
@@ -219,4 +115,72 @@ body {
 }
 video {
 	clip-path: inset(1px 1px);
+}
+
+@media screen and (max-width: 600px) {
+  .header-upper{
+		grid-template-columns: repeat(1, 1fr); 
+  }
+	.header-contact{
+		padding-top: 12px;
+	}
+	.responsive-1{
+		display: none;
+	}
+	.responsive-2 br {
+		display: none;
+	}
+	.main{
+		padding-top: 142px;
+	}
+	.header-block{
+		padding: 0px 8px;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .header-upper{
+		grid-template-columns: repeat(2, 1fr); 
+  }
+	.header-social-links{
+		display: inline-block;
+	}
+	.header-contact{
+		margin-top: -20px;
+	}
+	.responsive-1{
+		display: none;
+	}
+	.main{
+		padding-top: 93px;
+	}
+	.header-block{
+		padding: 0px 8px;
+	}
+}
+
+@media screen and (min-width: 1100px) and (max-width: 2200px) {
+	.header-upper{
+		grid-template-columns: repeat(3, 1fr); 
+  }
+	.header-social-links{
+		display: flex;
+		width: fit-content;
+	}
+	.main{
+		padding-top: 105px;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	.header-upper{
+		grid-template-columns: repeat(4, 1fr); 
+  }
+	.header-social-links{
+		display: flex;
+		width: fit-content;
+	}
+	.main{
+		padding-top: 105px;
+	}
 }

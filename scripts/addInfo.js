@@ -1,14 +1,14 @@
 // document.querySelector('.top-icon-info').addEventListener('click', function() {showInfo();
 // });
 
-document.querySelector('.question-button').addEventListener('click', function() {showq();
-});
+// document.querySelector('.question-button').addEventListener('click', function() {showq();
+// });
 
-document.querySelector('.info-button').addEventListener('click', function() {getMemes();
-});
+// document.querySelector('.info-button').addEventListener('click', function() {getMemes();
+// });
 
-document.querySelector('.clear-button').addEventListener('click', function() {clearAdd();
-});
+// document.querySelector('.clear-button').addEventListener('click', function() {clearAdd();
+// });
 
 
 let infoCount = true;
