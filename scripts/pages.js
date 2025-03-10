@@ -1,6 +1,6 @@
 function goTo(pageName) {
   window.location.href = `pages/${pageName}.html`;
-  console.log(`${pageName}`);
+  // console.log(`${pageName}`);
 } 
   
 

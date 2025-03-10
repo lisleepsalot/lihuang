@@ -136,6 +136,10 @@ video {
 	.header-block{
 		padding: 0px 8px;
 	}
+	.project-preview-title {
+		padding-top: 12px;
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 1100px) {
@@ -157,6 +161,10 @@ video {
 	.header-block{
 		padding: 0px 8px;
 	}
+	.project-preview-title {
+		padding-top: 12px;
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 1100px) and (max-width: 2200px) {
@@ -170,11 +178,17 @@ video {
 	.main{
 		padding-top: 105px;
 	}
+	.project-preview-title {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 2200px) {
+	.project-preview-title {
+		display: none;
+	}
 	.header-upper{
-		grid-template-columns: repeat(4, 1fr); 
+		grid-template-columns: repeat(3, 1fr); 
   }
 	.header-social-links{
 		display: flex;

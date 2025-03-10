@@ -20,7 +20,7 @@ function makeGrid() {
       }
 
       projectsHTML += `
-          <div class="project-container js-${project.identifier}" onclick="goTo('${project.identifier}');">
+          <div class="project-container js-${project.identifier}" data-identifier="${project.identifier}" onclick="goTo('${project.identifier}');">
               <div style="position: relative; width: 100%">
                   ${mediaElement}
               </div>
