@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Set header content for non-index pages
             header.innerHTML = pageHeaderUpperHTML;
             makeInfoGrid();
+            makeBottomButtons();
         }
     });
 });
@@ -64,7 +65,8 @@ function updateDateTime() {
 updateDateTime(); 
 setInterval(updateDateTime, 1000);
 
-const bottomButtonsContainer = document.querySelector('.bottom-buttons-container');
+function makeBottomButtons(){
+    const bottomButtonsContainer = document.querySelector('.bottom-buttons-container');
 
 // Check if the container exists before inserting content
 if (bottomButtonsContainer) {
@@ -79,24 +81,34 @@ if (bottomButtonsContainer) {
 } else {
   console.error("The .bottom-buttons-container element was not found.");
 }
+}
+
 
 // Add click event listener to the next project button
-document.querySelector(".next-project-button").addEventListener("click", function() {
+const nextProjectButton = document.querySelector(".next-project-button");
+
+if (nextProjectButton) {
+  nextProjectButton.addEventListener("click", function() {
     const currentIdentifier = window.location.pathname.split("/").pop().replace(".html", "");
     
     // Find the index of the current project in the projects array
     let currentIndex = projects.findIndex(project => project.identifier === currentIdentifier);
     
     if (currentIndex === -1) {
-        console.error(`Current project with identifier "${currentIdentifier}" not found.`);
-        return;
+      console.error(`Current project with identifier "${currentIdentifier}" not found.`);
+      return;
     }
     
     // Determine the next project's index (wrap around to 0 if at the end)
     const nextIndex = (currentIndex + 1) % projects.length;
     const nextProject = projects[nextIndex];
+    
+    // Redirect to the next project's HTML page
     window.location.href = nextProject.identifier + ".html";
-});
+  });
+} else {
+  console.warn("The .next-project-button element was not found.");
+}
 
 
 function makeInfoGrid(){

@@ -47,9 +47,18 @@ const pageHeaderUpperHTML = `
        <div class="utlity header-text">
         <div class="header-block">
             <p class="underline-div">My projects</p>
-            <div class="type-checkbox">editorial</div>
-            <div class="type-checkbox">branding</div>
-            <div class="type-checkbox">type design</div>
+<div>
+  <input type="checkbox" id="checkbox-editorial">
+  <label for="checkbox-editorial" class="custom-checkbox"></label> editorial design
+</div>
+<div>
+  <input type="checkbox" id="checkbox-identity">
+  <label for="checkbox-identity" class="custom-checkbox"></label> identity design
+</div>
+<div>
+  <input type="checkbox" id="checkbox-motion">
+  <label for="checkbox-motion" class="custom-checkbox"></label> motion design
+</div>
         </div>
 
         <div class="header-block utility-display">

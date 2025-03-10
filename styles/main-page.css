@@ -133,14 +133,37 @@
   border-radius: 4px;
   background-color: white;
   padding: 12px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+/* Hide the native checkbox */
+input[type="checkbox"] {
+  display: none;
 }
 
-/* @media screen and (max-width: 520px) {
-  .about-block{
-    grid-template-columns: repeat(1, 1fr);
-      grid-column: span 1;}
-} */
+/* Style the custom checkbox */
+.custom-checkbox {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #000000; /* Accent border color */
+  border-radius: 50%; /* Rounded corners for the box */
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -3px;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #eebb3b; /* Accent color for the indicator */
+  border-radius: 50%; /* This creates a circle; change this for a different shape */
+}
+
 
 @media screen and (min-width: 1300px) {
   .about-right{

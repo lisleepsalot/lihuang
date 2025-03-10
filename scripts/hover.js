@@ -32,9 +32,9 @@ function createFloatingDiv(x, y, identifier) {
   floatingDiv = document.createElement('div');
   floatingDiv.innerHTML = `     
       ${projectData.name} <br>
-      ---------------------- <br>
+      -------------------------- <br>
       ${projectTags} <br>
-      ---------------------- <br>
+      -------------------------- <br>
       ${projectData.year} <br>`
   floatingDiv.classList.add('floating-info');
   floatingDiv.classList.add('header-text');

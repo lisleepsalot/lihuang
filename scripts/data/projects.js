@@ -174,7 +174,7 @@ const projects =[
     brief:``,
     credits:``,
     identifier: 'hospitalNavigation',
-    year: '2024'
+    year: '2023'
   },
   // {
   //   image: "images/covers-gif/kirakira.png",
