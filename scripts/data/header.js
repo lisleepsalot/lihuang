@@ -2,7 +2,7 @@ const headerUpperHTML = `
     <div class="header-upper">
         <div class="header-text header-block">
             <p style="margin: 0;">
-                <a class="removeA hover-yellow" href="index.html" target="_blank">Li Huang</a>
+                <a class="removeA hover-yellow" href="index.html">Li Huang</a>
                 <div id="animation1">-->-->-->-->-->--> </div>
                 <span class = "responsive-1" id="current-datetime"> <br></span>
                 <span class = "responsive-1">(last updated on 03/2025)<br></span>
