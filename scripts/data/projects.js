@@ -70,15 +70,7 @@ const projects =[
     identifier: 'struveGeodeticArc',
     year: '2024'
   },
-  {
-    image: "images/covers/openKitchen.jpg",
-    name: "To Cook With An Open Kitchen",
-    categories: ['editorial design','art direction'],
-    brief: `The follow-up to the poster series "To Cook ___ In Here," this book guides you in locating all essential items for cooking, whether edible or non-edible, within and beyond the kitchen.`,
-    credits:`Design Studio 3 <br>RISD 2023 Fall <br>Instructed by: Renee Payne`,
-    identifier: 'openKitchen',
-    year: '2023'
-  },
+
   {
     image: "images/covers/heap.mp4",
     name: "Heap Mono",
@@ -102,14 +94,14 @@ const projects =[
     year: '2023'
   },
   {
-    image: "images/covers/toCookInHere.jpg",
-    name: "To Cook ___ in Here",
-    categories: ['poster design'],
-    brief:`                    A poster series aims to explore how a particular food culture thrives in a foreign physical environment, ranging from the micro to the macro level. Stay tuned for the subsequent subproject "To Cook with an Open Kitchen".`,
-    credits:`                    Design Studio 3 <br>
+    image: "images/covers/mrJones.jpg",
+    name: "The Unforseeable Fate of Mr.Jones",
+    categories: ['editorial design'],
+    brief:`                    Inspired by the song of the same name by Foster the People, 'The Unforeseeable Fate of Mr. Jones' is a two-part project that explores the concept of self-reflection through the lens of standardized tests. It includes the creation of both a book and a website. (Turn onthe audio please)`,
+    credits:`                    Typography III <br>
                     RISD 2023 Fall <br>
-                    Instructed by: Renee Payne`,
-    identifier: 'toCookInHere',
+                    Instructed by: Min Hee Lee <br><br>`,
+    identifier: 'mrJones',
     year: '2023'
   },
   {
@@ -134,14 +126,14 @@ const projects =[
     year: '2023'
   },
   {
-    image: "images/covers/mrJones.jpg",
-    name: "The Unforseeable Fate of Mr.Jones",
-    categories: ['editorial design'],
-    brief:`                    Inspired by the song of the same name by Foster the People, 'The Unforeseeable Fate of Mr. Jones' is a two-part project that explores the concept of self-reflection through the lens of standardized tests. It includes the creation of both a book and a website. (Turn onthe audio please)`,
-    credits:`                    Typography III <br>
+    image: "images/covers/toCookInHere.jpg",
+    name: "To Cook ___ in Here",
+    categories: ['poster design'],
+    brief:`                    A poster series aims to explore how a particular food culture thrives in a foreign physical environment, ranging from the micro to the macro level. Stay tuned for the subsequent subproject "To Cook with an Open Kitchen".`,
+    credits:`                    Design Studio 3 <br>
                     RISD 2023 Fall <br>
-                    Instructed by: Min Hee Lee <br><br>`,
-    identifier: 'mrJones',
+                    Instructed by: Renee Payne`,
+    identifier: 'toCookInHere',
     year: '2023'
   },
   {
