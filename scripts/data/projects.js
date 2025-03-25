@@ -29,15 +29,13 @@ const projects =[
     year: '2024'
   },
   {
-    image: "images/covers/mrJones.jpg",
-    name: "The Unforseeable Fate of Mr.Jones",
-    categories: ['editorial design'],
-    brief:`                    Inspired by the song of the same name by Foster the People, 'The Unforeseeable Fate of Mr. Jones' is a two-part project that explores the concept of self-reflection through the lens of standardized tests. It includes the creation of both a book and a website. (Turn onthe audio please)`,
-    credits:`                    Typography III <br>
-                    RISD 2023 Fall <br>
-                    Instructed by: Min Hee Lee <br><br>`,
-    identifier: 'mrJones',
-    year: '2023'
+    image: "images/covers/debates-in-ai.jpg",
+    name: "Debates in AI",
+    categories: ['identity design'],
+    brief:`                    Debates in AI at RISD was a symposium held on April 11–12, 2024, bringing together artists from around the world to explore the complex dimensions of artificial intelligence (AI) and its influence on creative fields. The visual identity drew inspiration from the dynamics of information processing and the fluid, ambiguous nature of AI-generated visuals.`,
+    credits:`Client: RISD <br> With Hannah Jeong and Maggie Meitong Xian`,
+    identifier: 'debatesInAI',
+    year: '2024'
   },
   {
     image: "images/covers/risd-museum.mp4",
@@ -136,13 +134,15 @@ const projects =[
     year: '2023'
   },
   {
-    image: "images/covers/debates-in-ai.jpg",
-    name: "Debates in AI",
-    categories: ['identity design'],
-    brief:`                    Debates in AI at RISD was a symposium held on April 11–12, 2024, bringing together artists from around the world to explore the complex dimensions of artificial intelligence (AI) and its influence on creative fields. The visual identity drew inspiration from the dynamics of information processing and the fluid, ambiguous nature of AI-generated visuals.`,
-    credits:`Client: RISD <br> With Hannah Jeong and Maggie Meitong Xian`,
-    identifier: 'debatesInAI',
-    year: '2024'
+    image: "images/covers/mrJones.jpg",
+    name: "The Unforseeable Fate of Mr.Jones",
+    categories: ['editorial design'],
+    brief:`                    Inspired by the song of the same name by Foster the People, 'The Unforeseeable Fate of Mr. Jones' is a two-part project that explores the concept of self-reflection through the lens of standardized tests. It includes the creation of both a book and a website. (Turn onthe audio please)`,
+    credits:`                    Typography III <br>
+                    RISD 2023 Fall <br>
+                    Instructed by: Min Hee Lee <br><br>`,
+    identifier: 'mrJones',
+    year: '2023'
   },
   {
     image: "images/covers/atlas-swing.jpg",
