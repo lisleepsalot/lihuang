@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //this method generates the projects
 function showDesign(){
+  showLoadingOverlaySamePage(() => {
+    console.log('Overlay removed; archive view updated.');
+  });
+
   const designCategoryElements = document.querySelectorAll('.design-category');
   clearRest();
   makeGrid();
@@ -40,6 +44,9 @@ function showDesign(){
 
 //this methods shows the archive grid and replaces the project grids
 function showArchives() {
+  showLoadingOverlaySamePage(() => {
+    console.log('Overlay removed; archive view updated.');
+  });
   let archiveHTML = '';
   clearRest();
   archives.forEach((archive) => {
@@ -68,6 +75,9 @@ function showArchives() {
   });
 
   document.querySelector('.archive-display-grid').innerHTML = archiveHTML;
+  showLoadingOverlay(() => {
+    console.log('Overlay removed; page fully loaded.');
+  });
 }
 
 function archiveView(archiveIndex) {

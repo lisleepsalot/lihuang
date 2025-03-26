@@ -1,31 +1,87 @@
-// Create the overlay div
-const overlay = document.createElement('div');
-overlay.classList.add('loading-overlay');
-overlay.classList.add('h1');
+function showLoadingOverlay(callback) {
+  // Create the overlay div
+  const overlay = document.createElement('div');
+  overlay.classList.add('loading-overlay');
+  overlay.classList.add('h1');
 
-const loadingText = document.createElement('div');
-overlay.appendChild(loadingText);
+  // Create the loading text element
+  const loadingText = document.createElement('div');
+  overlay.appendChild(loadingText);
 
-document.body.appendChild(overlay);
+  // Append overlay to the document body
+  document.body.appendChild(overlay);
 
-// Animate the loading text
-let dotCount = 1;
-const maxDots = 6;
+  // Animate the loading text
+  let dotCount = 1;
+  const maxDots = 6;
+  const loadingInterval = setInterval(() => {
+    loadingText.textContent = 'Loading' + '.'.repeat(dotCount);
+    dotCount = (dotCount % maxDots) + 1;
+  }, 300); // adjust speed here
 
-const loadingInterval = setInterval(() => {
-  loadingText.textContent = 'Loading' + '.'.repeat(dotCount);
-  dotCount = (dotCount % maxDots) + 1;
-}, 100); // adjust speed here
+  // Function to hide and remove overlay
+  function hideOverlay() {
+    overlay.classList.add('hide');
+    clearInterval(loadingInterval);
+    setTimeout(() => {
+      overlay.remove();
+      if (callback && typeof callback === 'function') {
+        callback();
+      }
+    }, 1000); // match transition duration
+  }
 
-// Wait until all resources (including images) are fully loaded
-window.addEventListener('load', () => {
-  overlay.classList.add('hide');
+  // Check if the page has already loaded
+  if (document.readyState === 'complete') {
+    // Page is loaded, so hide overlay immediately
+    hideOverlay();
+  } else {
+    // Otherwise, wait for the window load event
+    window.addEventListener('load', hideOverlay);
+  }
+}
 
-  // Stop animation
-  clearInterval(loadingInterval);
-
-  // Remove it after transition
-  setTimeout(() => {
-    overlay.remove();
-  }, 1000); // match transition duration
+// Call the function as soon as the script runs,
+// so that every time the page is opened or refreshed the overlay is created.
+showLoadingOverlay(() => {
+  console.log('Overlay removed; page fully loaded.');
 });
+
+function showLoadingOverlaySamePage(callback) {
+  // Create the overlay div
+  const overlay = document.createElement('div');
+  overlay.classList.add('loading-overlay');
+  overlay.classList.add('h1');
+
+  // Create the loading text element
+  const loadingText = document.createElement('div');
+  overlay.appendChild(loadingText);
+
+  // Append overlay to the document body
+  document.body.appendChild(overlay);
+
+  // Animate the loading text
+  let dotCount = 1;
+  const maxDots = 6;
+  const loadingInterval = setInterval(() => {
+    loadingText.textContent = 'Loading' + '.'.repeat(dotCount);
+    dotCount = (dotCount % maxDots) + 1;
+  }, 300); // adjust speed here
+
+  // Function to hide and remove overlay
+  function hideOverlay() {
+    overlay.classList.add('hide'); // trigger slide-away animation
+    clearInterval(loadingInterval);
+    setTimeout(() => {
+      overlay.remove();
+      if (callback && typeof callback === 'function') {
+        callback();
+      }
+    }, 1000); // match the CSS transition duration
+  }
+
+  // Instead of relying on window load (which only fires once),
+  // wait a fixed delay for the new content to be rendered.
+  // Adjust the delay (here 500ms) as needed for your content updates.
+  setTimeout(hideOverlay, 500);
+}

@@ -1,39 +1,23 @@
-// Site wide cursor
-const site_wide_cursor = document.querySelector('.custom-cursor.site-wide');
+    // Create the custom cursor element dynamically
+    const cursor = document.createElement('div');
+    cursor.id = 'customCursor';
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
 
-document.addEventListener('mouseenter', () => {
-	site_wide_cursor.style.display = 'block';
-});
+    // Update the cursor position based on mouse movements
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
 
-document.addEventListener('mouseleave', () => {
-	site_wide_cursor.style.display = 'none';
-});
+    // Enlarge the cursor on mouse press
+    document.addEventListener('mousedown', () => {
+      cursor.style.width = '50px';
+      cursor.style.height = '50px';
+    });
 
-document.addEventListener('mousemove', TrackCursor);
-
-document.addEventListener('mousedown', () => site_wide_cursor.classList.add('active'));
-document.addEventListener('mouseup', () => site_wide_cursor.classList.remove('active'));
-
-/*function TrackCursor(evt) {
-	const w = site_wide_cursor.clientWidth;
-	const h = site_wide_cursor.clientHeight;
-
-	site_wide_cursor.style.transform = 
-		`translate(${evt.clientX - w/2}px, ${evt.clientY - h/2}px)`;
-}*/
-function TrackCursor(evt) {
-  const w = site_wide_cursor.clientWidth;
-  const h = site_wide_cursor.clientHeight;
-
-  // Adjust the cursor's position based on the current scroll position
-  const scrollX = window.scrollX || window.pageXOffset;
-  const scrollY = window.scrollY || window.pageYOffset;
-
-  site_wide_cursor.style.transform = 
-    `translate(${evt.clientX - w / 2 + scrollX}px, ${evt.clientY - h / 2 + scrollY}px)`;
-}
-
-function refreshCursor(){
-  site_wide_cursor.style.transform = 
-    `translate(1px, 1px)`;
-}
+    // Return to original size on mouse release
+    document.addEventListener('mouseup', () => {
+      cursor.style.width = '30px';
+      cursor.style.height = '30px';
+    });

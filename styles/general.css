@@ -10,6 +10,22 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	background-color: black;
+	cursor:none;
+}
+
+/* Create a custom cursor element */
+.custom-cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+  background-color: #f7d580;
+	border-radius: 50%;
+	pointer-events: none; /* Let clicks pass through */
+	transform: translate(-50%, -50%);
+	transition: width 0.2s ease, height 0.2s ease;
+	z-index: 10000;
 }
 
 .main {
@@ -19,7 +35,7 @@ body {
 .index-title{
 	text-decoration: none;
 	color: #333;
-	cursor: pointer;
+	/* cursor: pointer; */
 	transition: color 0.3s;
 }
 .header{
