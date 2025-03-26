@@ -117,6 +117,29 @@ video {
 	clip-path: inset(1px 1px);
 }
 
+/* Full-screen overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease-in-out;
+  transform: translateY(0);
+}
+
+/* Hidden state (slide out) */
+.loading-overlay.hide {
+  transform: translateY(100vh);
+}
+
 @media screen and (max-width: 600px) {
   .header-upper{
 		grid-template-columns: repeat(1, 1fr); 
