@@ -126,10 +126,21 @@ const projects =[
     year: '2023'
   },
   {
+    image: "images/covers/openKitchen.jpg",
+    name: "To Cook With an Open Kitchen",
+    categories: ['poster design'],
+    brief:`A zine that explores the gesture of cooking. Subsequent project of "To Cook in Here".`,
+    credits:`                    Design Studio 3 <br>
+                    RISD 2023 Fall <br>
+                    Instructed by: Renee Payne`,
+    identifier: 'openKitchen',
+    year: '2023'
+  },
+  {
     image: "images/covers/toCookInHere.jpg",
     name: "To Cook ___ in Here",
     categories: ['poster design'],
-    brief:`                    A poster series aims to explore how a particular food culture thrives in a foreign physical environment, ranging from the micro to the macro level. Stay tuned for the subsequent subproject "To Cook with an Open Kitchen".`,
+    brief:`A poster series aims to explore how a particular food culture thrives in a foreign physical environment, ranging from the micro to the macro level. Stay tuned for the subsequent subproject "To Cook with an Open Kitchen".`,
     credits:`                    Design Studio 3 <br>
                     RISD 2023 Fall <br>
                     Instructed by: Renee Payne`,
