@@ -54,6 +54,7 @@
 
 .narrow-duo-content{
   display: grid;
+  min-width: 350px;
   grid-template-columns: repeat(2, 1fr);
   max-width: 80vw;
   height: auto;
