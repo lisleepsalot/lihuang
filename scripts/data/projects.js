@@ -18,6 +18,39 @@ const projects =[
     year: '2024'
   },
   {
+    image: "images/covers/hopeAndAnchor.mp4",
+    name: "Hope and Anchor",
+    categories: ['identity design', 'motion design'],
+    brief:`A speculative branding project.`,
+    credits:`        Color and Surface <br>
+        RISD 2023 Spring<br>(revisited 2025)<br>
+        Instructed by: Emily Rye <br>`,
+    identifier: 'hopeAndAnchor',
+    year: '2025'
+  },
+  // {
+  //   image: "images/covers/commencement.jpg",
+  //   name: "RISD Commencement 2025",
+  //   categories: ['identity design','motion design', 'editorial design'],
+  //   brief:`        A visionary branding project for the Struve Geodetic Arc, a UNESCO World Heritage site where scientists measured the size of the Earth using mathematics and precise measurements. The brand identity explores themes of distance, geometry, the Earth, and mathematical precision.`,
+  //   credits:`          Grad Type III <br>
+  //         RISD 2024 Fall <br>
+  //         Instructed by: Doug Scott <br>`,
+  //   identifier: 'commencement2025',
+  //   year: '2025'
+  // },
+  {
+    image: "images/covers/struve-geodetic-arc.mp4",
+    name: "Struve Geodetic Arc",
+    categories: ['identity design','motion design', 'editorial design'],
+    brief:`        A visionary branding project for the Struve Geodetic Arc, a UNESCO World Heritage site where scientists measured the size of the Earth using mathematics and precise measurements. The brand identity explores themes of distance, geometry, the Earth, and mathematical precision.`,
+    credits:`          Grad Type III <br>
+          RISD 2024 Fall <br>
+          Instructed by: Doug Scott <br>`,
+    identifier: 'struveGeodeticArc',
+    year: '2024'
+  },
+  {
     image: "images/covers/instructional-type.jpg",
     name: "Instructional Typography",
     categories: ['editorial design'],
@@ -26,15 +59,6 @@ const projects =[
         RISD 2024 Fall <br>
         Instructed by: Doug Scott <br>`,
     identifier: 'instructionalTypography',
-    year: '2024'
-  },
-  {
-    image: "images/covers/debates-in-ai.jpg",
-    name: "Debates in AI",
-    categories: ['identity design'],
-    brief:`                    Debates in AI at RISD was a symposium held on April 11–12, 2024, bringing together artists from around the world to explore the complex dimensions of artificial intelligence (AI) and its influence on creative fields. The visual identity drew inspiration from the dynamics of information processing and the fluid, ambiguous nature of AI-generated visuals.`,
-    credits:`Client: RISD <br> With Hannah Jeong and Maggie Meitong Xian`,
-    identifier: 'debatesInAI',
     year: '2024'
   },
   {
@@ -49,6 +73,15 @@ const projects =[
     year: '2024'
   },
   {
+    image: "images/covers/debates-in-ai.jpg",
+    name: "Debates in AI",
+    categories: ['identity design', 'motion design'],
+    brief:`                    Debates in AI at RISD was a symposium held on April 11–12, 2024, bringing together artists from around the world to explore the complex dimensions of artificial intelligence (AI) and its influence on creative fields. The visual identity drew inspiration from the dynamics of information processing and the fluid, ambiguous nature of AI-generated visuals.`,
+    credits:`Client: RISD <br> With Hannah Jeong and Maggie Meitong Xian`,
+    identifier: 'debatesInAI',
+    year: '2024'
+  },
+  {
     image: "images/covers/yearbook2024.jpg",
     name: "RISD Yearbook 2024",
     categories: ['editorial design', 'art direction'],
@@ -57,17 +90,6 @@ const projects =[
                     with RISD <a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a><br>
                     Year: 2024`,
     identifier: 'yearbook2024',
-    year: '2024'
-  },
-  {
-    image: "images/covers/struve-geodetic-arc.mp4",
-    name: "Struve Geodetic Arc",
-    categories: ['identity design','motion design', 'editorial design'],
-    brief:`        A visionary branding project for the Struve Geodetic Arc, a UNESCO World Heritage site where scientists measured the size of the Earth using mathematics and precise measurements. The brand identity explores themes of distance, geometry, the Earth, and mathematical precision.`,
-    credits:`          Grad Type III <br>
-          RISD 2024 Fall <br>
-          Instructed by: Doug Scott <br>`,
-    identifier: 'struveGeodeticArc',
     year: '2024'
   },
 
