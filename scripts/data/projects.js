@@ -62,7 +62,16 @@ const projects =[
     year: '2024'
   },
   {
-    image: "images/covers/risd-museum.mp4",
+    image: "images/covers/debates-in-ai.jpg",
+    name: "Debates in AI",
+    categories: ['identity design', 'motion design'],
+    brief:`                    Debates in AI at RISD was a symposium held on April 11–12, 2024, bringing together artists from around the world to explore the complex dimensions of artificial intelligence (AI) and its influence on creative fields. The visual identity drew inspiration from the dynamics of information processing and the fluid, ambiguous nature of AI-generated visuals.`,
+    credits:`Client: RISD <br> With Hannah Jeong and Maggie Meitong Xian`,
+    identifier: 'debatesInAI',
+    year: '2024'
+  },
+  {
+    image: "images/covers/risd-museum.jpg",
     name: "RISD Museum",
     categories: ['identity design'],
     brief:`                    A visionary rebranding project for the RISD Museum, featuring a dynamic logo and color system inspired by the museum’s architecture. The new identity reflects its structural forms, textures, and spatial experience, creating a visual language that captures the look and feel of the physical space.`,
@@ -70,15 +79,6 @@ const projects =[
                     RISD 2024 Spring <br>
                     Instructed by: Hammett Nurosi <br>`,
     identifier: 'risdMuseum',
-    year: '2024'
-  },
-  {
-    image: "images/covers/debates-in-ai.jpg",
-    name: "Debates in AI",
-    categories: ['identity design', 'motion design'],
-    brief:`                    Debates in AI at RISD was a symposium held on April 11–12, 2024, bringing together artists from around the world to explore the complex dimensions of artificial intelligence (AI) and its influence on creative fields. The visual identity drew inspiration from the dynamics of information processing and the fluid, ambiguous nature of AI-generated visuals.`,
-    credits:`Client: RISD <br> With Hannah Jeong and Maggie Meitong Xian`,
-    identifier: 'debatesInAI',
     year: '2024'
   },
   {
