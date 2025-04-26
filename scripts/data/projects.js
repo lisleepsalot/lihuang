@@ -21,7 +21,7 @@ const projects =[
     image: "images/covers/hopeAndAnchor.mp4",
     name: "Hope and Anchor",
     categories: ['identity design', 'motion design'],
-    brief:`A speculative branding project for a fictional soap brand, developed within a set color palette and rooted in scent, ritual, and tactile experience.`,
+    brief:`A speculative branding project for a conceptual Rhode Island soap brand, developed within a set color palette and rooted in scent, ritual, and tactile experience.`,
     credits:`        Color and Surface <br>
         RISD 2023 Spring<br>(revisited 2025)<br>
         Instructed by: Emily Rye <br>`,
