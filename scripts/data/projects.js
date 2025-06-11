@@ -6,6 +6,17 @@ const projects =[
   //   identifier: null,
   // },
   {
+    image: "images/covers/commencement.jpg",
+    name: "RISD Commencement 2025",
+    categories: ['identity design','motion design', 'art direction'],
+    brief:`Inspired by the gestures of overlap and shared making. Threads, hands, and objects weave together RISD’s cross-disciplinary spirit and celebrate the craft that connects us all.`,
+    credits:`Client: RISD <br>
+                    with RISD <a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a><br>
+                    Year: 2025`,
+    identifier: 'commencement2025',
+    year: '2025'
+  },
+  {
     image: "images/covers/calvino.mp4",
     name: "6 Memos to the Next Millennium",
     categories: ['motion design','art direction'],
@@ -18,6 +29,17 @@ const projects =[
     year: '2024'
   },
   {
+    image: "images/covers/yearbook2025.jpg",
+    name: "RISD Yearbook 2025",
+    categories: ['editorial design','art direction'],
+    brief:`The 2025 yearbook is a celebration of what we carry with us and the moments we hold close. Each student page is personalized—decorated and curated like a proud, well-loved fridge door. We dedicate this yearbook as a keepsake for the graduating class of 2025. What’s yours?`,
+    credits:`Client: RISD <br>
+                    with RISD <a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a><br>
+                    Year: 2025`,
+    identifier: 'yearbook2025',
+    year: '2025'
+  },
+  {
     image: "images/covers/hopeAndAnchor.mp4",
     name: "Hope and Anchor",
     categories: ['identity design', 'motion design'],
@@ -28,17 +50,6 @@ const projects =[
     identifier: 'hopeAndAnchor',
     year: '2025'
   },
-  // {
-  //   image: "images/covers/commencement.jpg",
-  //   name: "RISD Commencement 2025",
-  //   categories: ['identity design','motion design', 'editorial design'],
-  //   brief:`        A visionary branding project for the Struve Geodetic Arc, a UNESCO World Heritage site where scientists measured the size of the Earth using mathematics and precise measurements. The brand identity explores themes of distance, geometry, the Earth, and mathematical precision.`,
-  //   credits:`          Grad Type III <br>
-  //         RISD 2024 Fall <br>
-  //         Instructed by: Doug Scott <br>`,
-  //   identifier: 'commencement2025',
-  //   year: '2025'
-  // },
   {
     image: "images/covers/struve-geodetic-arc.mp4",
     name: "Struve Geodetic Arc",
@@ -87,7 +98,7 @@ const projects =[
     categories: ['editorial design', 'art direction'],
     brief:`This yearbook takes the viewer away from their common beginnings at RISD into an imagined future where each graduating student is famous. Where and who will they be by 2034? Each year, the graduating class' yearbook is student-designed by the Design Guild.`,
     credits:`       Client: RISD <br>
-                    with RISD <a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a><br>
+                    with <a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a><br>
                     Year: 2024`,
     identifier: 'yearbook2024',
     year: '2024'
