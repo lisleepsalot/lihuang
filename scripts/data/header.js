@@ -10,9 +10,9 @@ const headerUpperHTML = `
         </div>
         <div class="header-block">
             <p class="header-text" style="margin: 0;">
-                <span class="responsive-2">Pursuing <a class="removeA hover-yellow" href="https://risd.gd/" target="_blank">BFA @RISD.GD</a>, <br>
-                Currently @<a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a> <br>
-                Previously @<a class="removeA hover-yellow" href="https://www.apple.com/" target="_blank">Apple</a> </span>
+                Brooklyn based Graphic Designer<br>
+                Currently @<a class="removeA hover-yellow" href="https://www.familyoffice.is/" target="_blank">Family Office</a><br>
+                Previously @<a class="removeA hover-yellow" href="https://www.apple.com/" target="_blank">Apple</a></span>, <a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a>
             </p>
         </div>
         <div class="header-block header-contact">
