@@ -38,7 +38,7 @@ const pageHeaderUpperHTML = `
             <p class="header-text" style="margin: 0;">
                 <a class="removeA hover-yellow" href="https://www.instagram.com/lihuang.space/" target="_blank">Instagram</a>, 
                 <a class="removeA hover-yellow" href="https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">LinkedIn</a>,  
-                <a class="removeA hover-yellow" href="mailto:lhuang02@risd.edu">E-mail</a>
+                <a class="removeA hover-yellow" href="mailto:lihbhsf@risd.edu">E-mail</a>
             </p>
         </div>
     </div>`;
