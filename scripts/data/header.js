@@ -19,7 +19,7 @@ const headerUpperHTML = `
             <p class="header-text" style="margin: 0;">
                 <a class="removeA hover-yellow header-social-links" href="https://www.instagram.com/lihuang.space/" target="_blank">Instagram,</a>
                 <a class="removeA hover-yellow header-social-links" href="https://www.linkedin.com/in/li-huang-7810231b8/" target="_blank">LinkedIn,</a>
-                <a class="removeA hover-yellow header-social-links" href="mailto:lhuang02@risd.edu">E-mail</a>
+                <a class="removeA hover-yellow header-social-links" href="mailto:lihbhsf@gmail.com">E-mail</a>
             </p>
         </div>
     </div>`;
