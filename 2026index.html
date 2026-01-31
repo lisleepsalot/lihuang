@@ -126,17 +126,15 @@
         ];
         
         // Calculate how many border items needed for complete surrounding layer
-        // Add enough border items to complete at least 2 more full spiral layers
         const regularCount = projects.length;
         
         // Calculate which positions would form a complete surrounding border
-        // We'll add items until we have at least 2 complete layers beyond the last regular item
         let currentTotal = regularCount;
-        let steps = Math.ceil(Math.sqrt(currentTotal)); // rough estimate of current radius
+        let steps = Math.ceil(Math.sqrt(currentTotal));
         
         // Add 2 complete spiral layers worth of items to ensure full coverage
-        const layerSize1 = (steps * 2) * 4; // perimeter of next layer
-        const layerSize2 = ((steps + 1) * 2) * 4; // perimeter of layer after that
+        const layerSize1 = (steps * 2) * 4;
+        const layerSize2 = ((steps + 1) * 2) * 4;
         const borderItemsNeeded = layerSize1 + layerSize2;
         
         for (let i = 0; i < borderItemsNeeded; i++) {
