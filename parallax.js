@@ -1,7 +1,3 @@
-// Core Parallax Effect Module
-// Smooth mouse-based parallax that moves elements opposite to cursor position
-// with acceleration based on distance from center
-
 // Maximum parallax offset in pixels
 const PARALLAX_MAX = 24;
 

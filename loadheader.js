@@ -1,5 +1,5 @@
 let headerHTML = `<div class="header-container header-name">
-                <p ><a class="header-text">Li Huang</a></p>
+                <p ><a href="index.html" class="header-text">Li Huang</a></p>
             </div>
             <div class="header-container">
                 <p id="current-datetime"></p>
