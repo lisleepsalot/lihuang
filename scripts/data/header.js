@@ -11,7 +11,7 @@ const headerUpperHTML = `
         <div class="header-block">
             <p class="header-text" style="margin: 0;">
                 Brooklyn based Graphic Designer<br>
-                Currently @<a class="removeA hover-yellow" href="https://www.franklyn.co/" target="_blank">Franklyn</a><br>
+                Currently @<a class="removeA hover-yellow" href="https://www.thiscardigan.com/" target="_blank">Cardigan</a><br>
                 Previously @<a class="removeA hover-yellow" href="https://www.familyoffice.is/" target="_blank">Family Office</a>, <a class="removeA hover-yellow" href="https://www.apple.com/" target="_blank">Apple</a></span>, <a class="removeA hover-yellow" href="https://www.risdguild.com/" target="_blank">RISD Design Guild</a>
             </p>
         </div>

@@ -17,16 +17,13 @@ const projects =[
     year: '2025'
   },
   {
-    image: "images/covers/calvino.mp4",
-    name: "6 Memos to the Next Millennium",
-    categories: ['motion design','art direction'],
-    brief:`
-             Type compositions on Italo Calvino’s Six Memos for the Next Millennium, Chapter 6, Exactitude.`,
-    credits:`Grad Type III <br>
-                    RISD 2024 Fall <br>
-                    Instructed by: Doug Scott`,
-    identifier: 'calvino',
-    year: '2024'
+    image: "images/covers/LVMA.mp4",
+    name: "Las Vegas Museum of Art",
+    categories: ['motion design','identity design'],
+    brief:``,
+    credits:``,
+    identifier: 'lvma',
+    year: '2026'
   },
   {
     image: "images/covers/yearbook2025.jpg",
@@ -108,7 +105,7 @@ const projects =[
     image: "images/covers/heap.mp4",
     name: "Heap Mono",
     categories: ['type design'],
-    brief:`                    The follow-up to the poster series "To Cook ___ In Here," this book guides you in locating all essential items for cooking, whether edible or non-edible, within and beyond the kitchen. <br>
+    brief:`My personal type design project. <br>
                     (This website is using it.)`,
     credits:`                    RISD 2024 Spring <br>
                     Instructed by: Cyrus Highsmith`,
@@ -158,17 +155,17 @@ const projects =[
     identifier: 'anatomyOfFascism',
     year: '2023'
   },
-  {
-    image: "images/covers/openKitchen.jpg",
-    name: "To Cook With an Open Kitchen",
-    categories: ['poster design'],
-    brief:`A zine that explores the gesture of cooking. Subsequent project of "To Cook in Here".`,
-    credits:`                    Design Studio 3 <br>
-                    RISD 2023 Fall <br>
-                    Instructed by: Renee Payne`,
-    identifier: 'openKitchen',
-    year: '2023'
-  },
+  // {
+  //   image: "images/covers/openKitchen.jpg",
+  //   name: "To Cook With an Open Kitchen",
+  //   categories: ['poster design'],
+  //   brief:`A zine that explores the gesture of cooking. Subsequent project of "To Cook in Here".`,
+  //   credits:`                    Design Studio 3 <br>
+  //                   RISD 2023 Fall <br>
+  //                   Instructed by: Renee Payne`,
+  //   identifier: 'openKitchen',
+  //   year: '2023'
+  // },
   {
     image: "images/covers/toCookInHere.jpg",
     name: "To Cook ___ in Here",
@@ -180,38 +177,38 @@ const projects =[
     identifier: 'toCookInHere',
     year: '2023'
   },
-  {
-    image: "images/covers/atlas-swing.jpg",
-    name: "Atlas Swing",
-    categories: ['game design','art direction'],
-    brief:`As a submission to the 2023 Geopipe NYC game jam, Atlas Swings is a golf game crafted utilizing Geopipe's provided model of New York City. The game secured first place in the game jam. In my role as the artist and graphic designer on the team, I collaborated with my colleagues to conduct research and delve into art styles and game flow. More specifically, I was responsible for designing and creating 3D models, 2D UI elements, and particle effects for various assets.<br> Cover Art & Animation by
-                    <a class="credit-link" href="https://adamying.myportfolio.com/" target="_blank">Adam Ying</a><br>
-                    Cover Illustration by <a class="credit-link" href="https://nicolezhu.com//" target="_blank">Nicole Zhu</a><br>`,
-    credits:`2023 Geopipe NYC game jam`,
-    identifier: 'atlasSwing',
-    year: '2023'
-  },
-  {
-    image: "images/covers/meowfia.mp4",
-    name: "Meowfia",
-    categories: ['game design'],
-    brief:`                    Meowfia is a 2D pixel art game built with Unity. In a two-player game of cat and house, one attempts to escape the devious traps of the humans, the other stops them. I was responsible for creating the background art and designing the characters.
-                    Play the game <a class="credit-link" href="https://brownrisdgames.itch.io/meowfia" target="_blank">here</a>!
-                    Cover art by <a class="credit-link" href="https://cindylithium.com/" target="_blank">Cindy Li</a>.`,
-    credits:`                    With <a class="credit-link" href="https://brownrisdgames.itch.io/meowfia" target="_blank">BRDG</a>
-                    2022`,
-    identifier: 'meowfia',
-    year: '2022'
-  },
-  {
-    image: "images/covers/hospital-navigation.jpg",
-    name: "Hospital Navigation",
-    categories: ['web design'],
-    brief:``,
-    credits:``,
-    identifier: 'hospitalNavigation',
-    year: '2023'
-  },
+  // {
+  //   image: "images/covers/atlas-swing.jpg",
+  //   name: "Atlas Swing",
+  //   categories: ['game design','art direction'],
+  //   brief:`As a submission to the 2023 Geopipe NYC game jam, Atlas Swings is a golf game crafted utilizing Geopipe's provided model of New York City. The game secured first place in the game jam. In my role as the artist and graphic designer on the team, I collaborated with my colleagues to conduct research and delve into art styles and game flow. More specifically, I was responsible for designing and creating 3D models, 2D UI elements, and particle effects for various assets.<br> Cover Art & Animation by
+  //                   <a class="credit-link" href="https://adamying.myportfolio.com/" target="_blank">Adam Ying</a><br>
+  //                   Cover Illustration by <a class="credit-link" href="https://nicolezhu.com//" target="_blank">Nicole Zhu</a><br>`,
+  //   credits:`2023 Geopipe NYC game jam`,
+  //   identifier: 'atlasSwing',
+  //   year: '2023'
+  // },
+  // {
+  //   image: "images/covers/meowfia.mp4",
+  //   name: "Meowfia",
+  //   categories: ['game design'],
+  //   brief:`                    Meowfia is a 2D pixel art game built with Unity. In a two-player game of cat and house, one attempts to escape the devious traps of the humans, the other stops them. I was responsible for creating the background art and designing the characters.
+  //                   Play the game <a class="credit-link" href="https://brownrisdgames.itch.io/meowfia" target="_blank">here</a>!
+  //                   Cover art by <a class="credit-link" href="https://cindylithium.com/" target="_blank">Cindy Li</a>.`,
+  //   credits:`                    With <a class="credit-link" href="https://brownrisdgames.itch.io/meowfia" target="_blank">BRDG</a>
+  //                   2022`,
+  //   identifier: 'meowfia',
+  //   year: '2022'
+  // },
+  // {
+  //   image: "images/covers/hospital-navigation.jpg",
+  //   name: "Hospital Navigation",
+  //   categories: ['web design'],
+  //   brief:``,
+  //   credits:``,
+  //   identifier: 'hospitalNavigation',
+  //   year: '2023'
+  // },
   // {
   //   image: "images/covers-gif/kirakira.png",
   //   name: "KiraKira",
