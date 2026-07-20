@@ -1,15 +1,16 @@
 let headerHTML = `<div class="header-container header-name">
-                <p ><a href="index.html" class="header-text">Li Huang</a></p>
+                <p ><a href="work.html" class="header-text">Li Huang</a></p>
             </div>
             <div class="header-container">
                 <p id="current-datetime"></p>
             </div>
             <div class="header-container header-utility">
-                <p id="current-display" class="header-text">
-                    index
-                </p>
+                <a href="work.html"  
+                id="current-display" class="header-text">
+                    work
+                </a>
                 <p>
-                    <a href="info.html" class="header-text">info</a> 
+                    <a href="index.html" class="header-text">about</a> 
                 </p>
                 <p>
                     <a href="playground.html" class="header-text">playground</a> 
