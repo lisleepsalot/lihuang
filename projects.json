@@ -1,0 +1,259 @@
+[
+  {
+    "_createdAt": "2026-07-21T05:45:52Z",
+    "_id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
+    "_rev": "MSs3wmKvNq6JDpgHXf480R",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T07:33:56Z",
+    "client": "RISD",
+    "content": [
+      {
+        "_key": "8cfdcc3e0e05",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/721f4b5fd88d4c15bf9b93bda8fa62edb0f138ad.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "11ba4db5f7ed",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/9b4c49d06682ee6ecf49ab65fd0156c4505d9690.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "6a7125287acb",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/d59c0ccca84400e4c01917531702965e7f7f2dfb.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "e526e95eaa34",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/26ed735c5c58d7ac1ced02bb634537771329821e.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "89b977bd85ac",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/8d613117c70645ae5e0704898b8b01e3af516cc6.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "b7d096a3d072",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/f374754484c8cd1a803f62d76181e5c7b26fd2e3.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "0096f08c54e6",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/ced8372614c677d05a29f4f210f54f47004766fd.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "359e71e576f5",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/3aae390778ac2c918f9487893466019e2b8882ba.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "15cb76d0dd0b",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/a9983d56484c9d474643b8c3c6b5c4bebfad7e57.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "ac7d87224c48",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/8c49e85c4f6e0de4b45bfc394703fdcba01bf10e.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "0a4e25c82260",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/e9ce540d501c0c7b4c3d7e7dad26cc59c9b2ae29.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "6d4832eecd17",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/b1ef04250df4db6d76f9e8d54d7e9874b489a52b.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "36b7276d0acd",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/fe42ac6b644fab68f4ec6f5172c7960f45ec2a97.jpg"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/7e0a8be86fc02863e8f4f67d0f6e7a21dd5262d0.jpg"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-wide"
+      },
+      {
+        "_key": "92dfb626308f",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/8618fae7a5a54550d5f25955cd42d098402f918d.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "f1e892af9f7b",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/14dcf3a3e7abf3e889397475d518135212de7594.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "227c107838b8",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/d959d658093874aada2e7e590b2d5f2bf7bd7220.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      }
+    ],
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/77cefd3f0e5fa68a6861ac0a5862f798f92a5b15.jpg"
+      }
+    },
+    "credit": "with RISD RISD Design Guild",
+    "description": "Inspired by the gestures of overlap and shared making. Threads, hands, and objects weave together RISD’s cross-disciplinary spirit and celebrate the craft that connects us all.",
+    "slug": {
+      "_type": "slug",
+      "current": "risd-commencement-2025"
+    },
+    "tags": [
+      "identity design",
+      "motion design"
+    ],
+    "webTitle": "RSID Commencement 2025",
+    "year": 2025
+  }
+]

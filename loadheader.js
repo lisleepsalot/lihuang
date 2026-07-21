@@ -13,9 +13,6 @@ let headerHTML = `<div class="header-container header-name">
                     <a href="index.html" class="header-text">about</a> 
                 </p>
                 <p>
-                    <a href="playground.html" class="header-text">playground</a> 
-                </p>
-                <p>
                     <a href="misc.html" class="header-text">misc</a>
                 </p>
             </div>`
