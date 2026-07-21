@@ -1,5 +1,100 @@
 [
   {
+    "_createdAt": "2026-07-21T08:12:55Z",
+    "_id": "11f324bf-4f90-4263-85dd-c646164151ef",
+    "_rev": "gpzUsLcLqWFSm3yg5m5sov",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:55Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/de9211188db16bde7e7aa9cc78815c9262f69638.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "anatomy-of-fascism"
+    },
+    "webTitle": "Anatomy of Fascism"
+  },
+  {
+    "_createdAt": "2026-07-21T08:12:29Z",
+    "_id": "242528c8-f566-483b-a759-225b11d62cf3",
+    "_rev": "gpzUsLcLqWFSm3yg5m5st5",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:57Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/15065a044aedc6910a1dab190a2ff5e8b2b3ba7a.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "struve-geodetic-arc"
+    },
+    "webTitle": "Struve Geodetic Arc"
+  },
+  {
+    "_createdAt": "2026-07-21T08:14:24Z",
+    "_id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
+    "_rev": "J0MPS6a6VvqC5QQKWPBRG8",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:48Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/1757ea1c238a1f272a5486165397edf876de9ca4.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "risd-museum"
+    },
+    "webTitle": "RISD Museum"
+  },
+  {
+    "_createdAt": "2026-07-21T08:08:15Z",
+    "_id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
+    "_rev": "gpzUsLcLqWFSm3yg5m5tkU",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:18:18Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/png",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/d0d2d9d039bb9e1cc496b28c9b4fa25c721d0e60.png"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "risd-yearbook-204"
+    },
+    "webTitle": "RISD Yearbook 2024"
+  },
+  {
+    "_createdAt": "2026-07-21T08:15:38Z",
+    "_id": "802b1d6b-9412-4ee1-89b2-7cfdb5bb4249",
+    "_rev": "MSs3wmKvNq6JDpgHXf6mkK",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:45Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "video/mp4",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/0ae03c0db5eacfd6146fda3295a2e5175c195e9c.mp4"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "heap-mono"
+    },
+    "webTitle": "Heap Mono"
+  },
+  {
     "_createdAt": "2026-07-21T05:45:52Z",
     "_id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
     "_rev": "MSs3wmKvNq6JDpgHXf480R",
@@ -255,5 +350,144 @@
     ],
     "webTitle": "RSID Commencement 2025",
     "year": 2025
+  },
+  {
+    "_createdAt": "2026-07-21T08:11:53Z",
+    "_id": "b1579109-d01f-4336-87bf-9f4c48decbaa",
+    "_rev": "gpzUsLcLqWFSm3yg5m5syd",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:59Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/0cb6b8c1564ea2cbf8a16a93b8dff192f9bb93d1.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "risd-yearbook-2025"
+    },
+    "webTitle": "RISD Yearbook 2025"
+  },
+  {
+    "_createdAt": "2026-07-21T08:10:00Z",
+    "_id": "b7e05747-941e-4b51-8cf0-e35f91a08e77",
+    "_rev": "MSs3wmKvNq6JDpgHXf6jPe",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:31Z",
+    "content": null,
+    "coverImage": null,
+    "slug": {
+      "_type": "slug",
+      "current": "hope-and-anchor"
+    },
+    "webTitle": "Hope and Anchor"
+  },
+  {
+    "_createdAt": "2026-07-21T08:08:46Z",
+    "_id": "c55510b0-9460-4e1b-b770-17614faf1353",
+    "_rev": "J0MPS6a6VvqC5QQKWPBSxN",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:18:01Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/png",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/2fb583340a5397d0e7220da48271f4b75e987d3c.png"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "clean-wipes"
+    },
+    "webTitle": "Clean Wipes"
+  },
+  {
+    "_createdAt": "2026-07-21T08:13:21Z",
+    "_id": "c8439c54-a43c-4c63-ab04-daf60860bb29",
+    "_rev": "gpzUsLcLqWFSm3yg5m5slS",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:52Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/a24dab1b0a6ae49a2e35b4f3577288d7c7cad9b0.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "head-in-the-cloud"
+    },
+    "webTitle": "Head in the Cloud"
+  },
+  {
+    "_createdAt": "2026-07-21T08:16:12Z",
+    "_id": "c845062c-f722-4386-b117-b2e21f465cdd",
+    "_rev": "gpzUsLcLqWFSm3yg5m5sA0",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:39Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/f2b37dfc883bc6f7400493a6ce0950c64c6b5524.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "instructional-typography"
+    },
+    "webTitle": "Instructional Typography"
+  },
+  {
+    "_createdAt": "2026-07-21T08:14:44Z",
+    "_id": "cae93248-9bcc-4897-8402-8f676f992ead",
+    "_rev": "gpzUsLcLqWFSm3yg5m5sKP",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:43Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "video/mp4",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/195c18dc6922128533f461a5c14630aca4adf95e.mp4"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "lvma"
+    },
+    "url": "https://www.thiscardigan.com/work/las-vegas-museum-of-art",
+    "webTitle": "Las Vegas Museum of Art"
+  },
+  {
+    "_createdAt": "2026-07-21T08:17:08Z",
+    "_id": "d353cbe6-16e2-41ed-beb1-f1787cf815f4",
+    "_rev": "J0MPS6a6VvqC5QQKWPBPNC",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:36Z",
+    "content": null,
+    "coverImage": null,
+    "slug": {
+      "_type": "slug",
+      "current": "debates-in-ai"
+    },
+    "webTitle": "Debates in AI"
+  },
+  {
+    "_createdAt": "2026-07-21T08:13:41Z",
+    "_id": "d39cdb01-c4e5-4af0-91ab-f1cef6641055",
+    "_rev": "J0MPS6a6VvqC5QQKWPBRms",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T08:17:50Z",
+    "content": null,
+    "coverImage": null,
+    "slug": {
+      "_type": "slug",
+      "current": "here-for-now"
+    },
+    "url": "https://www.herefornow.risd.gd/",
+    "webTitle": "Here for Now"
   }
 ]

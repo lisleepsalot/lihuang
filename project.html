@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li Huang</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="project-view.css">
+</head>
+<body>
+    <header class="header"></header>
+
+    <main class="project-render" id="projectRoot">
+        <p class="project-status">loading…</p>
+    </main>
+
+    <script src="loadheader.js"></script>
+    <script type="module">
+        import {buildProjectHTML} from './Renderprojectclient.js'
+
+        const root = document.getElementById('projectRoot')
+        const slug = new URLSearchParams(window.location.search).get('slug')
+
+        async function renderProject() {
+            if (!slug) {
+                root.innerHTML = '<p class="project-status">No project specified.</p>'
+                return
+            }
+
+            const response = await fetch('./projects.json')
+            const projects = await response.json()
+            const project = projects.find(p => p.slug && p.slug.current === slug)
+
+            if (!project) {
+                root.innerHTML = '<p class="project-status">Project not found.</p>'
+                return
+            }
+
+            document.title = project.webTitle ? `${project.webTitle} — Li Huang` : 'Li Huang'
+            root.innerHTML = buildProjectHTML(project)
+        }
+
+        renderProject()
+    </script>
+</body>
+</html>
