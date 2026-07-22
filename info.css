@@ -96,6 +96,31 @@ padding: 0px 8px;
     cursor:pointer;
 }
 
+.fun-grid {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.fun-cell {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px dotted white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Heap';
+    font-size: 10px;
+    color: white;
+}
+
 @media (max-width: 600px) {
     .info-container {
         width: 100%;
