@@ -26,11 +26,26 @@
 }
 
 .display-grid-image {
+    position: relative;
     width: 570px;
     height: 380px;
     background-image: url('./placeholder.jpeg');
     background-size: cover;
     background-position: center;
+}
+
+.display-grid-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.display-grid-container:hover .display-grid-image::after {
+    opacity: 0.25;
 }
 
 .display-grid-video {
@@ -143,7 +158,7 @@
 }
 
 .bottom-controls.hidden {
-    transform: translateY(196px);
+    transform: translateY(148px);
 }
 
 .controls-grid {

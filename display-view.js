@@ -1,4 +1,7 @@
 
+// Toggle the mouse-driven parallax effect on the grid on/off.
+const PARALLAX_ENABLED = false;
+
 // Fetches the projects saved by fetchProjects.js (run `node fetchProjects.js`
 // to refresh projects.json from Sanity) and returns them as a plain array.
 async function fetchProjects() {
@@ -49,6 +52,7 @@ async function initDisplayView() {
     let baseCenterY = 0;
     let isNavigating = false;
     let currentIndex = 1;
+    let isInitialRender = true;
 
     const rawProjects = await fetchProjects();
     let projects = rawProjects.map(toDisplayProject);
@@ -200,15 +204,6 @@ async function initDisplayView() {
         });
     });
 
-    // Calculate grid bounds (only for non-border items)
-    const nonBorderCells = gridCells.filter((_, index) => !projects[index].isBorder);
-    const gridBounds = {
-        minX: Math.min(...nonBorderCells.map(cell => cell.coord.x)),
-        maxX: Math.max(...nonBorderCells.map(cell => cell.coord.x)),
-        minY: Math.min(...nonBorderCells.map(cell => cell.coord.y)),
-        maxY: Math.max(...nonBorderCells.map(cell => cell.coord.y))
-    };
-
     // Handle arrow click to navigate to adjacent grid cell
     function handleArrowClick(classList, currentIndex) {
         const currentCoord = gridCells[currentIndex].coord;
@@ -225,7 +220,7 @@ async function initDisplayView() {
         }
 
         const targetIndex = findGridIndexByCoord(targetCoord);
-        if (targetIndex !== -1) {
+        if (targetIndex !== -1 && !projects[targetIndex].isBorder) {
             navigateToGrid(targetIndex + 1);
         }
     }
@@ -235,6 +230,12 @@ async function initDisplayView() {
         return gridCells.findIndex(cell =>
             cell.coord.x === coord.x && cell.coord.y === coord.y
         );
+    }
+
+    // Whether the cell adjacent to coord in the given direction holds a real project
+    function hasProjectNeighbor(coord, dx, dy) {
+        const neighborIndex = findGridIndexByCoord({x: coord.x + dx, y: coord.y + dy});
+        return neighborIndex !== -1 && !projects[neighborIndex].isBorder;
     }
 
     // Function to center a specific grid item
@@ -266,21 +267,21 @@ async function initDisplayView() {
             activeButton.element.classList.add('active');
         }
 
-        // Hide/show arrows based on grid boundaries
+        // Hide/show arrows based on whether a real project sits in that direction
         const arrows = cellData.element.querySelectorAll('.nav-arrow');
         arrows.forEach(arrow => {
             arrow.classList.remove('hidden');
 
-            if (arrow.classList.contains('nav-arrow-left') && coord.x <= gridBounds.minX) {
+            if (arrow.classList.contains('nav-arrow-left') && !hasProjectNeighbor(coord, -1, 0)) {
                 arrow.classList.add('hidden');
             }
-            if (arrow.classList.contains('nav-arrow-right') && coord.x >= gridBounds.maxX) {
+            if (arrow.classList.contains('nav-arrow-right') && !hasProjectNeighbor(coord, 1, 0)) {
                 arrow.classList.add('hidden');
             }
-            if (arrow.classList.contains('nav-arrow-up') && coord.y <= gridBounds.minY) {
+            if (arrow.classList.contains('nav-arrow-up') && !hasProjectNeighbor(coord, 0, -1)) {
                 arrow.classList.add('hidden');
             }
-            if (arrow.classList.contains('nav-arrow-down') && coord.y >= gridBounds.maxY) {
+            if (arrow.classList.contains('nav-arrow-down') && !hasProjectNeighbor(coord, 0, 1)) {
                 arrow.classList.add('hidden');
             }
         });
@@ -307,16 +308,24 @@ async function initDisplayView() {
         baseCenterX = translateX;
         baseCenterY = translateY;
 
-        // Use slower transition for navigation
-        gridContainer.style.transition = 'transform 1.5s ease';
-
-        // Apply transform with current parallax offset
-        gridContainer.style.transform = `translate(${baseCenterX + targetTX}px, ${baseCenterY + targetTY}px)`;
-
-        // Re-enable parallax after navigation completes (1.5s)
-        setTimeout(() => {
+        if (isInitialRender) {
+            // Jump straight to the starting cell on page load — no slide-in.
+            isInitialRender = false;
+            gridContainer.style.transition = 'none';
+            gridContainer.style.transform = `translate(${baseCenterX + targetTX}px, ${baseCenterY + targetTY}px)`;
             isNavigating = false;
-        }, 1500);
+        } else {
+            // Use slower transition for navigation
+            gridContainer.style.transition = 'transform 1.5s ease';
+
+            // Apply transform with current parallax offset
+            gridContainer.style.transform = `translate(${baseCenterX + targetTX}px, ${baseCenterY + targetTY}px)`;
+
+            // Re-enable parallax after navigation completes (1.5s)
+            setTimeout(() => {
+                isNavigating = false;
+            }, 1500);
+        }
     }
 
     // Apply parallax transform combining base centering and parallax offset
@@ -367,8 +376,10 @@ async function initDisplayView() {
     }
 
     // Initialize parallax listeners
-    window.addEventListener('mousemove', onMouseMove);
-    window.addEventListener('mouseleave', resetParallax);
+    if (PARALLAX_ENABLED) {
+        window.addEventListener('mousemove', onMouseMove);
+        window.addEventListener('mouseleave', resetParallax);
+    }
 
     // Toggle controls visibility
     const controlsToggle = document.getElementById('controls-toggle');

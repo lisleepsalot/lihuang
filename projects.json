@@ -38,6 +38,32 @@
     "webTitle": "Struve Geodetic Arc"
   },
   {
+    "_createdAt": "2026-07-21T22:36:11Z",
+    "_id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
+    "_rev": "PWImsxFx7g4xqmxC71FLJE",
+    "_system": {
+      "base": {
+        "id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
+        "rev": "5poerSnBDlmYCDAwsKJnAG"
+      }
+    },
+    "_type": "project",
+    "_updatedAt": "2026-07-21T22:37:37Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/ef484913d584ab4ff7e7fa67b8c366c17c07bea2.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "here-for-now"
+    },
+    "url": "https://www.herefornow.risd.gd/",
+    "webTitle": "Here for Now"
+  },
+  {
     "_createdAt": "2026-07-21T08:14:24Z",
     "_id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
     "_rev": "J0MPS6a6VvqC5QQKWPBRG8",
@@ -59,14 +85,20 @@
   {
     "_createdAt": "2026-07-21T08:08:15Z",
     "_id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-    "_rev": "gpzUsLcLqWFSm3yg5m5tkU",
+    "_rev": "J0MPS6a6VvqC5QQKWPFKIU",
+    "_system": {
+      "base": {
+        "id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
+        "rev": "gpzUsLcLqWFSm3yg5m5tkU"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:18:18Z",
+    "_updatedAt": "2026-07-21T08:50:30Z",
     "content": null,
     "coverImage": {
       "asset": {
-        "mimeType": "image/png",
-        "url": "https://cdn.sanity.io/files/91e2aldw/production/d0d2d9d039bb9e1cc496b28c9b4fa25c721d0e60.png"
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/7502174509eec6416d90ac89bd27b0999be73e2e.jpg"
       }
     },
     "slug": {
@@ -74,6 +106,25 @@
       "current": "risd-yearbook-204"
     },
     "webTitle": "RISD Yearbook 2024"
+  },
+  {
+    "_createdAt": "2026-07-21T22:35:39Z",
+    "_id": "7b2443d6-9c34-44a7-b9eb-ebf199daedbe",
+    "_rev": "PWImsxFx7g4xqmxC71FJs2",
+    "_type": "project",
+    "_updatedAt": "2026-07-21T22:36:02Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/2021492c1252533d6d4ec32475a11ebb73926c4e.jpg"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "debates-in-ai"
+    },
+    "webTitle": "Debates in AI"
   },
   {
     "_createdAt": "2026-07-21T08:15:38Z",
@@ -371,13 +422,18 @@
     "webTitle": "RISD Yearbook 2025"
   },
   {
-    "_createdAt": "2026-07-21T08:10:00Z",
-    "_id": "b7e05747-941e-4b51-8cf0-e35f91a08e77",
-    "_rev": "MSs3wmKvNq6JDpgHXf6jPe",
+    "_createdAt": "2026-07-21T22:37:03Z",
+    "_id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
+    "_rev": "PWImsxFx7g4xqmxC71FKrC",
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:31Z",
+    "_updatedAt": "2026-07-21T22:37:19Z",
     "content": null,
-    "coverImage": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/0a6f0e9a0535860af0d6fc644de1f29a7c97ff96.jpg"
+      }
+    },
     "slug": {
       "_type": "slug",
       "current": "hope-and-anchor"
@@ -387,14 +443,20 @@
   {
     "_createdAt": "2026-07-21T08:08:46Z",
     "_id": "c55510b0-9460-4e1b-b770-17614faf1353",
-    "_rev": "J0MPS6a6VvqC5QQKWPBSxN",
+    "_rev": "MSs3wmKvNq6JDpgHXf7w0v",
+    "_system": {
+      "base": {
+        "id": "c55510b0-9460-4e1b-b770-17614faf1353",
+        "rev": "J0MPS6a6VvqC5QQKWPBSxN"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:18:01Z",
+    "_updatedAt": "2026-07-21T08:50:37Z",
     "content": null,
     "coverImage": {
       "asset": {
-        "mimeType": "image/png",
-        "url": "https://cdn.sanity.io/files/91e2aldw/production/2fb583340a5397d0e7220da48271f4b75e987d3c.png"
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/ff47deb5470dec8cb61744c97d68028bc7860df4.jpg"
       }
     },
     "slug": {
@@ -460,34 +522,5 @@
     },
     "url": "https://www.thiscardigan.com/work/las-vegas-museum-of-art",
     "webTitle": "Las Vegas Museum of Art"
-  },
-  {
-    "_createdAt": "2026-07-21T08:17:08Z",
-    "_id": "d353cbe6-16e2-41ed-beb1-f1787cf815f4",
-    "_rev": "J0MPS6a6VvqC5QQKWPBPNC",
-    "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:36Z",
-    "content": null,
-    "coverImage": null,
-    "slug": {
-      "_type": "slug",
-      "current": "debates-in-ai"
-    },
-    "webTitle": "Debates in AI"
-  },
-  {
-    "_createdAt": "2026-07-21T08:13:41Z",
-    "_id": "d39cdb01-c4e5-4af0-91ab-f1cef6641055",
-    "_rev": "J0MPS6a6VvqC5QQKWPBRms",
-    "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:50Z",
-    "content": null,
-    "coverImage": null,
-    "slug": {
-      "_type": "slug",
-      "current": "here-for-now"
-    },
-    "url": "https://www.herefornow.risd.gd/",
-    "webTitle": "Here for Now"
   }
 ]

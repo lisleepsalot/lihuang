@@ -43,18 +43,25 @@ function renderContentBlock(block) {
     </div>`
 }
 
-// Renders the text info section at the top of a project (title, year, client,
-// description, credit, tags).
+// Renders the text info section at the top of a project: full-width title
+// (underlined), then a description / client-credit-year / tags row below it.
 function renderProjectInfo(project) {
-  const tags = (project.tags || []).map(escapeHtml).join(', ')
+  const tagsHtml = (project.tags || [])
+    .map(tag => `<p>#${escapeHtml(tag)}</p>`)
+    .join('')
 
   return `
     <div class="project-info">
-      <h1>${escapeHtml(project.webTitle)}</h1>
-      <p class="project-meta">${escapeHtml(project.year)} — ${escapeHtml(project.client)}</p>
-      <p class="project-description">${escapeHtml(project.description)}</p>
-      <p class="project-credit">${escapeHtml(project.credit)}</p>
-      <p class="project-tags">${tags}</p>
+      <h1 class="project-title">${escapeHtml(project.webTitle)}</h1>
+      <div class="project-info-row">
+        <div class="project-description">${escapeHtml(project.description)}</div>
+        <div class="project-meta">
+          <p>Client: ${escapeHtml(project.client)}</p>
+          <p>${escapeHtml(project.credit)}</p>
+          <p>Year: ${escapeHtml(project.year)}</p>
+        </div>
+        <div class="project-tags">${tagsHtml}</div>
+      </div>
     </div>`
 }
 
@@ -64,4 +71,18 @@ function renderProjectInfo(project) {
 export function buildProjectHTML(project) {
   const blocksHtml = (project.content || []).map(renderContentBlock).join('\n')
   return renderProjectInfo(project) + blocksHtml
+}
+
+// Renders the prev/next/home project navigation footer — same divider
+// treatment as the project-info title, with header-style link buttons.
+export function buildProjectFooterHTML(prevProject, nextProject) {
+  const prevSlug = prevProject.slug ? prevProject.slug.current : ''
+  const nextSlug = nextProject.slug ? nextProject.slug.current : ''
+
+  return `
+    <div class="project-footer">
+      <a class="header-text project-footer-prev" href="project.html?slug=${encodeURIComponent(prevSlug)}">← ${escapeHtml(prevProject.webTitle)}</a>
+      <a class="header-text project-footer-home" href="work.html">return home</a>
+      <a class="header-text project-footer-next" href="project.html?slug=${encodeURIComponent(nextSlug)}">${escapeHtml(nextProject.webTitle)} →</a>
+    </div>`
 }
