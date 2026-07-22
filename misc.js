@@ -1,5 +1,5 @@
       // Are.na API configuration
-      const API_URL = 'https://api.are.na/v2/channels/li-s-misc';
+      const API_URL = 'https://api.are.na/v2/channels/misc-2-blz7-7lhg';
 
       // State
       let blocks = [];

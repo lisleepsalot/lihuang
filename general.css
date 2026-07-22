@@ -26,7 +26,7 @@ body {
   z-index: 80;
   width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     justify-content: space-between;
     padding: 16px 24px 16px 24px;
@@ -38,7 +38,6 @@ body {
 .header-container{
     width: 100%;
     height: auto;
-    max-width: 400px;
 }
 
 .header-container p{
@@ -51,9 +50,9 @@ body {
 
 .header-utility{
     display: flex;
-    width: 400px;
-    justify-content: space-between;
+    gap: 48px;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .header-text{
@@ -69,6 +68,70 @@ body {
     cursor:pointer;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-family: 'Heap';
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    #current-datetime {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .menu-toggle {
+        display: inline-block;
+        position: fixed;
+        top: 16px;
+        right: 24px;
+        z-index: 1001;
+    }
+
+    .header-utility {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0 8px;
+        background-color: rgba(255, 255, 255, 0.95);
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    }
+
+    .header-utility.open {
+        max-height: 300px;
+        opacity: 1;
+        padding: 16px;
+        pointer-events: auto;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        border-top: 1px dotted #000;
+        flex-shrink: 0;
+    }
+
+    .nav-link:first-child {
+        border-top: none;
+    }
+
+    .nav-link:hover {
+        padding: 12px;
+    }
+}
+
 .clickable-text{
     color: black;
     text-decoration:underline;
@@ -77,4 +140,24 @@ body {
 .clickable-text:hover{
   color:gray;
   cursor:pointer;
+}
+
+/* page transition overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease-in-out;
+  transform: translateY(0);
+}
+
+.loading-overlay.hide {
+  transform: translateY(100vh);
 }

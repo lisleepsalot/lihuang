@@ -12,6 +12,15 @@ body{
     color: var(--lh);
 }
 
+.header-utility.open {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.header-utility.open .nav-link {
+    border-top: 1px dotted var(--lh);
+            padding: 12px;
+}
+
 .footer{
   position: fixed;
   bottom: 0;

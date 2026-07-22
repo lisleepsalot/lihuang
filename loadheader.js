@@ -4,22 +4,26 @@ let headerHTML = `<div class="header-container header-name">
             <div class="header-container">
                 <p id="current-datetime"></p>
             </div>
-            <div class="header-container header-utility">
-                <a href="work.html"  
-                id="current-display" class="header-text">
-                    work
-                </a>
-                <p>
-                    <a href="index.html" class="header-text">about</a> 
-                </p>
-                <p>
-                    <a href="misc.html" class="header-text">misc</a>
-                </p>
+            <div class="header-container header-utility-wrapper">
+                <button type="button" class="header-text menu-toggle" aria-label="Toggle menu">[...]</button>
+                <div class="header-utility">
+                    <a href="work.html" id="current-display" class="header-text nav-link">work</a>
+                    <a href="index.html" class="header-text nav-link">about</a>
+                    <a href="misc.html" class="header-text nav-link">misc</a>
+                </div>
             </div>`
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".header").forEach(header => {
-            header.innerHTML = headerHTML;
+        header.innerHTML = headerHTML;
+
+        const utility = header.querySelector(".header-utility");
+        const menuToggle = header.querySelector(".menu-toggle");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = utility.classList.toggle("open");
+            menuToggle.textContent = isOpen ? "[x]" : "[...]";
+        });
     });
 });
 

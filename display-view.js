@@ -1,5 +1,5 @@
 
-// Toggle the mouse-driven parallax effect on the grid on/off.
+// parralax toggle
 const PARALLAX_ENABLED = false;
 
 // Fetches the projects saved by fetchProjects.js (run `node fetchProjects.js`
@@ -34,8 +34,50 @@ function goToProject(project) {
     if (project.url) {
         window.open(project.url, '_blank', 'noopener,noreferrer');
     } else if (project.slug) {
-        window.location.href = `project.html?slug=${encodeURIComponent(project.slug)}`;
+        navigateWithTransition(`project.html?slug=${encodeURIComponent(project.slug)}`);
     }
+}
+
+// Narrow screens skip the spiral entirely: a plain single-column, full-width
+// list in normal document flow — no border filler cells, no nav-arrows, no
+// parallax/centering transform. Just scroll.
+function renderMobileGrid(projects, gridContainer) {
+    projects.forEach(project => {
+        const cell = document.createElement('div');
+        cell.className = 'grid-cell';
+
+        cell.innerHTML = `
+            <div class="display-grid-container">
+                <div class="display-grid-image"></div>
+                <div class="display-grid-textbox">
+                    <span class="display-grid-name"></span>
+                    <span class="display-grid-year"></span>
+                </div>
+            </div>
+        `;
+
+        const imageEl = cell.querySelector('.display-grid-image');
+        if (project.isVideo) {
+            const video = document.createElement('video');
+            video.className = 'display-grid-video';
+            video.src = project.image;
+            video.autoplay = true;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+            imageEl.appendChild(video);
+        } else {
+            imageEl.style.backgroundImage = `url("${project.image}")`;
+        }
+        cell.querySelector('.display-grid-name').textContent = project.name;
+        cell.querySelector('.display-grid-year').textContent = project.year;
+
+        const container = cell.querySelector('.display-grid-container');
+        container.style.cursor = 'pointer';
+        container.addEventListener('click', () => goToProject(project));
+
+        gridContainer.appendChild(cell);
+    });
 }
 
 async function initDisplayView() {
@@ -48,7 +90,7 @@ async function initDisplayView() {
     let targetTX = 0;
     let targetTY = 0;
     let parallaxRaf = null;
-    let baseCenterX = 0; // Base centering transform
+    let baseCenterX = 0;
     let baseCenterY = 0;
     let isNavigating = false;
     let currentIndex = 1;
@@ -57,8 +99,12 @@ async function initDisplayView() {
     const rawProjects = await fetchProjects();
     let projects = rawProjects.map(toDisplayProject);
 
-    // Spiral grid arrangement variables.
-    // Spiral grid arragment logic, calculate which positions would form a complete surrounding border.
+    if (window.matchMedia('(max-width: 900px)').matches) {
+        renderMobileGrid(projects, gridContainer);
+        return;
+    }
+
+    // Spiral grid arragment logic & variables
     const regularCount = projects.length;
     let currentTotal = regularCount;
     let steps = Math.ceil(Math.sqrt(currentTotal));
@@ -85,10 +131,10 @@ async function initDisplayView() {
                 for (let j = 0; j < steps; j++) {
                     if (coords.length >= count) break;
 
-                    if (direction === 0) x++; // right
-                    else if (direction === 1) y--; // up
-                    else if (direction === 2) x--; // left
-                    else if (direction === 3) y++; // down
+                    if (direction === 0) x++;
+                    else if (direction === 1) y--;
+                    else if (direction === 2) x--;
+                    else if (direction === 3) y++;
 
                     coords.push({x, y});
                 }
@@ -110,7 +156,6 @@ async function initDisplayView() {
         gridCell.className = 'grid-cell';
 
         const coord = spiralCoords[index];
-        // Convert to 0-based and position absolutely
         gridCell.style.position = 'absolute';
         gridCell.style.left = `${(coord.x - 1) * 680}px`;
         gridCell.style.top = `${(coord.y - 1) * 480}px`;
@@ -409,3 +454,11 @@ async function initDisplayView() {
 }
 
 initDisplayView();
+
+// The spiral (desktop) vs. simple list (mobile) layout is built once at
+// load and never re-laid-out live, so resizing across the breakpoint leaves
+// stale DOM/state from whichever version was originally built. Reload when
+// the breakpoint is actually crossed, in either direction, to rebuild clean.
+window.matchMedia('(max-width: 900px)').addEventListener('change', () => {
+    window.location.reload();
+});
