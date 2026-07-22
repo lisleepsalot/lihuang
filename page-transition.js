@@ -1,19 +1,17 @@
+// Shows the loading overlay immediately, animating "Loading..." until the
+// page finishes loading, then slides it away. The dot text is set
+// synchronously up front since setInterval's first tick doesn't fire until
+// its delay elapses, and a fast page load can hide the overlay again before then.
 function showLoadingOverlay(callback) {
-  // Create the overlay div
   const overlay = document.createElement('div');
   overlay.classList.add('loading-overlay');
 
-  // Create the loading text element
   const loadingText = document.createElement('div');
   loadingText.textContent = 'Loading.';
   overlay.appendChild(loadingText);
 
-  // Append overlay to the document body
   document.body.appendChild(overlay);
 
-  // Animate the loading text. setInterval doesn't fire its first tick until
-  // after the delay, so the text above is set synchronously first — without
-  // it, a fast page load can hide the overlay again before any dot ever renders.
   let dotCount = 1;
   const maxDots = 6;
   const loadingInterval = setInterval(() => {
@@ -21,7 +19,7 @@ function showLoadingOverlay(callback) {
     dotCount = (dotCount % maxDots) + 1;
   }, 300);
 
-  // Function to hide and remove overlay
+  // Slides the overlay out, then removes it and calls back.
   function hideOverlay() {
     overlay.classList.add('hide');
     clearInterval(loadingInterval);
@@ -33,60 +31,49 @@ function showLoadingOverlay(callback) {
     }, 1000); // match transition duration
   }
 
-  // Check if the page has already loaded
   if (document.readyState === 'complete') {
-    // Page is loaded, so hide overlay immediately
     hideOverlay();
   } else {
-    // Otherwise, wait for the window load event
     window.addEventListener('load', hideOverlay);
   }
 }
 
-// Call the function as soon as the script runs,
-// so that every time the page is opened or refreshed the overlay is created.
+// Runs on script load, so the overlay covers every page open/refresh.
 showLoadingOverlay(() => {
   console.log('Overlay removed; page fully loaded.');
 });
 
+// Same as showLoadingOverlay, but for content swapped in-page: there's no
+// further window "load" event to wait on, so it just waits a fixed delay.
 function showLoadingOverlaySamePage(callback) {
-  // Create the overlay div
   const overlay = document.createElement('div');
   overlay.classList.add('loading-overlay');
 
-  // Create the loading text element
   const loadingText = document.createElement('div');
   loadingText.textContent = 'Loading.';
   overlay.appendChild(loadingText);
 
-  // Append overlay to the document body
   document.body.appendChild(overlay);
 
-  // Animate the loading text. setInterval doesn't fire its first tick until
-  // after the delay, so the text above is set synchronously first — without
-  // it, a fast page load can hide the overlay again before any dot ever renders.
   let dotCount = 1;
   const maxDots = 6;
   const loadingInterval = setInterval(() => {
     loadingText.textContent = 'Loading' + '.'.repeat(dotCount);
     dotCount = (dotCount % maxDots) + 1;
-  }, 300); // adjust speed here
+  }, 300);
 
-  // Function to hide and remove overlay
+  // Slides the overlay out, then removes it and calls back.
   function hideOverlay() {
-    overlay.classList.add('hide'); // trigger slide-away animation
+    overlay.classList.add('hide');
     clearInterval(loadingInterval);
     setTimeout(() => {
       overlay.remove();
       if (callback && typeof callback === 'function') {
         callback();
       }
-    }, 1000); 
+    }, 1000);
   }
 
-  // Instead of relying on window load (which only fires once),
-  // wait a fixed delay for the new content to be rendered.
-  // Adjust the delay (here 500ms) as needed for your content updates.
   setTimeout(hideOverlay, 500);
 }
 
@@ -106,8 +93,8 @@ function navigateWithTransition(url) {
 }
 window.navigateWithTransition = navigateWithTransition;
 
-// Intercept clicks on same-site links so leaving a page gets the transition
-// too, not just arriving on one.
+// Intercepts clicks on same-site links so leaving a page also gets the
+// transition; external, anchor, mailto/tel, and new-tab links pass through untouched.
 document.addEventListener('click', (e) => {
   const link = e.target.closest('a[href]');
   if (!link || link.target === '_blank') return;
@@ -116,7 +103,7 @@ document.addEventListener('click', (e) => {
   if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
 
   const url = new URL(href, window.location.href);
-  if (url.origin !== window.location.origin) return; // let external links behave normally
+  if (url.origin !== window.location.origin) return;
 
   e.preventDefault();
   navigateWithTransition(url.href);

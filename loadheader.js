@@ -13,6 +13,7 @@ let headerHTML = `<div class="header-container header-name">
                 </div>
             </div>`
 
+// Injects the header markup into every .header element and wires up the mobile menu toggle.
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".header").forEach(header => {
         header.innerHTML = headerHTML;
@@ -27,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-//time logic
+// Updates the header clock to the current NY time; called every second.
 function updateDateTime() {
   let now = new Date();
 
@@ -40,7 +40,7 @@ function updateDateTime() {
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
-      hour12: false // 24-hour format
+      hour12: false
   };
 
   let estDateTime = new Intl.DateTimeFormat("en-US", options).format(now);

@@ -1,9 +1,9 @@
 // Decorative mouse-trail effect for the info (about) page. Divides the
-// screen into a 20x20px grid; moving the mouse drops a dotted white cell
-// with a random letter into whichever cell it's currently over, and the
-// cell fades out if the mouse doesn't revisit it. Only runs on wide
-// viewports (>=1200px) — the effect sits behind #info-container, which
-// stays on top and fully readable.
+// screen into a grid; moving the mouse drops a dotted white cell with a
+// letter into whichever cell it's currently over, and the cell fades out
+// if the mouse doesn't revisit it. Only runs on wide viewports (>=1200px)
+// — the effect sits behind #info-container, which stays on top and fully
+// readable.
 
 const FUN_CELL_SIZE = 24;
 const FUN_FADE_DELAY_MS = 1000;
@@ -24,8 +24,7 @@ const FUN_LONG_PRESS_MS = 300;
 const FUN_TYPEWRITER_COLS = 20;
 const FUN_TYPEWRITER_CHAR_DELAY_MS = 55;
 
-// Greedy word-wrap: breaks to a new line whenever the next word would push
-// the current line past maxCols, without splitting a word mid-way.
+// Greedy word-wrap: never splits a word, breaks once a line would exceed maxCols.
 function wrapTextToLines(text, maxCols) {
     const words = text.split(' ');
     const lines = [];
@@ -48,26 +47,23 @@ function wrapTextToLines(text, maxCols) {
     return lines;
 }
 
+// Sets up the grid: fact-driven trail letters, mouse-trail spawning, and the long-press typewriter.
 function initFunGrid() {
     const container = document.getElementById('funGrid');
     if (!container) return;
 
     const activeCells = new Map(); // "col,row" -> {el, timeoutId}
 
-    // Letters are drawn in order from a random fetched fact instead of
-    // pure randomness, so the grid is effectively spelling it out as you
-    // move. Falls back to a random A-Z pool if the fetch fails.
     let funLetterPool = FUN_LETTERS.split('');
     let funLetterIndex = 0;
     let funFactText = '';
     let funSpaceCount = 0;
 
+    // Returns the next character from the fact pool, every 3rd space swapped for a special glyph.
     function nextFunLetter() {
         const letter = funLetterPool[funLetterIndex % funLetterPool.length];
         funLetterIndex++;
 
-        // Every 3rd space in the trail becomes a random special glyph
-        // instead of blank, breaking up the plain mouse-movement trail.
         if (letter === ' ') {
             funSpaceCount++;
             if (funSpaceCount % 3 === 0) {
@@ -78,6 +74,7 @@ function initFunGrid() {
         return letter;
     }
 
+    // Fetches a random fact and refreshes the letter pool it drives.
     async function loadFunFact() {
         try {
             const response = await fetch(FUN_FACT_API);
@@ -90,12 +87,11 @@ function initFunGrid() {
                 funFactText = data.text;
             }
         } catch (err) {
-            // Keep the default A-Z pool if the fact can't be fetched.
+            // Keep the existing pool if the fact can't be fetched.
         }
     }
 
-    // `letter` lets callers (e.g. the typewriter) place a specific
-    // character instead of drawing the next one from the fact pool.
+    // Creates or refreshes the cell at (col, row); may spawn neighbors and always re-arms its fade timer.
     function activateCell(col, row, isSpawnedNeighbor, letter) {
         const key = `${col},${row}`;
         let entry = activeCells.get(key);
@@ -111,9 +107,6 @@ function initFunGrid() {
             entry = {el: cell, timeoutId: null};
             activeCells.set(key, entry);
 
-            // A freshly spawned cell (not itself one of these neighbor
-            // spawns, to avoid runaway chains) has a chance to also light
-            // up 1-2 of the cells around it.
             if (!isSpawnedNeighbor && Math.random() < FUN_SPAWN_CHANCE) {
                 spawnNeighbors(col, row);
             }
@@ -121,8 +114,6 @@ function initFunGrid() {
             clearTimeout(entry.timeoutId);
         }
 
-        // Jitter the dissolve delay +/- FUN_FADE_JITTER_MS so cells in the
-        // same trail don't all disappear on the same beat.
         const fadeDelay = FUN_FADE_DELAY_MS + (Math.random() * 2 - 1) * FUN_FADE_JITTER_MS;
 
         entry.timeoutId = setTimeout(() => {
@@ -131,18 +122,21 @@ function initFunGrid() {
         }, fadeDelay);
     }
 
+    // Lights up 1-2 random neighbors of a freshly spawned cell.
     function spawnNeighbors(col, row) {
         const count = Math.random() < 0.5 ? 1 : 2;
         const offsets = [...FUN_NEIGHBOR_OFFSETS].sort(() => Math.random() - 0.5).slice(0, count);
         offsets.forEach(({dx, dy}) => activateCell(col + dx, row + dy, true));
     }
 
+    // Activates the cell under the cursor on every move.
     function onMouseMove(e) {
         const col = Math.floor(e.clientX / FUN_CELL_SIZE);
         const row = Math.floor(e.clientY / FUN_CELL_SIZE);
         activateCell(col, row);
     }
 
+    // Removes every active cell and clears their fade timers.
     function clearAllCells() {
         activeCells.forEach(entry => {
             clearTimeout(entry.timeoutId);
@@ -151,16 +145,12 @@ function initFunGrid() {
         activeCells.clear();
     }
 
-    // Long-press (>300ms) types out the fetched fact, word-wrapped to 20
-    // columns, one character at a time, starting from the press location —
-    // then a short credit line for the API underneath.
     let typewriterTimeoutId = null;
 
+    // Fetches a fresh fact and types it out, word-wrapped, from the press point, then the API credit.
     async function startTypewriter(startCol, startRow) {
-        // Fetch a fresh fact for every long-press instead of reusing the
-        // one loaded at page load.
         await loadFunFact();
-        if (!funFactText) return; // fetch failed and nothing ever loaded
+        if (!funFactText) return;
 
         const factLines = wrapTextToLines(funFactText, FUN_TYPEWRITER_COLS);
         const creditLines = wrapTextToLines(FUN_CREDIT_TEXT, FUN_TYPEWRITER_COLS);
@@ -169,7 +159,7 @@ function initFunGrid() {
         const queue = [];
         lines.forEach((line, lineIndex) => {
             line.split('').forEach((char, charIndex) => {
-                if (char === ' ') return; // leave gaps between words empty
+                if (char === ' ') return;
                 queue.push({col: startCol + charIndex, row: startRow + lineIndex, letter: char});
             });
         });
@@ -187,18 +177,21 @@ function initFunGrid() {
 
     let longPressTimeoutId = null;
 
+    // Starts the long-press timer that triggers the typewriter.
     function onMouseDown(e) {
         const col = Math.floor(e.clientX / FUN_CELL_SIZE);
         const row = Math.floor(e.clientY / FUN_CELL_SIZE);
         longPressTimeoutId = setTimeout(() => startTypewriter(col, row), FUN_LONG_PRESS_MS);
     }
 
+    // Cancels a pending long-press before it fires.
     function cancelLongPress() {
         clearTimeout(longPressTimeoutId);
     }
 
     const wideViewport = window.matchMedia('(min-width: 1200px)');
 
+    // Enables or disables all mouse listeners based on whether the viewport is wide enough.
     function syncToViewport(matches) {
         if (matches) {
             window.addEventListener('mousemove', onMouseMove);

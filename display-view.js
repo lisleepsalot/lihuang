@@ -1,9 +1,7 @@
 
-// parralax toggle
 const PARALLAX_ENABLED = false;
 
-// Fetches the projects saved by fetchProjects.js (run `node fetchProjects.js`
-// to refresh projects.json from Sanity) and returns them as a plain array.
+// Fetches projects.json (built by fetchProjects.js) and returns it as a plain array.
 async function fetchProjects() {
     const response = await fetch('./projects.json');
     if (!response.ok) {
@@ -28,8 +26,7 @@ function toDisplayProject(project) {
     };
 }
 
-// Navigates to a project's designated External URL if one is set in Sanity;
-// otherwise falls back to the auto-rendered project page for its slug.
+// Opens a project's Sanity `url` in a new tab, or navigates to its auto-rendered page.
 function goToProject(project) {
     if (project.url) {
         window.open(project.url, '_blank', 'noopener,noreferrer');
@@ -38,9 +35,7 @@ function goToProject(project) {
     }
 }
 
-// Narrow screens skip the spiral entirely: a plain single-column, full-width
-// list in normal document flow — no border filler cells, no nav-arrows, no
-// parallax/centering transform. Just scroll.
+// Renders the mobile grid as a plain single-column, full-width list — no spiral, borders, arrows, or parallax.
 function renderMobileGrid(projects, gridContainer) {
     projects.forEach(project => {
         const cell = document.createElement('div');
@@ -80,12 +75,12 @@ function renderMobileGrid(projects, gridContainer) {
     });
 }
 
+// Builds and wires up the project grid: fetches projects, then renders the mobile list or the full desktop spiral.
 async function initDisplayView() {
     const gridContainer = document.getElementById('gridContainer');
     const controlPanel = document.getElementById('controlPanel');
     const controlButtons = [];
 
-    // Parallax effect variables
     const PARALLAX_MAX = 20;
     let targetTX = 0;
     let targetTY = 0;
@@ -104,7 +99,7 @@ async function initDisplayView() {
         return;
     }
 
-    // Spiral grid arragment logic & variables
+    // Border cells fill out the spiral into a full surrounding square.
     const regularCount = projects.length;
     let currentTotal = regularCount;
     let steps = Math.ceil(Math.sqrt(currentTotal));
@@ -117,10 +112,10 @@ async function initDisplayView() {
         projects.push({ name: "", year: "", isBorder: true });
     }
 
-    // Generate spiral coordinates starting from center (4,4)
+    // Generates spiral coordinates starting from center (4,4).
     function generateSpiralCoordinates(count) {
         const coords = [];
-        let x = 4, y = 4; // Start at center
+        let x = 4, y = 4;
         coords.push({x, y});
 
         let steps = 1;
@@ -150,7 +145,7 @@ async function initDisplayView() {
     const spiralCoords = generateSpiralCoordinates(projects.length);
     const gridCells = [];
 
-    // Create grid cells and position them according to spiral
+    // Creates and positions each grid cell according to the spiral.
     projects.forEach((project, index) => {
         const gridCell = document.createElement('div');
         gridCell.className = 'grid-cell';
@@ -161,14 +156,12 @@ async function initDisplayView() {
         gridCell.style.top = `${(coord.y - 1) * 480}px`;
 
         if (project.isBorder) {
-            // Border items: just outline box, no image, no text
             gridCell.innerHTML = `
                 <div class="display-grid-container">
                     <div class="display-grid-image" style="background-image: none; background-color: transparent; border: 1px dashed black;"></div>
                 </div>
             `;
         } else {
-            // Regular items
             gridCell.innerHTML = `
                 <div class="display-grid-container">
                     <div class="display-grid-image"></div>
@@ -183,8 +176,7 @@ async function initDisplayView() {
                 <div class="nav-arrow nav-arrow-down">↓</div>
             `;
 
-            // Set dynamic content via DOM APIs (not string interpolation) so
-            // CMS-sourced text/URLs can't break out of the markup.
+            // Set via DOM APIs (not string interpolation) so CMS-sourced text/URLs can't break out of the markup.
             const imageEl = gridCell.querySelector('.display-grid-image');
             if (project.isVideo) {
                 const video = document.createElement('video');
@@ -209,7 +201,6 @@ async function initDisplayView() {
         gridContainer.appendChild(gridCell);
         gridCells.push({element: gridCell, coord: coord});
 
-        // Add click listeners to navigation arrows for non-border items
         if (!project.isBorder) {
             const arrows = gridCell.querySelectorAll('.nav-arrow');
             arrows.forEach(arrow => {
@@ -221,7 +212,7 @@ async function initDisplayView() {
         }
     });
 
-    // Generate control panel buttons only for non-border items
+    // Builds one control-panel button per non-border project.
     const nonBorderProjects = projects.filter(p => !p.isBorder);
     nonBorderProjects.forEach((project, index) => {
         const button = document.createElement('button');
@@ -241,7 +232,6 @@ async function initDisplayView() {
         button.addEventListener('click', () => navigateToGrid(index + 1));
         controlPanel.appendChild(button);
 
-        // Store button reference with original name
         controlButtons.push({
             element: button,
             nameSpan: nameSpan,
@@ -249,7 +239,7 @@ async function initDisplayView() {
         });
     });
 
-    // Handle arrow click to navigate to adjacent grid cell
+    // Navigates to whichever grid cell is adjacent to the current one in the arrow's direction.
     function handleArrowClick(classList, currentIndex) {
         const currentCoord = gridCells[currentIndex].coord;
         let targetCoord;
@@ -270,32 +260,28 @@ async function initDisplayView() {
         }
     }
 
-    // Find grid cell index by coordinate
+    // Finds a grid cell's index by its spiral coordinate.
     function findGridIndexByCoord(coord) {
         return gridCells.findIndex(cell =>
             cell.coord.x === coord.x && cell.coord.y === coord.y
         );
     }
 
-    // Whether the cell adjacent to coord in the given direction holds a real project
+    // Whether the cell adjacent to coord in the given direction holds a real project.
     function hasProjectNeighbor(coord, dx, dy) {
         const neighborIndex = findGridIndexByCoord({x: coord.x + dx, y: coord.y + dy});
         return neighborIndex !== -1 && !projects[neighborIndex].isBorder;
     }
 
-    // Function to center a specific grid item
+    // Centers the given grid item, updates active states, and shows/hides its arrows.
     function navigateToGrid(index) {
         currentIndex = index;
-
-        // Disable parallax during navigation
         isNavigating = true;
 
-        // Remove active class from all cells
         gridCells.forEach(cell => {
             cell.element.classList.remove('active');
         });
 
-        // Remove active state from all control buttons
         controlButtons.forEach(btn => {
             btn.element.classList.remove('active');
         });
@@ -303,16 +289,13 @@ async function initDisplayView() {
         const cellData = gridCells[index - 1];
         const coord = cellData.coord;
 
-        // Add active class to the centered cell
         cellData.element.classList.add('active');
 
-        // Add active state to corresponding control button
         if (controlButtons[index - 1]) {
             const activeButton = controlButtons[index - 1];
             activeButton.element.classList.add('active');
         }
 
-        // Hide/show arrows based on whether a real project sits in that direction
         const arrows = cellData.element.querySelectorAll('.nav-arrow');
         arrows.forEach(arrow => {
             arrow.classList.remove('hidden');
@@ -331,25 +314,20 @@ async function initDisplayView() {
             }
         });
 
-        // Calculate position of the grid item (0-based pixels)
         const itemX = (coord.x - 1) * 680;
         const itemY = (coord.y - 1) * 500;
 
-        // Calculate viewport center (adjust based on controls visibility)
         const viewportCenterX = window.innerWidth / 2;
         const bottomControls = document.querySelector('.bottom-controls');
         const isHidden = bottomControls.classList.contains('hidden');
         const viewportCenterY = window.innerHeight / 2 + (isHidden ? 20 : -10);
 
-        // Calculate grid item center
         const itemCenterX = itemX + 340; // 680/2
         const itemCenterY = itemY + 240; // 480/2
 
-        // Calculate translation needed to center the item
         const translateX = viewportCenterX - itemCenterX;
         const translateY = viewportCenterY - itemCenterY;
 
-        // Store base centering position
         baseCenterX = translateX;
         baseCenterY = translateY;
 
@@ -360,57 +338,47 @@ async function initDisplayView() {
             gridContainer.style.transform = `translate(${baseCenterX + targetTX}px, ${baseCenterY + targetTY}px)`;
             isNavigating = false;
         } else {
-            // Use slower transition for navigation
             gridContainer.style.transition = 'transform 1.5s ease';
-
-            // Apply transform with current parallax offset
             gridContainer.style.transform = `translate(${baseCenterX + targetTX}px, ${baseCenterY + targetTY}px)`;
 
-            // Re-enable parallax after navigation completes (1.5s)
             setTimeout(() => {
                 isNavigating = false;
             }, 1500);
         }
     }
 
-    // Apply parallax transform combining base centering and parallax offset
+    // Applies the current base-centering + parallax offset as the grid's transform.
     function applyParallax() {
         parallaxRaf = null;
-
-        // Use faster transition for parallax
         gridContainer.style.transition = 'transform 180ms ease-out';
-
         const transform = `translate(${baseCenterX + targetTX}px, ${baseCenterY + targetTY}px)`;
         gridContainer.style.transform = transform;
     }
 
-    // Calculate parallax offset based on mouse position
+    // Updates the parallax offset from mouse position, accelerating further from center.
     function onMouseMove(e) {
-        // Skip parallax if currently navigating
         if (isNavigating) return;
 
         const cx = window.innerWidth / 2;
         const cy = window.innerHeight / 2;
 
-        // Normalized distance from center (-1 to 1)
+        // Normalized distance from center (-1 to 1).
         const dx = (e.clientX - cx) / cx;
         const dy = (e.clientY - cy) / cy;
 
-        // Acceleration factor: moves more aggressively when further from center
         const ax = 1 + 0.6 * Math.abs(dx);
         const ay = 1 + 0.6 * Math.abs(dy);
 
-        // Calculate target offset (negative to move opposite of cursor)
+        // Negative so the grid moves opposite the cursor.
         targetTX = -dx * PARALLAX_MAX * ax;
         targetTY = -dy * PARALLAX_MAX * ay;
 
-        // Debounce transform updates using RAF
         if (parallaxRaf === null) {
             parallaxRaf = requestAnimationFrame(applyParallax);
         }
     }
 
-    // Reset parallax to center position
+    // Resets the parallax offset back to center.
     function resetParallax() {
         targetTX = 0;
         targetTY = 0;
@@ -420,21 +388,19 @@ async function initDisplayView() {
         }
     }
 
-    // Initialize parallax listeners
     if (PARALLAX_ENABLED) {
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('mouseleave', resetParallax);
     }
 
-    // Toggle controls visibility
     const controlsToggle = document.getElementById('controls-toggle');
     const bottomControls = document.querySelector('.bottom-controls');
     let controlsVisible = false;
 
-    // Set initial hidden state
     bottomControls.classList.add('hidden');
     controlsToggle.textContent = 'show project list ↑';
 
+    // Shows/hides the project list panel and re-centers the current grid item.
     controlsToggle.addEventListener('click', () => {
         controlsVisible = !controlsVisible;
 
@@ -449,16 +415,14 @@ async function initDisplayView() {
         navigateToGrid(currentIndex);
     });
 
-    // Initialize by centering the first item (center of spiral)
     navigateToGrid(1);
 }
 
 initDisplayView();
 
-// The spiral (desktop) vs. simple list (mobile) layout is built once at
-// load and never re-laid-out live, so resizing across the breakpoint leaves
-// stale DOM/state from whichever version was originally built. Reload when
-// the breakpoint is actually crossed, in either direction, to rebuild clean.
+// The spiral (desktop) vs. simple list (mobile) layout is built once at load
+// and never re-laid-out live, so crossing the breakpoint leaves stale state.
+// Reload when it's actually crossed, in either direction, to rebuild clean.
 window.matchMedia('(max-width: 900px)').addEventListener('change', () => {
     window.location.reload();
 });

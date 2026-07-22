@@ -8,8 +8,7 @@ function escapeHtml(text) {
     .replace(/"/g, '&quot;')
 }
 
-// Turns one uploaded media item ({asset: {url, mimeType}}) into an <img> or <video> tag.
-// Returns '' if the slot is empty (e.g. no mobile alt was set).
+// Turns one uploaded media item into an <img> or <video> tag, or '' if the slot is empty.
 function mediaTag(mediaItem, extraClass) {
   if (!mediaItem || !mediaItem.asset) return ''
   const {url, mimeType} = mediaItem.asset
@@ -21,8 +20,7 @@ function mediaTag(mediaItem, extraClass) {
   return `<img class="${extraClass}" src="${url}" alt="">`
 }
 
-// Renders one desktop+mobile pair as a single media slot. Both versions are
-// always in the markup; a CSS media query decides which one shows.
+// Renders a desktop+mobile media pair; both are in the markup and a CSS media query picks which shows.
 function renderMediaSlot(desktopItem, mobileItem) {
   if (!desktopItem) return ''
   const desktopTag = mediaTag(desktopItem, 'media-desktop')
@@ -30,8 +28,7 @@ function renderMediaSlot(desktopItem, mobileItem) {
   return desktopTag + mobileTag
 }
 
-// Renders one content block into a div carrying its layout type as a class name
-// (e.g. "content-block--2-wide") — your CSS handles the actual arrangement.
+// Renders one content block into a div carrying its layout type as a class name.
 function renderContentBlock(block) {
   const slot1 = renderMediaSlot(block.image1, block.mobileImage1)
   const slot2 = renderMediaSlot(block.image2, block.mobileImage2)
@@ -43,8 +40,7 @@ function renderContentBlock(block) {
     </div>`
 }
 
-// Renders the text info section at the top of a project: full-width title
-// (underlined), then a description / client-credit-year / tags row below it.
+// Renders the top info section: underlined title, then description/client-credit-year/tags.
 function renderProjectInfo(project) {
   const tagsHtml = (project.tags || [])
     .map(tag => `<p>#${escapeHtml(tag)}</p>`)
@@ -65,16 +61,13 @@ function renderProjectInfo(project) {
     </div>`
 }
 
-// Builds the full inner HTML for one project (info section + every content block).
-// This is the browser-side twin of renderProjectPage() in renderProjects.js —
-// same logic, but returns a string to inject into the page instead of writing a file.
+// Builds the full project HTML: info section plus every content block.
 export function buildProjectHTML(project) {
   const blocksHtml = (project.content || []).map(renderContentBlock).join('\n')
   return renderProjectInfo(project) + blocksHtml
 }
 
-// Renders the prev/next/home project navigation footer — same divider
-// treatment as the project-info title, with header-style link buttons.
+// Renders the prev/next/home footer nav, styled like the header buttons.
 export function buildProjectFooterHTML(prevProject, nextProject) {
   const prevSlug = prevProject.slug ? prevProject.slug.current : ''
   const nextSlug = nextProject.slug ? nextProject.slug.current : ''

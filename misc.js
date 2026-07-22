@@ -1,12 +1,9 @@
-      // Are.na API configuration
       const API_URL = 'https://api.are.na/v2/channels/misc-2-blz7-7lhg';
 
-      // State
       let blocks = [];
       let currentIndex = 0;
       let channelUrl = '';
 
-      // Elements
       const miscAbout = document.querySelector('.misc-about');
       const miscContainer = document.querySelector('.misc-container');
       const miscMedia = document.querySelector('.misc-media');
@@ -17,28 +14,23 @@
       const visitChannelBtn = document.getElementById('visit-channel');
       const aboutToggleBtn = document.getElementById('about-toggle');
 
-      // Intro animation sequence
+      // Shows the about panel for 5s, then fades it out and the block viewer in.
       function initIntroSequence() {
-        // Show about for 5 seconds
         setTimeout(() => {
-          // Fade out about
           miscAbout.classList.add('fade-out');
 
-          // After fade out completes, fade in container
           setTimeout(() => {
             miscContainer.classList.add('fade-in');
-          }, 400); // Match CSS transition duration
+          }, 400); // match CSS transition duration
         }, 5000);
       }
 
-      // Fetch channel data from Are.na
+      // Fetches the Are.na channel and displays its first block.
       async function fetchChannel() {
         try {
           const response = await fetch(API_URL);
           const data = await response.json();
-          blocks = data.contents.filter(block => block.class !== 'Channel'); // Filter out channel blocks
-
-          // Store channel URL
+          blocks = data.contents.filter(block => block.class !== 'Channel');
           channelUrl = `https://www.are.na/${data.user.slug}/${data.slug}`;
 
           if (blocks.length > 0) {
@@ -50,19 +42,17 @@
         }
       }
 
-      // Display a block
+      // Renders the block at index into the media/description panels, optionally fading between blocks.
       function displayBlock(index, withTransition = false) {
         if (blocks.length === 0) return;
 
         const block = blocks[index];
 
-        // Function to update content
+        // Swaps in the new block's media + description.
         const updateContent = () => {
-          // Clear previous content
           miscMedia.innerHTML = '';
           miscDescription.innerHTML = '';
 
-        // Display media based on block type
         switch(block.class) {
           case 'Image':
             const img = document.createElement('img');
@@ -118,7 +108,6 @@
             miscMedia.innerHTML = '<p>Unsupported block type</p>';
         }
 
-          // Display description
           let description = '';
           if (block.title) description += `<strong>${block.title}</strong><br>`;
           if (block.description) description += block.description;
@@ -126,11 +115,9 @@
 
           miscDescription.innerHTML = description || 'No description available.';
 
-          // Remove fade-out class to fade in
           miscMedia.classList.remove('fade-out');
           miscDescription.classList.remove('fade-out');
 
-          // Add click handler to open block URL
           miscMedia.style.cursor = 'pointer';
           miscMedia.onclick = () => {
             if (block.source && block.source.url) {
@@ -141,56 +128,52 @@
           };
         };
 
-        // If transition requested, fade out then update
         if (withTransition) {
           miscMedia.classList.add('fade-out');
           miscDescription.classList.add('fade-out');
-          setTimeout(updateContent, 300); // Match CSS transition duration
+          setTimeout(updateContent, 300); // match CSS transition duration
         } else {
           updateContent();
         }
       }
 
-      // Navigation functions
+      // Steps to the previous block, wrapping around.
       function showPrevious() {
         if (blocks.length === 0) return;
         currentIndex = (currentIndex - 1 + blocks.length) % blocks.length;
         displayBlock(currentIndex, true);
       }
 
+      // Steps to the next block, wrapping around.
       function showNext() {
         if (blocks.length === 0) return;
         currentIndex = (currentIndex + 1) % blocks.length;
         displayBlock(currentIndex, true);
       }
 
+      // Jumps to a random block.
       function showRandom() {
         if (blocks.length === 0) return;
         currentIndex = Math.floor(Math.random() * blocks.length);
         displayBlock(currentIndex, true);
       }
 
-      // Event listeners
       prevButton.addEventListener('click', showPrevious);
       nextButton.addEventListener('click', showNext);
       shuffleButton.addEventListener('click', showRandom);
 
-      // Visit channel button
+      // Opens the Are.na channel in a new tab.
       visitChannelBtn.addEventListener('click', () => {
         if (channelUrl) {
           window.open(channelUrl, '_blank');
         }
       });
 
-      // About toggle button
+      // Reveals the about panel again for 5s, then returns to the block viewer.
       aboutToggleBtn.addEventListener('click', () => {
-        // Fade out container
         miscContainer.classList.remove('fade-in');
-
-        // Fade in about
         miscAbout.classList.remove('fade-out');
 
-        // After 5 seconds, reverse
         setTimeout(() => {
           miscAbout.classList.add('fade-out');
           setTimeout(() => {
@@ -199,6 +182,5 @@
         }, 5000);
       });
 
-      // Initialize
       initIntroSequence();
       fetchChannel();
