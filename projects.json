@@ -403,15 +403,15 @@
   {
     "_createdAt": "2026-07-21T08:08:15Z",
     "_id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-    "_rev": "5poerSnBDlmYCDAwsPzVyA",
+    "_rev": "PWImsxFx7g4xqmxC76wa6g",
     "_system": {
       "base": {
         "id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-        "rev": "5poerSnBDlmYCDAwsPrroK"
+        "rev": "5poerSnBDlmYCDAwsPzVyA"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T05:37:42Z",
+    "_updatedAt": "2026-07-23T06:37:47Z",
     "client": "RISD",
     "content": [
       {
@@ -481,8 +481,8 @@
     "description": "This yearbook takes the viewer away from their common beginnings at RISD into an imagined future where each graduating student is famous. Where and who will they be by 2034? Each year, the graduating class' yearbook is student-designed by the Design Guild.",
     "heroImage": {
       "asset": {
-        "mimeType": "image/jpeg",
-        "url": "https://cdn.sanity.io/files/91e2aldw/production/a6b26af980f519e05ff20bea9c1fa1de87e8c779.jpg"
+        "mimeType": "image/png",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/983057e29ea41b0a7d4a7ecda12d61ddd5dd539b.png"
       }
     },
     "index": 2,
