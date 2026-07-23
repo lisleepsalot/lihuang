@@ -5,7 +5,22 @@ export default defineType({
   name: 'project',
   title: 'Project',
   type: 'document',
+  // Lets the studio list (and the rendered site) be sorted by the "index" field below.
+  orderings: [
+    {
+      title: 'Display Order',
+      name: 'indexAsc',
+      by: [{field: 'index', direction: 'asc'}],
+    },
+  ],
   fields: [
+    // Controls the order projects render in — lower numbers come first.
+    defineField({
+      name: 'index',
+      title: 'Order (lower numbers render first)',
+      type: 'number',
+    }),
+
     // Used to name the folder/URL for this project.
     defineField({
       name: 'slug',
