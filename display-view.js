@@ -62,19 +62,31 @@ function buildPlaceholderContent() {
     return wrapper;
 }
 
+// How long to wait on a single asset before giving up on it — mobile browsers
+// (iOS Safari especially) can decline to ever fire "loadeddata" for a video
+// that isn't muted/inline/in the document, so this is a hard backstop against
+// one stuck asset stranding the loading overlay forever.
+const MEDIA_PRELOAD_TIMEOUT = 8000;
+
 // Preloads a project's cover image/video so the loading overlay can wait on it —
 // grid cells apply background-image via JS well after window's "load" event fires.
-// Resolves (never rejects) on either success or failure so one broken asset can't
-// stall the overlay forever.
+// Resolves (never rejects) on success, failure, or timeout so one broken/stalled
+// asset can't stall the overlay forever.
 function preloadMedia(project) {
     if (project.isBorder) return Promise.resolve();
 
-    return new Promise(resolve => {
+    const loadPromise = new Promise(resolve => {
         if (project.isVideo) {
             const video = document.createElement('video');
+            // Required on mobile (iOS Safari in particular) for the browser to
+            // actually fetch video data for an element that's never played or attached.
+            video.muted = true;
+            video.playsInline = true;
+            video.preload = 'auto';
             video.addEventListener('loadeddata', resolve, { once: true });
             video.addEventListener('error', resolve, { once: true });
             video.src = project.image;
+            video.load();
         } else {
             const img = new Image();
             img.onload = resolve;
@@ -82,6 +94,9 @@ function preloadMedia(project) {
             img.src = project.image;
         }
     });
+
+    const timeoutPromise = new Promise(resolve => setTimeout(resolve, MEDIA_PRELOAD_TIMEOUT));
+    return Promise.race([loadPromise, timeoutPromise]);
 }
 
 // Fetches projects.json (built by fetchProjects.js) and returns it as a plain array.
