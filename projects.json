@@ -340,19 +340,52 @@
   {
     "_createdAt": "2026-07-21T08:14:24Z",
     "_id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
-    "_rev": "5poerSnBDlmYCDAwsQ0Fyf",
+    "_rev": "HCKf4zekuu2Li58GHaXR61",
     "_system": {
       "base": {
         "id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
-        "rev": "PWImsxFx7g4xqmxC76c7cu"
+        "rev": "PWImsxFx7g4xqmxC7719Lc"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T05:45:29Z",
+    "_updatedAt": "2026-07-23T07:08:38Z",
     "client": "RISD Design Studio 4",
     "content": [
       {
-        "_key": "03a0905ec2a9",
+        "_key": "aed622876ed0",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/56ca6d912eeb0f8c1383464e7b372ab905e3f395.jpg"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/1899edb7d4c60025939f274a1e1d8264e64f16db.mp4"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
+      },
+      {
+        "_key": "ebcf62762b0e",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/e6f868c937541bb705dfb942636f65db3aff14bd.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "d11ca3561161",
         "_type": "contentBlock",
         "image1": {
           "asset": {
@@ -366,7 +399,7 @@
         "type": "full-bleed"
       },
       {
-        "_key": "5109d5c80727",
+        "_key": "548ec9284fa7",
         "_type": "contentBlock",
         "image1": {
           "asset": {
@@ -378,6 +411,25 @@
         "mobileImage1": null,
         "mobileImage2": null,
         "type": "full-bleed"
+      },
+      {
+        "_key": "8024e695d9b1",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/d1e681f2e2626d0ec8dc83126d538a690008d79e.jpg"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/939b1d7db2ca13209188c80a95e524b3f355534e.jpg"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
       }
     ],
     "coverImage": {
@@ -388,7 +440,12 @@
     },
     "credit": "Instructed by: Hammett Nurosi",
     "description": "A visionary rebranding project for the RISD Museum, featuring a dynamic logo and color system inspired by the museum’s architecture. The new identity reflects its structural forms, textures, and spatial experience, creating a visual language that captures the look and feel of the physical space.",
-    "heroImage": null,
+    "heroImage": {
+      "asset": {
+        "mimeType": "video/mp4",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/80cebe07cf53a889da7e741139e03a1387e00c71.mp4"
+      }
+    },
     "index": 3,
     "slug": {
       "_type": "slug",
