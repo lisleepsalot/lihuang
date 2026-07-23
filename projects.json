@@ -311,15 +311,15 @@
   {
     "_createdAt": "2026-07-21T22:36:11Z",
     "_id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
-    "_rev": "5poerSnBDlmYCDAwsPmpY8",
+    "_rev": "5poerSnBDlmYCDAwsQ9Gtw",
     "_system": {
       "base": {
         "id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
-        "rev": "PWImsxFx7g4xqmxC71FLJE"
+        "rev": "5poerSnBDlmYCDAwsPmpY8"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:40Z",
+    "_updatedAt": "2026-07-23T06:59:12Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -334,7 +334,8 @@
       "current": "here-for-now"
     },
     "url": "https://www.herefornow.risd.gd/",
-    "webTitle": "Here for Now"
+    "webTitle": "Here for Now",
+    "year": 2025
   },
   {
     "_createdAt": "2026-07-21T08:14:24Z",
@@ -1812,15 +1813,15 @@
   {
     "_createdAt": "2026-07-21T08:14:44Z",
     "_id": "cae93248-9bcc-4897-8402-8f676f992ead",
-    "_rev": "PWImsxFx7g4xqmxC76KUow",
+    "_rev": "5poerSnBDlmYCDAwsQ9FvT",
     "_system": {
       "base": {
         "id": "cae93248-9bcc-4897-8402-8f676f992ead",
-        "rev": "gpzUsLcLqWFSm3yg5m5sKP"
+        "rev": "PWImsxFx7g4xqmxC76KUow"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T03:42:17Z",
+    "_updatedAt": "2026-07-23T06:58:50Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -1835,6 +1836,7 @@
       "current": "lvma"
     },
     "url": "https://www.thiscardigan.com/work/las-vegas-museum-of-art",
-    "webTitle": "Las Vegas Museum of Art"
+    "webTitle": "Las Vegas Museum of Art",
+    "year": 2026
   }
 ]
