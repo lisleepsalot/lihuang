@@ -2,49 +2,311 @@
   {
     "_createdAt": "2026-07-21T08:12:55Z",
     "_id": "11f324bf-4f90-4263-85dd-c646164151ef",
-    "_rev": "gpzUsLcLqWFSm3yg5m5sov",
+    "_rev": "5poerSnBDlmYCDAwsQ2SwR",
+    "_system": {
+      "base": {
+        "id": "11f324bf-4f90-4263-85dd-c646164151ef",
+        "rev": "gpzUsLcLqWFSm3yg5m5sov"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:55Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T06:03:32Z",
+    "client": "Typography 3 RISD 2023 Spring",
+    "content": [
+      {
+        "_key": "f59b3793de5e",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/206dec4c062b71531aeee7ce228e77821846ac40.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "1cb6dcaf2952",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/c974d081ce3c1afc5ef09f7c24d17317def79cef.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "d8ca02fa1fb0",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/38b77340609b504cd2d4252b5a996f06c9e5082e.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "b96544f79fee",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/eee2db45c63f4c8c89f7ec43ce097bc24fbe7e41.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/de9211188db16bde7e7aa9cc78815c9262f69638.jpg"
       }
     },
-    "heroImage": null,
+    "credit": "Instructed by: Anastasiia Raina",
+    "description": "This book project merges the writings of Robert O. Paxton's \"The Anatomy of Fascism\" and Adolf Loos' \"Ornament and Crime\" using both sans-serif and black-letter typefaces. This project deliberately explores the brutality of modernism beyond design boundaries.",
+    "heroImage": {
+      "asset": {
+        "mimeType": "image/png",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/feb45b78cfd8d0ea4116d3aba31b68dd2378607b.png"
+      }
+    },
     "slug": {
       "_type": "slug",
       "current": "anatomy-of-fascism"
     },
-    "webTitle": "Anatomy of Fascism"
+    "tags": [
+      "#editorial design"
+    ],
+    "webTitle": "Anatomy of Fascism",
+    "year": 2023
   },
   {
     "_createdAt": "2026-07-21T08:12:29Z",
     "_id": "242528c8-f566-483b-a759-225b11d62cf3",
-    "_rev": "PWImsxFx7g4xqmxC76bw2G",
+    "_rev": "PWImsxFx7g4xqmxC76o50A",
     "_system": {
       "base": {
         "id": "242528c8-f566-483b-a759-225b11d62cf3",
-        "rev": "PWImsxFx7g4xqmxC76KVgS"
+        "rev": "PWImsxFx7g4xqmxC76bw2G"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:37Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T05:31:09Z",
+    "client": "RISD Grad Type III ",
+    "content": [
+      {
+        "_key": "8d314f75fb63",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/7f2db809581bc3bb661bf7f0a769d1555c1f746e.mp4"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/fc956d2f37aaa70a1e4d250bff93cdd7b093d49d.jpg"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
+      },
+      {
+        "_key": "d8b474b77dd0",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/caeccf8cdb56c5378d889bae1d2501782c44b3c7.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "421697e93d98",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/13e0575cc7951a35bf282bb7033852208e32cb26.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "115fb81dd9f9",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/5408d338b563bd0af34727d7b0dfbdc96b6bfda4.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "264f3d4ce5e9",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/42b249774e5995bc6757de6f22b1eb56c5c6f9d5.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "0104c5e025ad",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/516bc642d5746f64ea4909703206c91887970431.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "c8f9ea9a06ca",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/d9807e0676d328831752f865d238688f44b7ecf5.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "a3e3680d2c4d",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/0af000a9d4a30e953578c52d6a970c331cb283ac.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "small"
+      },
+      {
+        "_key": "acdc7d062c32",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/5e91d8d6831b9b2160c9a190d434b4b528e37cdc.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "be415bd3cc60",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/33e720da64f9944f0cea4ec939bd86b08f96ed85.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "30a90a80ad47",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/36672ddd77507af69c68c68ad4b68c938d75bbf6.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "ba1561ba539d",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/4a15be8b4cf91215068628764bebb5b93458d4c8.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/15065a044aedc6910a1dab190a2ff5e8b2b3ba7a.jpg"
       }
     },
-    "heroImage": null,
+    "credit": "Instructed by: Doug Scott",
+    "description": "A visionary branding project for the Struve Geodetic Arc, a UNESCO World Heritage site where scientists measured the size of the Earth using mathematics and precise measurements. The brand identity explores themes of distance, geometry, the Earth, and mathematical precision.",
+    "heroImage": {
+      "asset": {
+        "mimeType": "video/mp4",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/8da269135d95501839514cb4d97021f27e509ea6.mp4"
+      }
+    },
     "index": 2,
     "slug": {
       "_type": "slug",
       "current": "struve-geodetic-arc"
     },
-    "webTitle": "Struve Geodetic Arc"
+    "tags": [
+      "#editorial design",
+      "#identity design"
+    ],
+    "webTitle": "Struve Geodetic Arc",
+    "year": 2024
   },
   {
     "_createdAt": "2026-07-21T22:36:11Z",
@@ -77,110 +339,398 @@
   {
     "_createdAt": "2026-07-21T08:14:24Z",
     "_id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
-    "_rev": "PWImsxFx7g4xqmxC76c7cu",
+    "_rev": "5poerSnBDlmYCDAwsQ0Fyf",
     "_system": {
       "base": {
         "id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
-        "rev": "J0MPS6a6VvqC5QQKWPBRG8"
+        "rev": "PWImsxFx7g4xqmxC76c7cu"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:49Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T05:45:29Z",
+    "client": "RISD Design Studio 4",
+    "content": [
+      {
+        "_key": "03a0905ec2a9",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/92ea265ff5873fa19da753021503c80eeb8a5f65.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "5109d5c80727",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/5d5fbda0233f34837b6743e156e79fba0ede1ce4.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/1757ea1c238a1f272a5486165397edf876de9ca4.jpg"
       }
     },
+    "credit": "Instructed by: Hammett Nurosi",
+    "description": "A visionary rebranding project for the RISD Museum, featuring a dynamic logo and color system inspired by the museum’s architecture. The new identity reflects its structural forms, textures, and spatial experience, creating a visual language that captures the look and feel of the physical space.",
     "heroImage": null,
     "index": 3,
     "slug": {
       "_type": "slug",
       "current": "risd-museum"
     },
-    "webTitle": "RISD Museum"
+    "tags": [
+      "#motion design",
+      "#identity design"
+    ],
+    "webTitle": "RISD Museum",
+    "year": 2024
   },
   {
     "_createdAt": "2026-07-21T08:08:15Z",
     "_id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-    "_rev": "HCKf4zekuu2Li58GHZjra3",
+    "_rev": "5poerSnBDlmYCDAwsPzVyA",
     "_system": {
       "base": {
         "id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-        "rev": "J0MPS6a6VvqC5QQKWPFKIU"
+        "rev": "5poerSnBDlmYCDAwsPrroK"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T03:42:56Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T05:37:42Z",
+    "client": "RISD",
+    "content": [
+      {
+        "_key": "ec220d940380",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/b028f20fe2130328b1d5d5870ab665c480688a3a.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "2b918a90f5ca",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/966567ef89c0bd8c616ad4235e31e29b7e87555a.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "81be8f5669df",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/9143debe6ca768d888950f53a6f58b57b77053f7.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "761d917f61b5",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/20e102891d51cfb1eac3d4687182d785d92f8275.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/7502174509eec6416d90ac89bd27b0999be73e2e.jpg"
       }
     },
-    "heroImage": null,
+    "credit": "with RISD Design Guild",
+    "description": "This yearbook takes the viewer away from their common beginnings at RISD into an imagined future where each graduating student is famous. Where and who will they be by 2034? Each year, the graduating class' yearbook is student-designed by the Design Guild.",
+    "heroImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/a6b26af980f519e05ff20bea9c1fa1de87e8c779.jpg"
+      }
+    },
     "index": 2,
     "slug": {
       "_type": "slug",
       "current": "risd-yearbook-204"
     },
-    "webTitle": "RISD Yearbook 2024"
+    "tags": [
+      "#editorial design"
+    ],
+    "webTitle": "RISD Yearbook 2024",
+    "year": 2025
   },
   {
     "_createdAt": "2026-07-21T22:35:39Z",
     "_id": "7b2443d6-9c34-44a7-b9eb-ebf199daedbe",
-    "_rev": "PWImsxFx7g4xqmxC76KVRA",
+    "_rev": "PWImsxFx7g4xqmxC76nWbA",
     "_system": {
       "base": {
         "id": "7b2443d6-9c34-44a7-b9eb-ebf199daedbe",
-        "rev": "PWImsxFx7g4xqmxC71FJs2"
+        "rev": "PWImsxFx7g4xqmxC76KVRA"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T03:42:58Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T05:15:26Z",
+    "client": "RISD CTC",
+    "content": [
+      {
+        "_key": "9a3131ba2d98",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/0f911c38207fc5f4d507b4fa1d580857fc298569.jpg"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/4dc0acecaf73989a9edce375fb2ee0415d683099.jpg"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
+      },
+      {
+        "_key": "21698e3003cb",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/c1780d52c90d779d9536b65fbb161ca674a4a901.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "1591531ae8f4",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/e8d157e57451f54d8bd38901039651f7c0f741e5.jpg"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/71ba5117e6657f6cb1da3b9a4021c61695cc33ee.jpg"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
+      },
+      {
+        "_key": "c242e4baac13",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/b922c3770d98938db27c49983de0fb340b4fabd9.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "f848b290e87d",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/eada1b27d5eba88b6722efa1770d139520b37577.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/2021492c1252533d6d4ec32475a11ebb73926c4e.jpg"
       }
     },
-    "heroImage": null,
+    "credit": "With Hannah Jeong and Maggie Meitong Xian",
+    "description": "Debates in AI at RISD was a symposium held on April 11–12, 2024, bringing together artists from around the world to explore the complex dimensions of artificial intelligence (AI) and its influence on creative fields. The visual identity drew inspiration from the dynamics of information processing and the fluid, ambiguous nature of AI-generated visuals.",
+    "heroImage": {
+      "asset": {
+        "mimeType": "video/mp4",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/51e824a81ebae36d5844d792de942a00b6f3ee6f.mp4"
+      }
+    },
     "index": 2,
     "slug": {
       "_type": "slug",
       "current": "debates-in-ai"
     },
-    "webTitle": "Debates in AI"
+    "tags": [
+      "#motion design",
+      "#identity desing"
+    ],
+    "webTitle": "Debates in AI",
+    "year": 2024
   },
   {
     "_createdAt": "2026-07-21T08:15:38Z",
     "_id": "802b1d6b-9412-4ee1-89b2-7cfdb5bb4249",
-    "_rev": "PWImsxFx7g4xqmxC76c13A",
+    "_rev": "PWImsxFx7g4xqmxC76hvRU",
     "_system": {
       "base": {
         "id": "802b1d6b-9412-4ee1-89b2-7cfdb5bb4249",
-        "rev": "5poerSnBDlmYCDAwsPUcIN"
+        "rev": "PWImsxFx7g4xqmxC76c13A"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:42Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T04:49:13Z",
+    "client": "RISD Grad Type Design 2024",
+    "content": [
+      {
+        "_key": "1ae91c283d66",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/e6e2e19ec01fbfc0bed6adee10b53c946e9f6464.mp4"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/png",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/02b4c34cf480f6ce5b81f97d2ffd09915678d75c.png"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
+      },
+      {
+        "_key": "2376daa9773d",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/b349c6a0dd08634fac64c28d28b8d58a845f075c.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "4e372bc2bf76",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/d1c287b2edadcc6024088a17f2d232fa7e7209f4.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "5714d8de19d8",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/4bb1f94ab1e91a72cb63b5755fcbd25ebd526b91.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "d3aeca44fbdb",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/4b65ddfb4f14491e1eabf08ef5a1ac94eea856fe.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "video/mp4",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/0ae03c0db5eacfd6146fda3295a2e5175c195e9c.mp4"
       }
     },
-    "heroImage": null,
+    "credit": "Instructed by Cyrus Highsmith",
+    "description": "My personal type design project.\n(This website is using it.)",
+    "heroImage": {
+      "asset": {
+        "mimeType": "video/mp4",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/d2a1c7d54cf73d6cb1f255e60cbdd5727fddc667.mp4"
+      }
+    },
     "index": 2,
     "slug": {
       "_type": "slug",
       "current": "heap-mono"
     },
-    "webTitle": "Heap Mono"
+    "tags": [
+      "#type design"
+    ],
+    "webTitle": "Heap Mono",
+    "year": 2024
   },
   {
     "_createdAt": "2026-07-21T05:45:52Z",
@@ -477,83 +1027,413 @@
   {
     "_createdAt": "2026-07-21T22:37:03Z",
     "_id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-    "_rev": "PWImsxFx7g4xqmxC76c3Bg",
+    "_rev": "5poerSnBDlmYCDAwsPsU15",
     "_system": {
       "base": {
         "id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-        "rev": "HCKf4zekuu2Li58GHZjrON"
+        "rev": "PWImsxFx7g4xqmxC76c3Bg"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:44Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T04:36:49Z",
+    "client": "Color and Surface RISD 2025",
+    "content": [
+      {
+        "_key": "bdd30bccf4ae",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/9198c90dd75223a359f98dd6d3c9ab3b5ea6d62b.jpg"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/d941e88cf0b76609f237cdcf4ff526e9807c9610.jpg"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
+      },
+      {
+        "_key": "fe3e0d7d6864",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/e6351d31c8d170b3ab1b586876fe1c562a90c40f.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "a1321ddfa3f4",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/ee8bf05516c67e5d02840dbcdf4be42488c78584.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "2429c6764421",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/5fae3df226e9e2292a4f7a53a31a4b988eb49dc5.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "73838811c1fb",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/05c0620319e4852ca7db291563207f6094a66f23.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "2e53bfdff531",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/92689bfb0dcef2837057a45cd6cb74fadbb5fb40.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "3b8954956725",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/66c3b1d3cd71978ac1566703f5153873022beffa.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "c315456e6d25",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/3ba73dac73e9adf5057cd385428e44b1674a9d1b.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "39ca2d1e0f52",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/faa12e136ce6b6c66d3f5d21f65efb516186b927.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/0a6f0e9a0535860af0d6fc644de1f29a7c97ff96.jpg"
       }
     },
-    "heroImage": null,
+    "credit": "Instructed by: Emily Rye",
+    "description": "A speculative branding project for a conceptual Rhode Island soap brand, developed within a set color palette and rooted in scent, ritual, and tactile experience.",
+    "heroImage": {
+      "asset": {
+        "mimeType": "video/mp4",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/4496e7c106759e46bcd08efd1162f180ec252c25.mp4"
+      }
+    },
     "index": 2,
     "slug": {
       "_type": "slug",
       "current": "hope-and-anchor"
     },
-    "webTitle": "Hope and Anchor"
+    "tags": [
+      "#identity design",
+      "#motion design"
+    ],
+    "webTitle": "Hope and Anchor",
+    "year": 2025
   },
   {
     "_createdAt": "2026-07-21T08:08:46Z",
     "_id": "c55510b0-9460-4e1b-b770-17614faf1353",
-    "_rev": "HCKf4zekuu2Li58GHa52Lf",
+    "_rev": "5poerSnBDlmYCDAwsQ0maO",
     "_system": {
       "base": {
         "id": "c55510b0-9460-4e1b-b770-17614faf1353",
-        "rev": "MSs3wmKvNq6JDpgHXf7w0v"
+        "rev": "HCKf4zekuu2Li58GHa52Lf"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:52Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T05:52:24Z",
+    "client": "Typography III RISD 2023 Fall",
+    "content": [
+      {
+        "_key": "be7822d280b7",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/f90d6a9b905cda459849335197ff58870fdf00d2.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "267a4d38f645",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/66a92754e4b5b7e7e7514625a6e507f9fe805f8e.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "a2f959ee36e9",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/244a3d85f5110cb736fb110f261c1bd37fa7c612.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "small"
+      },
+      {
+        "_key": "bdca9eede666",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/ebd5a8681b3c2565f1183e2ccdf7ba85f406d7f4.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "f4af1ad61a44",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/87b48975d2f9e8690cc30e6da4508b3191409ed7.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "aafd8daa3e6b",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/277d3c65d3128ba8b6469cdc141843160dad2d72.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "3d424d751ab9",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/8ab70e7580caa5f5401158b972e74c4c8fa59ebe.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/ff47deb5470dec8cb61744c97d68028bc7860df4.jpg"
       }
     },
-    "heroImage": null,
+    "credit": "Instructed by: Min Hee Lee",
+    "description": "“This world needs more pee pee poo poo.” Clean Wipes is a project dedicated to make the ultimate 'go-to toilet read.' It embraces the charm of the “bad” cultures we love. The first volume is a dive into bad movies and the cinematic guilty pleasures, presenting both a physical book and a corresponding web version.",
+    "heroImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/66a92754e4b5b7e7e7514625a6e507f9fe805f8e.jpg"
+      }
+    },
     "index": 3,
     "slug": {
       "_type": "slug",
       "current": "clean-wipes"
     },
-    "webTitle": "Clean Wipes"
+    "tags": [
+      "#editorial design"
+    ],
+    "webTitle": "Clean Wipes",
+    "year": 2023
   },
   {
     "_createdAt": "2026-07-21T08:13:21Z",
     "_id": "c8439c54-a43c-4c63-ab04-daf60860bb29",
-    "_rev": "5poerSnBDlmYCDAwsPn4e4",
+    "_rev": "PWImsxFx7g4xqmxC76pj1G",
     "_system": {
       "base": {
         "id": "c8439c54-a43c-4c63-ab04-daf60860bb29",
-        "rev": "gpzUsLcLqWFSm3yg5m5slS"
+        "rev": "5poerSnBDlmYCDAwsPn4e4"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:57Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T05:58:30Z",
+    "client": "RISD",
+    "content": [
+      {
+        "_key": "8aeadaae089d",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/319eeff55e4195f17a1ee4d11b550d02c9ef8433.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "9daaa11824a4",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/e87cd7eab47fee436e96801b574f58f184ec4266.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "3d63ab54b372",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/35435c67dc18ec70a8b80ac7477fbcb67c55d3a2.jpg"
+          }
+        },
+        "image2": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/6d618b41936b9693579dc6deaa7087dcd1410119.jpg"
+          }
+        },
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "2-full-bleed"
+      },
+      {
+        "_key": "222763afd1fb",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/4936722ee3a502dee8b1fce65ad5c99808f48bf0.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/a24dab1b0a6ae49a2e35b4f3577288d7c7cad9b0.jpg"
       }
     },
-    "heroImage": null,
+    "description": "CloudHopper proposes a visual identity for the RISD Artist Ball 2023, inspired by the theme \"Head in the Cloud.\"",
+    "heroImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/0e5314c4dce5a544f7b184ae50722fc218c7dc02.jpg"
+      }
+    },
     "index": 4,
     "slug": {
       "_type": "slug",
       "current": "head-in-the-cloud"
     },
-    "webTitle": "Head in the Cloud"
+    "tags": [
+      "identity design",
+      ""
+    ],
+    "webTitle": "Head in the Cloud",
+    "year": 2023
   },
   {
     "_createdAt": "2026-07-21T08:16:12Z",

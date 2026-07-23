@@ -28,7 +28,7 @@
       // Fetches the Are.na channel and displays its first block.
       async function fetchChannel() {
         try {
-          const response = await fetch(API_URL);
+          const response = await fetch(API_URL, {cache: 'no-store'});
           const data = await response.json();
           blocks = data.contents.filter(block => block.class !== 'Channel');
           channelUrl = `https://www.are.na/${data.user.slug}/${data.slug}`;
