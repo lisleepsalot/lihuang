@@ -5,13 +5,67 @@
 // — the effect sits behind #info-container, which stays on top and fully
 // readable.
 
+const FUN_DEBUG_FORCE_FALLBACK = true; // set true to skip the API and always use the Horsegirl fallback
+
 const FUN_CELL_SIZE = 24;
-const FUN_FADE_DELAY_MS = 1000;
-const FUN_FADE_JITTER_MS = 800; // +/- variation applied to each cell's fade delay
-const FUN_LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; // fallback pool if the fact fetch fails
+const FUN_FADE_DELAY_MS = 1600;
+const FUN_FADE_JITTER_MS = 700; // +/- variation applied to each cell's fade delay
 const FUN_FACT_API = 'https://uselessfacts.jsph.pl/api/v2/facts/random';
 const FUN_CREDIT_TEXT = 'via uselessfacts.jsph.pl';
+const FUN_FALLBACK_CREDIT = 'Horsegirl - "Well I Know You\'re Shy"';
 const FUN_SPECIAL_GLYPHS = 'ø014⅞@×÷↑→↓←'.split('');
+
+// Fallback text (Horsegirl, "Well I Know You're Shy") used until the fact fetch resolves, or if it fails.
+const FUN_FALLBACK_LYRICS = [
+    'Sing for you',
+    'I wanna sing like I do',
+    'Out your window',
+    'La-di, da-di, da, da',
+    'Radio tune',
+    "When the radio's blue",
+    'Listen to your window',
+    'La-di, da-di, da, da',
+    'What happened out there?',
+    'I wish it was me',
+    'What happened out there?',
+    'I wish it was me',
+    'What happened out there?',
+    "Well, I know you're shy",
+    "If you listen to me, you'll know",
+    'I wanna say, "Hi, " in your window',
+    'Think of you',
+    "Well, I can't sleep when I do",
+    'Looking through my window',
+    'La-di, da-di, da, da',
+    "And it's not connected to",
+    'How all good things come from you',
+    'And looking through your window',
+    'La-di, da-di, da, da',
+    'What happened out there?',
+    'I wish it was me',
+    'What happened out there?',
+    'I wish it was me',
+    'What happened out there?',
+    "Well, I know you're shy",
+    "If you listen to me, you'll know",
+    'I wanna say, "Hi, " in your window',
+    'Walk in two',
+    "'Cause you were so obscene",
+    'I hope that you know now',
+    'I hope that you know now',
+    'I hope that you know now',
+    "'Cause you were so obscene",
+    'I hope that you know now',
+    'I hope that you know now',
+    'What happened out there?',
+    'I wish it was me',
+    'What happened out there?',
+    'I wish it was me',
+    'What happened out there?',
+    "Well, I know you're shy",
+    "If you listen to me, you'll know",
+    'I wanna say, "Hi, " in your window'
+].join(' ');
 
 const FUN_SPAWN_CHANCE = 0.25; // odds a freshly spawned cell also lights up neighbors
 const FUN_NEIGHBOR_OFFSETS = [
@@ -54,10 +108,11 @@ function initFunGrid() {
 
     const activeCells = new Map(); // "col,row" -> {el, timeoutId}
 
-    let funLetterPool = FUN_LETTERS.split('');
+    let funLetterPool = FUN_FALLBACK_LYRICS.split('');
     let funLetterIndex = 0;
-    let funFactText = '';
+    let funFactText = FUN_FALLBACK_LYRICS;
     let funSpaceCount = 0;
+    let funIsFallback = true;
 
     // Returns the next character from the fact pool, every 3rd space swapped for a special glyph.
     function nextFunLetter() {
@@ -76,6 +131,8 @@ function initFunGrid() {
 
     // Fetches a random fact and refreshes the letter pool it drives.
     async function loadFunFact() {
+        if (FUN_DEBUG_FORCE_FALLBACK) return;
+
         try {
             const response = await fetch(FUN_FACT_API);
             const data = await response.json();
@@ -85,9 +142,10 @@ function initFunGrid() {
                 funLetterIndex = 0;
                 funSpaceCount = 0;
                 funFactText = data.text;
+                funIsFallback = false;
             }
         } catch (err) {
-            // Keep the existing pool if the fact can't be fetched.
+            // Keep the lyrics fallback if the fact can't be fetched.
         }
     }
 
@@ -147,14 +205,17 @@ function initFunGrid() {
 
     let typewriterTimeoutId = null;
 
-    // Fetches a fresh fact and types it out, word-wrapped, from the press point, then the API credit.
+    // Fetches a fresh fact and types it out with its credit; if the fetch didn't succeed, types just the fallback credit instead of the whole song.
     async function startTypewriter(startCol, startRow) {
         await loadFunFact();
-        if (!funFactText) return;
 
-        const factLines = wrapTextToLines(funFactText, FUN_TYPEWRITER_COLS);
-        const creditLines = wrapTextToLines(FUN_CREDIT_TEXT, FUN_TYPEWRITER_COLS);
-        const lines = [...factLines, '', ...creditLines];
+        const lines = funIsFallback
+            ? wrapTextToLines(FUN_FALLBACK_CREDIT, FUN_TYPEWRITER_COLS)
+            : [
+                ...wrapTextToLines(funFactText, FUN_TYPEWRITER_COLS),
+                '',
+                ...wrapTextToLines(FUN_CREDIT_TEXT, FUN_TYPEWRITER_COLS)
+            ];
 
         const queue = [];
         lines.forEach((line, lineIndex) => {
