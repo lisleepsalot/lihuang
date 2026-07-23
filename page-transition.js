@@ -31,10 +31,19 @@ function showLoadingOverlay(callback) {
     }, 1000); // match transition duration
   }
 
+  // Some pages (e.g. work.html) build their content asynchronously after
+  // window's "load" event already fired, via a script that sets
+  // window.__contentReadyPromise. Wait on it too, if present, so the overlay
+  // doesn't reveal a page whose assets are still loading in the background.
+  // Caught so a failed fetch/asset can't strand the overlay forever.
+  function whenFullyLoaded() {
+    Promise.resolve(window.__contentReadyPromise).catch(() => {}).then(hideOverlay);
+  }
+
   if (document.readyState === 'complete') {
-    hideOverlay();
+    whenFullyLoaded();
   } else {
-    window.addEventListener('load', hideOverlay);
+    window.addEventListener('load', whenFullyLoaded);
   }
 }
 

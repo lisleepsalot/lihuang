@@ -62,6 +62,28 @@ function buildPlaceholderContent() {
     return wrapper;
 }
 
+// Preloads a project's cover image/video so the loading overlay can wait on it —
+// grid cells apply background-image via JS well after window's "load" event fires.
+// Resolves (never rejects) on either success or failure so one broken asset can't
+// stall the overlay forever.
+function preloadMedia(project) {
+    if (project.isBorder) return Promise.resolve();
+
+    return new Promise(resolve => {
+        if (project.isVideo) {
+            const video = document.createElement('video');
+            video.addEventListener('loadeddata', resolve, { once: true });
+            video.addEventListener('error', resolve, { once: true });
+            video.src = project.image;
+        } else {
+            const img = new Image();
+            img.onload = resolve;
+            img.onerror = resolve;
+            img.src = project.image;
+        }
+    });
+}
+
 // Fetches projects.json (built by fetchProjects.js) and returns it as a plain array.
 async function fetchProjects() {
     const response = await fetch('./projects.json');
@@ -164,9 +186,11 @@ async function initDisplayView() {
 
     const rawProjects = await fetchProjects();
     let projects = sortByOrder(rawProjects).map(toDisplayProject);
+    const mediaLoadPromise = Promise.all(projects.map(preloadMedia));
 
     if (window.matchMedia('(max-width: 900px)').matches) {
         renderMobileGrid(projects, gridContainer);
+        await mediaLoadPromise;
         return;
     }
 
@@ -493,9 +517,12 @@ async function initDisplayView() {
     });
 
     navigateToGrid(1);
+    await mediaLoadPromise;
 }
 
-initDisplayView();
+// Exposed so page-transition.js's loading overlay can wait on it, in addition to
+// window's "load" event, before revealing the page.
+window.__contentReadyPromise = initDisplayView();
 
 // The spiral (desktop) vs. simple list (mobile) layout is built once at load
 // and never re-laid-out live, so crossing the breakpoint leaves stale state.

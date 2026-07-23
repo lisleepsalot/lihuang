@@ -1000,29 +1000,265 @@
   {
     "_createdAt": "2026-07-21T08:11:53Z",
     "_id": "b1579109-d01f-4336-87bf-9f4c48decbaa",
-    "_rev": "5poerSnBDlmYCDAwsPmZLq",
+    "_rev": "HCKf4zekuu2Li58GHaRS3V",
     "_system": {
       "base": {
         "id": "b1579109-d01f-4336-87bf-9f4c48decbaa",
-        "rev": "gpzUsLcLqWFSm3yg5m5syd"
+        "rev": "5poerSnBDlmYCDAwsPmZLq"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T04:06:34Z",
-    "content": null,
+    "_updatedAt": "2026-07-23T06:34:42Z",
+    "client": "Rhode Island School of Design",
+    "content": [
+      {
+        "_key": "6939e09ea259",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/32cc1ecde3f3e3e1fee737bf05de9f9e2343edfa.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "small"
+      },
+      {
+        "_key": "d974e5cfd664",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/32fb5a462a009138320dc06b7a6257f2ae271f1d.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "8b0c9b6a3b6a",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/2e8134b2b19149bed24a946fc99321010eee4ef3.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "e7c849b33399",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/31b37b01e5c4d6c65aca8771a9d388b2944c33f6.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null
+      },
+      {
+        "_key": "38d3b599c7dd",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/5dc3e77ff208963736574d17125cde86b5039c3c.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "967903ed6272",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/a4904c71de65534b2253b5edaf475aab90f77405.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "2f3defe66b53",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/e4359d4a8b0ae58a6978b4eb447630c3e13a00c3.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "faae30c3d2bf",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/84f312a846e684e9e18e3d2e9e689b49dc2c3e5b.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "fbc8a498878d",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/0673125bfa5d99b55cbe40c880caa2e36641cc27.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "01e76772af8f",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/8a86cb10a326093762c5c675fad93122fca50713.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "3583024d1684",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/24867905459888c5a9ac38afe5316b326227337e.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "512dfb28a097",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/abe8aa3f995a08edf8bf348bdabc3f5c402c7919.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "7b7b1689d0a9",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/f536c194d9af853b8607e7927102dd470ef03254.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "21b771268e1b",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/c10fe7aa0e7bd64fa5dd782fc35a795c0d649d5a.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "f0db437c392b",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/8bf14adef61eefebe99d609cceb6818ad8c277bb.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "small"
+      },
+      {
+        "_key": "0324445d4c9f",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/1e9f6d2746af47869c5880c9d4d3c0e8af5a280b.mp4"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "small"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
         "url": "https://cdn.sanity.io/files/91e2aldw/production/0cb6b8c1564ea2cbf8a16a93b8dff192f9bb93d1.jpg"
       }
     },
-    "heroImage": null,
+    "credit": "with Design Guild",
+    "description": "The 2025 yearbook is a celebration of what we carry with us and the moments we hold close. Each student page is personalized—decorated and curated like a proud, well-loved fridge door. We dedicate this yearbook as a keepsake for the graduating class of 2025. What’s yours?",
+    "heroImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/a6b26af980f519e05ff20bea9c1fa1de87e8c779.jpg"
+      }
+    },
     "index": 1,
     "slug": {
       "_type": "slug",
       "current": "risd-yearbook-2025"
     },
-    "webTitle": "RISD Yearbook 2025"
+    "tags": [
+      "editorial design"
+    ],
+    "webTitle": "RISD Yearbook 2025",
+    "year": 2025
   },
   {
     "_createdAt": "2026-07-21T22:37:03Z",
