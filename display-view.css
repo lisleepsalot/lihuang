@@ -1,0 +1,259 @@
+.viewport {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* grid styles */
+
+.grid-container {
+    position: absolute;
+}
+
+.grid-cell {
+    width: 680px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-grid-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.display-grid-image {
+    position: relative;
+    width: 570px;
+    height: 380px;
+    background-image: url('./placeholder.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.display-grid-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.display-grid-container:hover .display-grid-image::after {
+    opacity: 0.25;
+}
+
+.display-grid-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.display-grid-textbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: 1px dotted black;
+    opacity: 0;
+    filter: blur(4px);
+    transition: opacity 0.4s ease, filter 0.8s ease;
+}
+
+.grid-cell.active .display-grid-textbox {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.nav-arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    filter: blur(4px);
+    transition:
+    opacity 0.4s ease,
+    filter 0.8s ease,
+    background-color 0.4s ease,
+    color 0.2s ease;
+    pointer-events: none;
+}
+
+.nav-arrow:hover {
+    background-color:rgb(239, 239, 239);
+    cursor:pointer;
+}
+
+.grid-cell.active .nav-arrow {
+    opacity: 1;
+    filter: blur(0);
+    pointer-events: auto;
+}
+
+.grid-cell.active .nav-arrow:hover {
+    opacity: 1;
+    pointer-events: auto;
+    cursor:pointer;
+}
+
+.nav-arrow.hidden {
+    display: none;
+}
+
+.nav-arrow-left {
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-arrow-right {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-arrow-up {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-arrow-down {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* bottom controls styles */
+
+.bottom-controls {
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 16px 32px 28px 32px;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease;
+    transform: translateY(0);
+}
+
+.bottom-controls.hidden {
+    transform: translateY(148px);
+}
+
+.controls-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.control-button {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    font-family: 'Heap';
+    font-size: 12px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.control-button:hover {
+    background-color: white;
+    padding: 3px 7px;
+    border: 1px dashed #000;
+    cursor:pointer;
+}
+
+.control-button.active {
+    border: none;
+    padding: 3px 7px;
+    border: 1px dashed #000;
+}
+
+#controls-toggle{
+    width: auto;
+    padding: 4px 8px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+#controls-toggle:hover {
+    background-color: white;
+    padding: 3px 7px;
+    border: 1px dashed #000;
+    cursor:pointer;
+}
+
+@media (max-width: 900px) {
+    body {
+        overflow: auto;
+    }
+
+    .viewport {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+    .grid-container {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 56px;
+    }
+
+    .grid-cell {
+        width: 100%;
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    .display-grid-container {
+        width: 100%;
+    }
+
+    .display-grid-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    .display-grid-textbox {
+        opacity: 1;
+        filter: none;
+    }
+
+    .bottom-controls {
+        display: none;
+    }
+}

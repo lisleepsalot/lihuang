@@ -1,0 +1,156 @@
+      :root{
+    --lh: #f7d580;
+}
+
+body{
+  background-color: black;
+  color: var(--lh);
+}
+
+.header{
+    background-color: black;
+    color: var(--lh);
+}
+
+.header-utility.open {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.header-utility.open .nav-link {
+    border-top: 1px dotted var(--lh);
+            padding: 12px;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 16px 24px;
+  background-color: black;
+  color: var(--lh);
+}
+
+.misc-viewport{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.misc-container{
+position: absolute;
+display: flex;
+width: 100vw;
+max-width: 900px;
+padding: 80px 16px 16px 16px;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+opacity: 0;
+transition: opacity 0.8s ease;
+}
+
+.misc-container.fade-in{
+  opacity: 1;
+}
+
+.misc-media-container{
+  width: 100%;
+  height: 80vh;
+  max-height: calc(100vh - 360px);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.misc-media{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.misc-media.fade-out{
+  opacity: 0;
+}
+
+.misc-media img, .misc-media video{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.misc-media iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.misc-about{
+  position: absolute;
+  width: 360px;
+  text-align: center;
+  font-family: Heap;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.misc-about.fade-out{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.misc-text{
+display: flex;
+width: 100%;
+flex-direction: column;
+align-items: center;
+gap:24px;
+}
+
+.misc-control{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header-text, .misc-button{
+    padding: 4px 8px;
+    color: var(--lh);
+    text-decoration: none;
+}
+
+.header-text:hover, .misc-button:hover{
+    background-color: black;
+    padding: 3px 7px;
+    border: 1px dashed white;
+    cursor:pointer;
+}
+
+.misc-description{
+  width: 80%;
+  height: 80px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.misc-description.fade-out{
+  opacity: 0;
+}

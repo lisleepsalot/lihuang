@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li Huang</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="project-view.css">
+</head>
+<body>
+    <header class="header"></header>
+
+    <main class="project-render" id="projectRoot">
+        <p class="project-status">loading…</p>
+    </main>
+
+    <script src="page-transition.js"></script>
+    <script src="loadheader.js"></script>
+    <script type="module">
+        import {buildProjectHTML, buildProjectFooterHTML} from './Renderprojectclient.js'
+
+        const root = document.getElementById('projectRoot')
+        const slug = new URLSearchParams(window.location.search).get('slug')
+
+        // Sorts by Sanity's `index` field ascending; projects without one sort to the end.
+        function sortByOrder(projects) {
+            return [...projects].sort((a, b) => {
+                const orderA = typeof a.index === 'number' ? a.index : Infinity
+                const orderB = typeof b.index === 'number' ? b.index : Infinity
+                if (orderA === orderB) return 0
+                return orderA < orderB ? -1 : 1
+            })
+        }
+
+        async function renderProject() {
+            if (!slug) {
+                root.innerHTML = '<p class="project-status">No project specified.</p>'
+                return
+            }
+
+            const response = await fetch('./projects.json')
+            const projects = sortByOrder(await response.json())
+            const project = projects.find(p => p.slug && p.slug.current === slug)
+
+            if (!project) {
+                root.innerHTML = '<p class="project-status">Project not found.</p>'
+                return
+            }
+
+            const index = projects.indexOf(project)
+            const prevProject = projects[(index - 1 + projects.length) % projects.length]
+            const nextProject = projects[(index + 1) % projects.length]
+
+            document.title = project.webTitle ? `${project.webTitle} — Li Huang` : 'Li Huang'
+            root.innerHTML = buildProjectHTML(project) + buildProjectFooterHTML(prevProject, nextProject)
+            observeContentBlocks()
+            initBlurUp()
+        }
+
+        // Blurs each image/video while it loads, then clears the blur once
+        // it's ready — a CSS-only stand-in for a real low-res placeholder,
+        // since these assets are Sanity file (not image) uploads and don't
+        // support the ?w=&blur= resize pipeline.
+        function initBlurUp() {
+            const media = root.querySelectorAll('.content-block img, .content-block video')
+
+            media.forEach(el => {
+                const markLoaded = () => el.classList.add('is-loaded')
+
+                if (el.tagName === 'IMG') {
+                    if (el.complete) markLoaded()
+                    else el.addEventListener('load', markLoaded, {once: true})
+                } else {
+                    if (el.readyState >= 2) markLoaded()
+                    else el.addEventListener('loadeddata', markLoaded, {once: true})
+                }
+            })
+        }
+
+        // Fades + slides each content block in as it scrolls into view, from
+        // below when scrolling down and from above when scrolling up — and
+        // replays every time a block re-enters, not just once.
+        function observeContentBlocks() {
+            const blocks = root.querySelectorAll('.content-block')
+
+            let lastScrollY = window.scrollY
+            let scrollDirection = 'down'
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY
+                scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up'
+                lastScrollY = currentScrollY
+            }, {passive: true})
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.toggle('from-above', scrollDirection === 'up')
+                        entry.target.classList.add('is-visible')
+                    } else {
+                        entry.target.classList.remove('is-visible')
+                    }
+                })
+            }, {threshold: 0.15})
+
+            blocks.forEach(block => observer.observe(block))
+        }
+
+        renderProject()
+    </script>
+</body>
+</html>
