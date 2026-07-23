@@ -13,7 +13,7 @@ const FUN_FADE_JITTER_MS = 700; // +/- variation applied to each cell's fade del
 const FUN_FACT_API = 'https://uselessfacts.jsph.pl/api/v2/facts/random';
 const FUN_CREDIT_TEXT = 'via uselessfacts.jsph.pl';
 const FUN_FALLBACK_CREDIT = 'Horsegirl - "Well I Know You\'re Shy"';
-const FUN_SPECIAL_GLYPHS = 'ø014⅞@×÷↑→↓←'.split('');
+const FUN_SPECIAL_GLYPHS = 'ø⅞@↑→↓←'.split('');
 
 // Fallback text (Horsegirl, "Well I Know You're Shy") used until the fact fetch resolves, or if it fails.
 const FUN_FALLBACK_LYRICS = [
