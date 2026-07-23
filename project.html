@@ -23,6 +23,16 @@
         const root = document.getElementById('projectRoot')
         const slug = new URLSearchParams(window.location.search).get('slug')
 
+        // Sorts by Sanity's `index` field ascending; projects without one sort to the end.
+        function sortByOrder(projects) {
+            return [...projects].sort((a, b) => {
+                const orderA = typeof a.index === 'number' ? a.index : Infinity
+                const orderB = typeof b.index === 'number' ? b.index : Infinity
+                if (orderA === orderB) return 0
+                return orderA < orderB ? -1 : 1
+            })
+        }
+
         async function renderProject() {
             if (!slug) {
                 root.innerHTML = '<p class="project-status">No project specified.</p>'
@@ -30,7 +40,7 @@
             }
 
             const response = await fetch('./projects.json')
-            const projects = await response.json()
+            const projects = sortByOrder(await response.json())
             const project = projects.find(p => p.slug && p.slug.current === slug)
 
             if (!project) {

@@ -71,6 +71,16 @@ async function fetchProjects() {
     return response.json();
 }
 
+// Sorts by Sanity's `index` field ascending; projects without one sort to the end.
+function sortByOrder(projects) {
+    return [...projects].sort((a, b) => {
+        const orderA = typeof a.index === 'number' ? a.index : Infinity;
+        const orderB = typeof b.index === 'number' ? b.index : Infinity;
+        if (orderA === orderB) return 0;
+        return orderA < orderB ? -1 : 1;
+    });
+}
+
 // Maps a raw Sanity project document to the shape the grid needs.
 function toDisplayProject(project) {
     const asset = project.coverImage && project.coverImage.asset;
@@ -153,7 +163,7 @@ async function initDisplayView() {
     let isInitialRender = true;
 
     const rawProjects = await fetchProjects();
-    let projects = rawProjects.map(toDisplayProject);
+    let projects = sortByOrder(rawProjects).map(toDisplayProject);
 
     if (window.matchMedia('(max-width: 900px)').matches) {
         renderMobileGrid(projects, gridContainer);

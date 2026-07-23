@@ -61,7 +61,7 @@ function renderProjectInfo(project) {
       <div class="project-info-row">
         <div class="project-description">${escapeHtml(project.description)}</div>
         <div class="project-meta">
-          <p>Client: ${escapeHtml(project.client)}</p>
+          <p>For: ${escapeHtml(project.client)}</p>
           <p>${escapeHtml(project.credit)}</p>
           <p>Year: ${escapeHtml(project.year)}</p>
         </div>

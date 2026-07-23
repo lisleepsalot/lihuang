@@ -22,9 +22,15 @@
   {
     "_createdAt": "2026-07-21T08:12:29Z",
     "_id": "242528c8-f566-483b-a759-225b11d62cf3",
-    "_rev": "gpzUsLcLqWFSm3yg5m5st5",
+    "_rev": "PWImsxFx7g4xqmxC76bw2G",
+    "_system": {
+      "base": {
+        "id": "242528c8-f566-483b-a759-225b11d62cf3",
+        "rev": "PWImsxFx7g4xqmxC76KVgS"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:57Z",
+    "_updatedAt": "2026-07-23T04:06:37Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -33,6 +39,7 @@
       }
     },
     "heroImage": null,
+    "index": 2,
     "slug": {
       "_type": "slug",
       "current": "struve-geodetic-arc"
@@ -42,15 +49,15 @@
   {
     "_createdAt": "2026-07-21T22:36:11Z",
     "_id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
-    "_rev": "PWImsxFx7g4xqmxC71FLJE",
+    "_rev": "5poerSnBDlmYCDAwsPmpY8",
     "_system": {
       "base": {
         "id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
-        "rev": "5poerSnBDlmYCDAwsKJnAG"
+        "rev": "PWImsxFx7g4xqmxC71FLJE"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-21T22:37:37Z",
+    "_updatedAt": "2026-07-23T04:06:40Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -59,6 +66,7 @@
       }
     },
     "heroImage": null,
+    "index": 2,
     "slug": {
       "_type": "slug",
       "current": "here-for-now"
@@ -69,9 +77,15 @@
   {
     "_createdAt": "2026-07-21T08:14:24Z",
     "_id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
-    "_rev": "J0MPS6a6VvqC5QQKWPBRG8",
+    "_rev": "PWImsxFx7g4xqmxC76c7cu",
+    "_system": {
+      "base": {
+        "id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
+        "rev": "J0MPS6a6VvqC5QQKWPBRG8"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:48Z",
+    "_updatedAt": "2026-07-23T04:06:49Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -80,6 +94,7 @@
       }
     },
     "heroImage": null,
+    "index": 3,
     "slug": {
       "_type": "slug",
       "current": "risd-museum"
@@ -89,15 +104,15 @@
   {
     "_createdAt": "2026-07-21T08:08:15Z",
     "_id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-    "_rev": "J0MPS6a6VvqC5QQKWPFKIU",
+    "_rev": "HCKf4zekuu2Li58GHZjra3",
     "_system": {
       "base": {
         "id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-        "rev": "gpzUsLcLqWFSm3yg5m5tkU"
+        "rev": "J0MPS6a6VvqC5QQKWPFKIU"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:50:30Z",
+    "_updatedAt": "2026-07-23T03:42:56Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -106,6 +121,7 @@
       }
     },
     "heroImage": null,
+    "index": 2,
     "slug": {
       "_type": "slug",
       "current": "risd-yearbook-204"
@@ -115,9 +131,15 @@
   {
     "_createdAt": "2026-07-21T22:35:39Z",
     "_id": "7b2443d6-9c34-44a7-b9eb-ebf199daedbe",
-    "_rev": "PWImsxFx7g4xqmxC71FJs2",
+    "_rev": "PWImsxFx7g4xqmxC76KVRA",
+    "_system": {
+      "base": {
+        "id": "7b2443d6-9c34-44a7-b9eb-ebf199daedbe",
+        "rev": "PWImsxFx7g4xqmxC71FJs2"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T22:36:02Z",
+    "_updatedAt": "2026-07-23T03:42:58Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -126,6 +148,7 @@
       }
     },
     "heroImage": null,
+    "index": 2,
     "slug": {
       "_type": "slug",
       "current": "debates-in-ai"
@@ -135,9 +158,15 @@
   {
     "_createdAt": "2026-07-21T08:15:38Z",
     "_id": "802b1d6b-9412-4ee1-89b2-7cfdb5bb4249",
-    "_rev": "MSs3wmKvNq6JDpgHXf6mkK",
+    "_rev": "PWImsxFx7g4xqmxC76c13A",
+    "_system": {
+      "base": {
+        "id": "802b1d6b-9412-4ee1-89b2-7cfdb5bb4249",
+        "rev": "5poerSnBDlmYCDAwsPUcIN"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:45Z",
+    "_updatedAt": "2026-07-23T04:06:42Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -146,6 +175,7 @@
       }
     },
     "heroImage": null,
+    "index": 2,
     "slug": {
       "_type": "slug",
       "current": "heap-mono"
@@ -155,15 +185,15 @@
   {
     "_createdAt": "2026-07-21T05:45:52Z",
     "_id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-    "_rev": "HCKf4zekuu2Li58GHZG40P",
+    "_rev": "PWImsxFx7g4xqmxC769yBe",
     "_system": {
       "base": {
         "id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-        "rev": "MSs3wmKvNq6JDpgHXf480R"
+        "rev": "HCKf4zekuu2Li58GHZG40P"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T02:43:13Z",
+    "_updatedAt": "2026-07-23T03:30:16Z",
     "client": "RISD",
     "content": [
       {
@@ -405,6 +435,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/721f4b5fd88d4c15bf9b93bda8fa62edb0f138ad.jpg"
       }
     },
+    "index": 1,
     "slug": {
       "_type": "slug",
       "current": "risd-commencement-2025"
@@ -419,9 +450,15 @@
   {
     "_createdAt": "2026-07-21T08:11:53Z",
     "_id": "b1579109-d01f-4336-87bf-9f4c48decbaa",
-    "_rev": "gpzUsLcLqWFSm3yg5m5syd",
+    "_rev": "5poerSnBDlmYCDAwsPmZLq",
+    "_system": {
+      "base": {
+        "id": "b1579109-d01f-4336-87bf-9f4c48decbaa",
+        "rev": "gpzUsLcLqWFSm3yg5m5syd"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:59Z",
+    "_updatedAt": "2026-07-23T04:06:34Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -430,6 +467,7 @@
       }
     },
     "heroImage": null,
+    "index": 1,
     "slug": {
       "_type": "slug",
       "current": "risd-yearbook-2025"
@@ -439,9 +477,15 @@
   {
     "_createdAt": "2026-07-21T22:37:03Z",
     "_id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-    "_rev": "PWImsxFx7g4xqmxC71FKrC",
+    "_rev": "PWImsxFx7g4xqmxC76c3Bg",
+    "_system": {
+      "base": {
+        "id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
+        "rev": "HCKf4zekuu2Li58GHZjrON"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T22:37:19Z",
+    "_updatedAt": "2026-07-23T04:06:44Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -450,6 +494,7 @@
       }
     },
     "heroImage": null,
+    "index": 2,
     "slug": {
       "_type": "slug",
       "current": "hope-and-anchor"
@@ -459,15 +504,15 @@
   {
     "_createdAt": "2026-07-21T08:08:46Z",
     "_id": "c55510b0-9460-4e1b-b770-17614faf1353",
-    "_rev": "MSs3wmKvNq6JDpgHXf7w0v",
+    "_rev": "HCKf4zekuu2Li58GHa52Lf",
     "_system": {
       "base": {
         "id": "c55510b0-9460-4e1b-b770-17614faf1353",
-        "rev": "J0MPS6a6VvqC5QQKWPBSxN"
+        "rev": "MSs3wmKvNq6JDpgHXf7w0v"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:50:37Z",
+    "_updatedAt": "2026-07-23T04:06:52Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -476,6 +521,7 @@
       }
     },
     "heroImage": null,
+    "index": 3,
     "slug": {
       "_type": "slug",
       "current": "clean-wipes"
@@ -485,9 +531,15 @@
   {
     "_createdAt": "2026-07-21T08:13:21Z",
     "_id": "c8439c54-a43c-4c63-ab04-daf60860bb29",
-    "_rev": "gpzUsLcLqWFSm3yg5m5slS",
+    "_rev": "5poerSnBDlmYCDAwsPn4e4",
+    "_system": {
+      "base": {
+        "id": "c8439c54-a43c-4c63-ab04-daf60860bb29",
+        "rev": "gpzUsLcLqWFSm3yg5m5slS"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:52Z",
+    "_updatedAt": "2026-07-23T04:06:57Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -496,6 +548,7 @@
       }
     },
     "heroImage": null,
+    "index": 4,
     "slug": {
       "_type": "slug",
       "current": "head-in-the-cloud"
@@ -505,38 +558,153 @@
   {
     "_createdAt": "2026-07-21T08:16:12Z",
     "_id": "c845062c-f722-4386-b117-b2e21f465cdd",
-    "_rev": "5poerSnBDlmYCDAwsP3UzF",
+    "_rev": "HCKf4zekuu2Li58GHZjqga",
     "_system": {
       "base": {
         "id": "c845062c-f722-4386-b117-b2e21f465cdd",
-        "rev": "gpzUsLcLqWFSm3yg5m5sA0"
+        "rev": "HCKf4zekuu2Li58GHZYk06"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T02:37:19Z",
+    "_updatedAt": "2026-07-23T03:42:12Z",
     "client": "Grad Type III",
-    "content": null,
+    "content": [
+      {
+        "_key": "32ccfbf9620e",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/f9bdacdc2fed69a7dcf8525721086e468e26fcbf.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "100906b69f23",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/a69717289acabe2a110f1ae18e48fa2dd62dfbd3.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "b004588a9a93",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/245abb621e2e924ff23e25637de0cddd15716e3b.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "1e5a2f96dd1a",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/bc1678e6ff42e9d7d9c8a222dc6847b01585b996.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      },
+      {
+        "_key": "0a6a518a8788",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/cc16a9def745aa4fb8ed5d420c5cc9dce808ab01.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "wide"
+      },
+      {
+        "_key": "1c6f43f47c38",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/02b4aa1657185a257342802bb9328310ed9a98e5.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "small"
+      },
+      {
+        "_key": "5a86e79bb328",
+        "_type": "contentBlock",
+        "image1": {
+          "asset": {
+            "mimeType": "image/jpeg",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/2664dd36574d2fef7cf5406ab7c80dd8a9c03775.jpg"
+          }
+        },
+        "image2": null,
+        "mobileImage1": null,
+        "mobileImage2": null,
+        "type": "full-bleed"
+      }
+    ],
     "coverImage": {
       "asset": {
         "mimeType": "image/jpeg",
-        "url": "https://cdn.sanity.io/files/91e2aldw/production/f2b37dfc883bc6f7400493a6ce0950c64c6b5524.jpg"
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/2385566d317545bbbecf640dbd4864d512ff734b.jpg"
       }
     },
     "description": "A curated collection of instructive typographic works, featuring El Lissitzky’s influential essays on typography presented as an instructional manual.",
-    "heroImage": null,
+    "heroImage": {
+      "asset": {
+        "mimeType": "image/png",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/af98258ce05bd87654631df475e87402d8609efb.png"
+      }
+    },
+    "index": 3,
     "slug": {
       "_type": "slug",
       "current": "instructional-typography"
     },
+    "tags": [
+      "#editorial design",
+      ""
+    ],
     "webTitle": "Instructional Typography",
     "year": 2024
   },
   {
     "_createdAt": "2026-07-21T08:14:44Z",
     "_id": "cae93248-9bcc-4897-8402-8f676f992ead",
-    "_rev": "gpzUsLcLqWFSm3yg5m5sKP",
+    "_rev": "PWImsxFx7g4xqmxC76KUow",
+    "_system": {
+      "base": {
+        "id": "cae93248-9bcc-4897-8402-8f676f992ead",
+        "rev": "gpzUsLcLqWFSm3yg5m5sKP"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:43Z",
+    "_updatedAt": "2026-07-23T03:42:17Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -545,6 +713,7 @@
       }
     },
     "heroImage": null,
+    "index": 1,
     "slug": {
       "_type": "slug",
       "current": "lvma"
