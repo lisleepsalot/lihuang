@@ -12,6 +12,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/de9211188db16bde7e7aa9cc78815c9262f69638.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "anatomy-of-fascism"
@@ -31,6 +32,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/15065a044aedc6910a1dab190a2ff5e8b2b3ba7a.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "struve-geodetic-arc"
@@ -56,6 +58,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/ef484913d584ab4ff7e7fa67b8c366c17c07bea2.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "here-for-now"
@@ -76,6 +79,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/1757ea1c238a1f272a5486165397edf876de9ca4.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "risd-museum"
@@ -101,6 +105,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/7502174509eec6416d90ac89bd27b0999be73e2e.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "risd-yearbook-204"
@@ -120,6 +125,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/2021492c1252533d6d4ec32475a11ebb73926c4e.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "debates-in-ai"
@@ -139,6 +145,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/0ae03c0db5eacfd6146fda3295a2e5175c195e9c.mp4"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "heap-mono"
@@ -148,20 +155,21 @@
   {
     "_createdAt": "2026-07-21T05:45:52Z",
     "_id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-    "_rev": "MSs3wmKvNq6JDpgHXf480R",
+    "_rev": "HCKf4zekuu2Li58GHZG40P",
+    "_system": {
+      "base": {
+        "id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
+        "rev": "MSs3wmKvNq6JDpgHXf480R"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T07:33:56Z",
+    "_updatedAt": "2026-07-23T02:43:13Z",
     "client": "RISD",
     "content": [
       {
         "_key": "8cfdcc3e0e05",
         "_type": "contentBlock",
-        "image1": {
-          "asset": {
-            "mimeType": "image/jpeg",
-            "url": "https://cdn.sanity.io/files/91e2aldw/production/721f4b5fd88d4c15bf9b93bda8fa62edb0f138ad.jpg"
-          }
-        },
+        "image1": null,
         "image2": null,
         "mobileImage1": null,
         "mobileImage2": null,
@@ -391,6 +399,12 @@
     },
     "credit": "with RISD RISD Design Guild",
     "description": "Inspired by the gestures of overlap and shared making. Threads, hands, and objects weave together RISD’s cross-disciplinary spirit and celebrate the craft that connects us all.",
+    "heroImage": {
+      "asset": {
+        "mimeType": "image/jpeg",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/721f4b5fd88d4c15bf9b93bda8fa62edb0f138ad.jpg"
+      }
+    },
     "slug": {
       "_type": "slug",
       "current": "risd-commencement-2025"
@@ -415,6 +429,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/0cb6b8c1564ea2cbf8a16a93b8dff192f9bb93d1.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "risd-yearbook-2025"
@@ -434,6 +449,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/0a6f0e9a0535860af0d6fc644de1f29a7c97ff96.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "hope-and-anchor"
@@ -459,6 +475,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/ff47deb5470dec8cb61744c97d68028bc7860df4.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "clean-wipes"
@@ -478,6 +495,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/a24dab1b0a6ae49a2e35b4f3577288d7c7cad9b0.jpg"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "head-in-the-cloud"
@@ -487,9 +505,16 @@
   {
     "_createdAt": "2026-07-21T08:16:12Z",
     "_id": "c845062c-f722-4386-b117-b2e21f465cdd",
-    "_rev": "gpzUsLcLqWFSm3yg5m5sA0",
+    "_rev": "5poerSnBDlmYCDAwsP3UzF",
+    "_system": {
+      "base": {
+        "id": "c845062c-f722-4386-b117-b2e21f465cdd",
+        "rev": "gpzUsLcLqWFSm3yg5m5sA0"
+      }
+    },
     "_type": "project",
-    "_updatedAt": "2026-07-21T08:17:39Z",
+    "_updatedAt": "2026-07-23T02:37:19Z",
+    "client": "Grad Type III",
     "content": null,
     "coverImage": {
       "asset": {
@@ -497,11 +522,14 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/f2b37dfc883bc6f7400493a6ce0950c64c6b5524.jpg"
       }
     },
+    "description": "A curated collection of instructive typographic works, featuring El Lissitzky’s influential essays on typography presented as an instructional manual.",
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "instructional-typography"
     },
-    "webTitle": "Instructional Typography"
+    "webTitle": "Instructional Typography",
+    "year": 2024
   },
   {
     "_createdAt": "2026-07-21T08:14:44Z",
@@ -516,6 +544,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/195c18dc6922128533f461a5c14630aca4adf95e.mp4"
       }
     },
+    "heroImage": null,
     "slug": {
       "_type": "slug",
       "current": "lvma"

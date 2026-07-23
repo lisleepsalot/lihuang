@@ -40,6 +40,15 @@ function renderContentBlock(block) {
     </div>`
 }
 
+// Renders the optional hero image above the info section, styled like a wide content block; '' if unset.
+function renderHeroImage(project) {
+  if (!project.heroImage || !project.heroImage.asset) return ''
+  return `
+    <div class="content-block content-block--wide">
+      ${mediaTag(project.heroImage, '')}
+    </div>`
+}
+
 // Renders the top info section: underlined title, then description/client-credit-year/tags.
 function renderProjectInfo(project) {
   const tagsHtml = (project.tags || [])
@@ -61,10 +70,10 @@ function renderProjectInfo(project) {
     </div>`
 }
 
-// Builds the full project HTML: info section plus every content block.
+// Builds the full project HTML: optional hero image, info section, then every content block.
 export function buildProjectHTML(project) {
   const blocksHtml = (project.content || []).map(renderContentBlock).join('\n')
-  return renderProjectInfo(project) + blocksHtml
+  return renderHeroImage(project) + renderProjectInfo(project) + blocksHtml
 }
 
 // Renders the prev/next/home footer nav, styled like the header buttons.

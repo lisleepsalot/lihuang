@@ -15,6 +15,7 @@ const client = createClient({
 const PROJECTS_QUERY = `*[_type == "project"]{
   ...,
   coverImage{asset->{url, mimeType}},
+  heroImage{asset->{url, mimeType}},
   content[]{
     ...,
     image1{asset->{url, mimeType}},
