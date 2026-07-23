@@ -5,7 +5,7 @@
 // — the effect sits behind #info-container, which stays on top and fully
 // readable.
 
-const FUN_DEBUG_FORCE_FALLBACK = true; // set true to skip the API and always use the Horsegirl fallback
+const FUN_DEBUG_FORCE_FALLBACK = false; // set true to skip the API and always use the Horsegirl fallback
 
 const FUN_CELL_SIZE = 24;
 const FUN_FADE_DELAY_MS = 1600;
