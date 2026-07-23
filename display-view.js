@@ -1,6 +1,67 @@
 
 const PARALLAX_ENABLED = false;
 
+const PLACEHOLDER_WORDS = [
+    '(placeholder)', '(lorem ipsum)', '(block)', '(empty)', '(coming soon)',
+     '(tbd)', '(filler)', '(n/a)'
+];
+
+// Picks a random word for a placeholder cell.
+function randomPlaceholderWord() {
+    return PLACEHOLDER_WORDS[Math.floor(Math.random() * PLACEHOLDER_WORDS.length)];
+}
+
+const PLACEHOLDER_ASCII = [
+    // patterns
+    '# # # # # # # #\n # # # # # # # \n# # # # # # # #\n # # # # # # # ',
+    '+-+-+-+-+-+-+-+\n| | | | | | | |\n+-+-+-+-+-+-+-+\n| | | | | | | |',
+    'xxxxxxxxxxxxxxx\nx   x   x   x  \nxxxxxxxxxxxxxxx\nx   x   x   x  ',
+    '/ / / / / / / /\n/ / / / / / / /\n/ / / / / / / /',
+    '+--+--+--+--+\n|  |  |  |  |\n+--+--+--+--+\n   |  |  |  |',
+    '_/\\_/\\_/\\_/\\_/\\\n\\_/\\_/\\_/\\_/\\_/\n_/\\_/\\_/\\_/\\_/\\',
+    '- . - . - . - .\n. - . - . - . -\n- . - . - . - .',
+    '<><><><><><><><\n><><><><><><><>\n<><><><><><><><',
+    '| | | | | | | |\n|-|-|-|-|-|-|-|\n| | | | | | | |\n|-|-|-|-|-|-|-|',
+    // illustrative
+    '   +------+\n  /      /|\n +------+ |\n |      |/',
+    '       |\n       |\n   ----+--->',
+    '   \\   |   /\n    \\  |  /\n-----*-----\n    /  |  \\',
+    '      /\\\n     /  \\\n    /____\\',
+    '    /\\\n   /  \\\n  /____\\\n  |    |',
+    '  ______\n /      \\\n|________|',
+    '  .-""""-.\n /        \\\n    ||\n    ||',
+    '_____________\n|           |\n|__|     |__|',
+    ' ___________\n|\\         /|\n| \\       / |\n|__\\_____/__|'
+];
+
+// Picks a random 2-3 line ASCII art snippet for a placeholder cell.
+function randomPlaceholderAscii() {
+    return PLACEHOLDER_ASCII[Math.floor(Math.random() * PLACEHOLDER_ASCII.length)];
+}
+
+// Builds the ascii-art-over-word content for one placeholder cell.
+function buildPlaceholderContent() {
+    const wrapper = document.createElement('div');
+    wrapper.style.display = 'flex';
+    wrapper.style.flexDirection = 'column';
+    wrapper.style.alignItems = 'center';
+    wrapper.style.gap = '8px';
+
+    const art = document.createElement('pre');
+    art.style.margin = '0';
+    art.style.fontFamily = 'monospace';
+    art.style.fontSize = '10px';
+    art.style.lineHeight = '1.2';
+    art.textContent = randomPlaceholderAscii();
+
+    const word = document.createElement('span');
+    word.textContent = randomPlaceholderWord();
+
+    wrapper.appendChild(art);
+    wrapper.appendChild(word);
+    return wrapper;
+}
+
 // Fetches projects.json (built by fetchProjects.js) and returns it as a plain array.
 async function fetchProjects() {
     const response = await fetch('./projects.json');
@@ -151,16 +212,22 @@ async function initDisplayView() {
         gridCell.className = 'grid-cell';
 
         const coord = spiralCoords[index];
+        const topOffset = project.isBorder ? -6 : 0; // nudges placeholders up to align with real cells
         gridCell.style.position = 'absolute';
         gridCell.style.left = `${(coord.x - 1) * 680}px`;
-        gridCell.style.top = `${(coord.y - 1) * 480}px`;
+        gridCell.style.top = `${(coord.y - 1) * 480 + topOffset}px`;
 
         if (project.isBorder) {
             gridCell.innerHTML = `
                 <div class="display-grid-container">
-                    <div class="display-grid-image" style="background-image: none; background-color: transparent; border: 1px dashed black;"></div>
+                    <div class="display-grid-image" style="background-image: none; background-color: transparent; border: 1px dashed black; display: flex; align-items: center; justify-content: center; text-align: center; color: #414141;"></div>
+                    <div class="display-grid-textbox">
+                        <span class="display-grid-name"></span>
+                        <span class="display-grid-year"></span>
+                    </div>
                 </div>
             `;
+            gridCell.querySelector('.display-grid-image').appendChild(buildPlaceholderContent());
         } else {
             gridCell.innerHTML = `
                 <div class="display-grid-container">
