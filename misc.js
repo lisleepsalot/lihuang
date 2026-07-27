@@ -117,15 +117,6 @@
 
           miscMedia.classList.remove('fade-out');
           miscDescription.classList.remove('fade-out');
-
-          miscMedia.style.cursor = 'pointer';
-          miscMedia.onclick = () => {
-            if (block.source && block.source.url) {
-              window.open(block.source.url, '_blank');
-            } else {
-              window.open(`https://www.are.na/block/${block.id}`, '_blank');
-            }
-          };
         };
 
         if (withTransition) {

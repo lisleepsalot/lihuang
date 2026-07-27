@@ -376,6 +376,36 @@ async function initDisplayView() {
         }
     }
 
+    // Maps arrow keys to the same directions the on-screen nav arrows use.
+    const ARROW_KEY_CLASS = {
+        ArrowLeft: 'nav-arrow-left',
+        ArrowRight: 'nav-arrow-right',
+        ArrowUp: 'nav-arrow-up',
+        ArrowDown: 'nav-arrow-down'
+    };
+
+    // Lets arrow keys navigate the grid the same way clicking a nav arrow does,
+    // and Enter open whichever cell is currently centered — both keyed off
+    // currentIndex (1-based), same indexing navigateToGrid itself uses.
+    function handleKeyNavigation(e) {
+        if (isNavigating) return;
+
+        if (e.key === 'Enter') {
+            const activeProject = projects[currentIndex - 1];
+            if (activeProject && !activeProject.isBorder) {
+                e.preventDefault();
+                goToProject(activeProject);
+            }
+            return;
+        }
+
+        const className = ARROW_KEY_CLASS[e.key];
+        if (!className) return;
+
+        e.preventDefault();
+        handleArrowClick({ contains: cls => cls === className }, currentIndex - 1);
+    }
+
     // Finds a grid cell's index by its spiral coordinate.
     function findGridIndexByCoord(coord) {
         return gridCells.findIndex(cell =>
@@ -508,6 +538,8 @@ async function initDisplayView() {
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('mouseleave', resetParallax);
     }
+
+    window.addEventListener('keydown', handleKeyNavigation);
 
     const controlsToggle = document.getElementById('controls-toggle');
     const bottomControls = document.querySelector('.bottom-controls');
