@@ -12,6 +12,10 @@ body{
     color: var(--lh);
 }
 
+.loading-overlay{
+    color: black;
+}
+
 .header-utility.open {
     background-color: rgba(0, 0, 0, 1);
 }
