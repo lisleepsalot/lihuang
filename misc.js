@@ -1,4 +1,4 @@
-      const API_URL = 'https://api.are.na/v2/channels/misc-2-blz7-7lhg';
+      const API_URL = 'https://api.are.na/v3/channels/li-misc';
 
       let blocks = [];
       let currentIndex = 0;
