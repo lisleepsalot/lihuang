@@ -2,7 +2,7 @@
 @font-face 
 {
   font-family: 'Heap';
-  src: url('./Heap-Regular.woff2') format('woff2'); /* Reference the font file */
+  src: url('../assets/fonts/Heap-Regular.woff2') format('woff2'); /* Reference the font file */
   font-weight: normal;
   font-style: normal;
 }

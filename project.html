@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Li Huang</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="project-view.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/project-view.css">
 </head>
 <body>
     <header class="header"></header>
@@ -15,10 +15,10 @@
         <p class="project-status">loading…</p>
     </main>
 
-    <script src="page-transition.js"></script>
-    <script src="loadheader.js"></script>
+    <script src="js/page-transition.js"></script>
+    <script src="js/loadheader.js"></script>
     <script type="module">
-        import {buildProjectHTML, buildProjectFooterHTML} from './Renderprojectclient.js'
+        import {buildProjectHTML, buildProjectFooterHTML} from './js/Renderprojectclient.js'
 
         const root = document.getElementById('projectRoot')
         const slug = new URLSearchParams(window.location.search).get('slug')

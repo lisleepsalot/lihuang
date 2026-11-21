@@ -1,5 +1,8 @@
 const {createClient} = require('@sanity/client')
 const fs = require('fs')
+const path = require('path')
+
+const OUTPUT_FILE = path.join(__dirname, '..', 'projects.json') // repo root, where the pages fetch it from
 
 // Connects to your Sanity project. useCdn:false reads straight from the API —
 // the CDN can lag a minute behind a publish, and the sync workflow runs right after one.
@@ -34,7 +37,7 @@ async function fetchProjects() {
 // render scripts can read project data straight off disk, no internet call needed.
 async function main() {
   const projects = await fetchProjects()
-  fs.writeFileSync('projects.json', JSON.stringify(projects, null, 2))
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(projects, null, 2))
   console.log(`Saved ${projects.length} project(s) to projects.json`)
 }
 

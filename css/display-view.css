@@ -29,7 +29,6 @@
     position: relative;
     width: 570px;
     height: 380px;
-    background-image: url('./placeholder.jpeg');
     background-size: cover;
     background-position: center;
 }
