@@ -1,13 +1,13 @@
 const {createClient} = require('@sanity/client')
 const fs = require('fs')
 
-// Connects to your Sanity project. useCdn:true serves cached (faster) data —
-// fine for a build script, since we're not showing live edits second-by-second.
+// Connects to your Sanity project. useCdn:false reads straight from the API —
+// the CDN can lag a minute behind a publish, and the sync workflow runs right after one.
 const client = createClient({
   projectId: '91e2aldw',
   dataset: 'production',
   apiVersion: '2024-01-01',
-  useCdn: true,
+  useCdn: false,
 })
 
 // GROQ query: grabs every Project document, and for every media slot,
