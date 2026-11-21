@@ -1,7 +1,8 @@
 {
   "name": "lihuang",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Li Huang portfolio site",
   "homepage": "https://github.com/lisleepsalot/lihuang#readme",
   "bugs": {
     "url": "https://github.com/lisleepsalot/lihuang/issues"
@@ -11,14 +12,9 @@
     "url": "git+https://github.com/lisleepsalot/lihuang.git"
   },
   "license": "ISC",
-  "author": "",
   "type": "commonjs",
-  "main": "display-view.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fetch": "node scripts/fetchProjects.js"
   },
   "dependencies": {
     "@sanity/client": "^7.24.0"

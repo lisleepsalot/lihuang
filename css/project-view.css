@@ -1,12 +1,4 @@
 /* general styles */
-@font-face 
-{
-  font-family: 'Heap';
-  src: url('./Heap-Regular.woff2') format('woff2'); /* Reference the font file */
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
     font-family: 'Heap';
     font-size: 12px;
