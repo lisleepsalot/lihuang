@@ -461,15 +461,15 @@
   {
     "_createdAt": "2026-07-21T08:08:15Z",
     "_id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-    "_rev": "PWImsxFx7g4xqmxC76wa6g",
+    "_rev": "x01nXMleZgEFXQUq4flWPz",
     "_system": {
       "base": {
         "id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-        "rev": "5poerSnBDlmYCDAwsPzVyA"
+        "rev": "PWImsxFx7g4xqmxC76wa6g"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T06:37:47Z",
+    "_updatedAt": "2026-11-21T08:44:05Z",
     "client": "RISD",
     "content": [
       {
@@ -543,7 +543,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/983057e29ea41b0a7d4a7ecda12d61ddd5dd539b.png"
       }
     },
-    "index": 2,
+    "index": 1,
     "slug": {
       "_type": "slug",
       "current": "risd-yearbook-204"
@@ -1870,15 +1870,15 @@
   {
     "_createdAt": "2026-07-21T08:14:44Z",
     "_id": "cae93248-9bcc-4897-8402-8f676f992ead",
-    "_rev": "5poerSnBDlmYCDAwsQ9FvT",
+    "_rev": "JRdQiUhHv5iPLxcGzULzPl",
     "_system": {
       "base": {
         "id": "cae93248-9bcc-4897-8402-8f676f992ead",
-        "rev": "PWImsxFx7g4xqmxC76KUow"
+        "rev": "5poerSnBDlmYCDAwsQ9FvT"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-07-23T06:58:50Z",
+    "_updatedAt": "2026-11-21T08:43:59Z",
     "content": null,
     "coverImage": {
       "asset": {
@@ -1887,7 +1887,7 @@
       }
     },
     "heroImage": null,
-    "index": 1,
+    "index": 2,
     "slug": {
       "_type": "slug",
       "current": "lvma"
