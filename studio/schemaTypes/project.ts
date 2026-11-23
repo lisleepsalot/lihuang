@@ -21,6 +21,15 @@ export default defineType({
       type: 'number',
     }),
 
+    // Hides the project from the work page grid/list and the prev/next links,
+    // without deleting it — its page still works if someone has the direct link.
+    defineField({
+      name: 'archived',
+      title: 'Archive (hide from work page)',
+      type: 'boolean',
+      initialValue: false,
+    }),
+
     // Used to name the folder/URL for this project.
     defineField({
       name: 'slug',

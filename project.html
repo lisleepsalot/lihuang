@@ -33,6 +33,24 @@
             })
         }
 
+        // Prev/next only cycle through projects shown on the work page. An
+        // archived project's page still opens from a direct link; its footer
+        // then just points at the first and last visible projects.
+        function buildFooter(projects, project) {
+            const visible = projects.filter(p => !p.archived)
+            if (!visible.length) return ''
+
+            const index = visible.indexOf(project)
+            const prevProject = index === -1
+                ? visible[visible.length - 1]
+                : visible[(index - 1 + visible.length) % visible.length]
+            const nextProject = index === -1
+                ? visible[0]
+                : visible[(index + 1) % visible.length]
+
+            return buildProjectFooterHTML(prevProject, nextProject)
+        }
+
         async function renderProject() {
             if (!slug) {
                 root.innerHTML = '<p class="project-status">No project specified.</p>'
@@ -48,12 +66,8 @@
                 return
             }
 
-            const index = projects.indexOf(project)
-            const prevProject = projects[(index - 1 + projects.length) % projects.length]
-            const nextProject = projects[(index + 1) % projects.length]
-
             document.title = project.webTitle ? `${project.webTitle} — Li Huang` : 'Li Huang'
-            root.innerHTML = buildProjectHTML(project) + buildProjectFooterHTML(prevProject, nextProject)
+            root.innerHTML = buildProjectHTML(project) + buildFooter(projects, project)
             observeContentBlocks()
             initBlurUp()
         }
