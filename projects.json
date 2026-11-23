@@ -2,7 +2,7 @@
   {
     "_createdAt": "2026-07-21T08:12:55Z",
     "_id": "11f324bf-4f90-4263-85dd-c646164151ef",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "11f324bf-4f90-4263-85dd-c646164151ef",
@@ -10,7 +10,7 @@
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:08:23Z",
+    "_updatedAt": "2026-11-23T20:17:02Z",
     "client": "Typography 3 RISD 2023 Spring",
     "content": [
       {
@@ -84,7 +84,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/feb45b78cfd8d0ea4116d3aba31b68dd2378607b.png"
       }
     },
-    "index": 14,
+    "index": 12,
     "slug": {
       "_type": "slug",
       "current": "anatomy-of-fascism"
@@ -98,7 +98,7 @@
   {
     "_createdAt": "2026-07-21T08:12:29Z",
     "_id": "242528c8-f566-483b-a759-225b11d62cf3",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "242528c8-f566-483b-a759-225b11d62cf3",
@@ -312,7 +312,7 @@
   {
     "_createdAt": "2026-07-21T22:36:11Z",
     "_id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "3cdec798-18e8-4eb1-9f8f-99373d25fb06",
@@ -463,7 +463,7 @@
   {
     "_createdAt": "2026-07-21T08:08:15Z",
     "_id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "5ca75340-2a82-497e-a34d-5af11618c4a9",
@@ -559,7 +559,7 @@
   {
     "_createdAt": "2026-07-21T22:35:39Z",
     "_id": "7b2443d6-9c34-44a7-b9eb-ebf199daedbe",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "7b2443d6-9c34-44a7-b9eb-ebf199daedbe",
@@ -567,7 +567,7 @@
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:13:29Z",
+    "_updatedAt": "2026-11-23T20:17:02Z",
     "client": "RISD CTC",
     "content": [
       {
@@ -665,7 +665,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/51e824a81ebae36d5844d792de942a00b6f3ee6f.mp4"
       }
     },
-    "index": 15,
+    "index": 13,
     "slug": {
       "_type": "slug",
       "current": "debates-in-ai"
@@ -680,7 +680,7 @@
   {
     "_createdAt": "2026-07-21T08:15:38Z",
     "_id": "802b1d6b-9412-4ee1-89b2-7cfdb5bb4249",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "802b1d6b-9412-4ee1-89b2-7cfdb5bb4249",
@@ -795,7 +795,7 @@
   {
     "_createdAt": "2026-07-21T05:45:52Z",
     "_id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
@@ -1060,7 +1060,7 @@
   {
     "_createdAt": "2026-07-21T08:11:53Z",
     "_id": "b1579109-d01f-4336-87bf-9f4c48decbaa",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "b1579109-d01f-4336-87bf-9f4c48decbaa",
@@ -1323,7 +1323,7 @@
   {
     "_createdAt": "2026-07-21T22:37:03Z",
     "_id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
@@ -1495,7 +1495,7 @@
   {
     "_createdAt": "2026-07-21T08:08:46Z",
     "_id": "c55510b0-9460-4e1b-b770-17614faf1353",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "c55510b0-9460-4e1b-b770-17614faf1353",
@@ -1503,7 +1503,7 @@
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:08:23Z",
+    "_updatedAt": "2026-11-23T20:17:02Z",
     "client": "Typography III RISD 2023 Fall",
     "content": [
       {
@@ -1619,7 +1619,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/66a92754e4b5b7e7e7514625a6e507f9fe805f8e.jpg"
       }
     },
-    "index": 11,
+    "index": 10,
     "slug": {
       "_type": "slug",
       "current": "clean-wipes"
@@ -1735,7 +1735,7 @@
   {
     "_createdAt": "2026-07-21T08:16:12Z",
     "_id": "c845062c-f722-4386-b117-b2e21f465cdd",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "c845062c-f722-4386-b117-b2e21f465cdd",
@@ -1743,7 +1743,7 @@
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:08:23Z",
+    "_updatedAt": "2026-11-23T20:17:02Z",
     "client": "Grad Type III",
     "content": [
       {
@@ -1858,7 +1858,7 @@
         "url": "https://cdn.sanity.io/files/91e2aldw/production/af98258ce05bd87654631df475e87402d8609efb.png"
       }
     },
-    "index": 12,
+    "index": 11,
     "slug": {
       "_type": "slug",
       "current": "instructional-typography"
@@ -1873,7 +1873,7 @@
   {
     "_createdAt": "2026-07-21T08:14:44Z",
     "_id": "cae93248-9bcc-4897-8402-8f676f992ead",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_system": {
       "base": {
         "id": "cae93248-9bcc-4897-8402-8f676f992ead",
@@ -1902,7 +1902,7 @@
   {
     "_createdAt": "2026-11-23T20:09:04Z",
     "_id": "cc5e5d0e-f33d-4214-beea-38d89c84fe7c",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
     "_type": "project",
     "_updatedAt": "2026-11-23T20:13:29Z",
     "content": null,
