@@ -200,7 +200,7 @@ async function initDisplayView() {
     let isInitialRender = true;
 
     const rawProjects = await fetchProjects();
-    let projects = sortByOrder(rawProjects).map(toDisplayProject);
+    let projects = sortByOrder(rawProjects.filter(p => !p.archived)).map(toDisplayProject);
     const mediaLoadPromise = Promise.all(projects.map(preloadMedia));
 
     if (window.matchMedia('(max-width: 900px)').matches) {

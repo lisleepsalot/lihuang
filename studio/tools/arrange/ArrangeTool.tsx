@@ -15,6 +15,7 @@ const PROJECTS_QUERY = `*[_type == "project"]{
   webTitle,
   year,
   index,
+  archived,
   "cover": coverImage.asset->{url, mimeType}
 }`
 
@@ -23,6 +24,7 @@ type RawProject = {
   webTitle?: string
   year?: number
   index?: number
+  archived?: boolean
   cover?: {url?: string; mimeType?: string} | null
 }
 
@@ -31,6 +33,7 @@ type Project = {
   title: string
   year?: number
   index?: number
+  archived: boolean
   coverUrl?: string
   isVideo: boolean
   hasPublished: boolean
@@ -52,6 +55,7 @@ function mergeDrafts(docs: RawProject[]): Project[] {
       title: doc.webTitle || 'Untitled',
       year: doc.year,
       index: doc.index,
+      archived: !!doc.archived,
       coverUrl: doc.cover?.url,
       isVideo: !!doc.cover?.mimeType?.startsWith('video/'),
       hasPublished: !isDraft,
@@ -92,6 +96,7 @@ export function ArrangeTool() {
   const toast = useToast()
 
   const [projects, setProjects] = useState<Project[] | null>(null)
+  const [archived, setArchived] = useState<Project[]>([])
   const [order, setOrder] = useState<string[]>([])
   const [savedOrder, setSavedOrder] = useState<string[]>([])
   const [dragId, setDragId] = useState<string | null>(null)
@@ -101,9 +106,13 @@ export function ArrangeTool() {
   // Reloads from Sanity, used on open and after every save.
   const load = useCallback(async () => {
     const docs = await client.fetch<RawProject[]>(PROJECTS_QUERY)
-    const sorted = sortProjects(mergeDrafts(docs))
+    const all = sortProjects(mergeDrafts(docs))
+    // Archived projects aren't on the work page, so they're left out of the
+    // spiral and keep whatever index they had.
+    const sorted = all.filter((p) => !p.archived)
     const ids = sorted.map((p) => p.id)
     setProjects(sorted)
+    setArchived(all.filter((p) => p.archived))
     setOrder(ids)
     // Treat any project whose stored index doesn't already equal its
     // position as unsaved, so ties from the old numbering get fixed on save.
@@ -298,6 +307,12 @@ export function ArrangeTool() {
             )
           })}
         </div>
+
+        {archived.length > 0 && (
+          <Text size={1} muted align="center">
+            Archived, not on the work page: {archived.map((p) => p.title).join(', ')}
+          </Text>
+        )}
       </Stack>
     </Box>
   )
