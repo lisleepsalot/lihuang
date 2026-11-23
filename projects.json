@@ -341,15 +341,16 @@
   {
     "_createdAt": "2026-07-21T08:14:24Z",
     "_id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "2Yb0Yi4XxW3da64q9EiwL7",
     "_system": {
       "base": {
         "id": "51ac646f-1294-4e81-bbca-4eea2cdf690b",
-        "rev": "PWImsxFx7g4xqmxC7719Lc"
+        "rev": "2Yb0Yi4XxW3da64q9EiRtN"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:08:23Z",
+    "_updatedAt": "2026-11-23T20:16:24Z",
+    "archived": true,
     "client": "RISD Design Studio 4",
     "content": [
       {
@@ -1632,15 +1633,16 @@
   {
     "_createdAt": "2026-07-21T08:13:21Z",
     "_id": "c8439c54-a43c-4c63-ab04-daf60860bb29",
-    "_rev": "2Yb0Yi4XxW3da64q9EiRtN",
+    "_rev": "ixs550XUI7pOsum5zDYut1",
     "_system": {
       "base": {
         "id": "c8439c54-a43c-4c63-ab04-daf60860bb29",
-        "rev": "5poerSnBDlmYCDAwsPn4e4"
+        "rev": "2Yb0Yi4XxW3da64q9EiRtN"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:08:23Z",
+    "_updatedAt": "2026-11-23T20:16:26Z",
+    "archived": true,
     "client": "RISD",
     "content": [
       {
