@@ -1896,5 +1896,22 @@
     "url": "https://www.thiscardigan.com/work/las-vegas-museum-of-art",
     "webTitle": "Las Vegas Museum of Art",
     "year": 2026
+  },
+  {
+    "_createdAt": "2026-11-23T20:09:04Z",
+    "_id": "cc5e5d0e-f33d-4214-beea-38d89c84fe7c",
+    "_rev": "6lC6EdqLuwxmjCN9IeLuYF",
+    "_type": "project",
+    "_updatedAt": "2026-11-23T20:09:55Z",
+    "content": null,
+    "coverImage": {
+      "asset": {
+        "mimeType": "image/png",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/10cd90b9b0386c5c91474c435b4a0d865c674043.png"
+      }
+    },
+    "heroImage": null,
+    "url": "https://makeplaylist.link/",
+    "webTitle": "makeplaylist.link"
   }
 ]
