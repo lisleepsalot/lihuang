@@ -1323,15 +1323,15 @@
   {
     "_createdAt": "2026-07-21T22:37:03Z",
     "_id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-    "_rev": "sZKM7OASV5aNDEZKfNCDgu",
+    "_rev": "sZKM7OASV5aNDEZKfNDivK",
     "_system": {
       "base": {
         "id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-        "rev": "6lC6EdqLuwxmjCN9IeNohB"
+        "rev": "sZKM7OASV5aNDEZKfNCDgu"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-24T19:49:08Z",
+    "_updatedAt": "2026-11-24T19:54:33Z",
     "client": "Color and Surface RISD 2025",
     "content": [
       {
@@ -1345,8 +1345,8 @@
         },
         "image2": {
           "asset": {
-            "mimeType": "image/jpeg",
-            "url": "https://cdn.sanity.io/files/91e2aldw/production/d941e88cf0b76609f237cdcf4ff526e9807c9610.jpg"
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/4ce9f911fbf834056c9802186b523d6baf0a00ed.mp4"
           }
         },
         "mobileImage1": null,
