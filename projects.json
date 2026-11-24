@@ -795,15 +795,15 @@
   {
     "_createdAt": "2026-07-21T05:45:52Z",
     "_id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
+    "_rev": "ixs550XUI7pOsum5zFHcvW",
     "_system": {
       "base": {
         "id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-        "rev": "HCKf4zekuu2Li58GHZG40P"
+        "rev": "6lC6EdqLuwxmjCN9IeNohB"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:13:29Z",
+    "_updatedAt": "2026-11-24T04:39:29Z",
     "client": "RISD",
     "content": [
       {
@@ -1054,7 +1054,7 @@
       "identity design",
       "motion design"
     ],
-    "webTitle": "RSID Commencement 2025",
+    "webTitle": "RISD Commencement 2025",
     "year": 2025
   },
   {
