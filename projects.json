@@ -795,15 +795,15 @@
   {
     "_createdAt": "2026-07-21T05:45:52Z",
     "_id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
+    "_rev": "ixs550XUI7pOsum5zFHcvW",
     "_system": {
       "base": {
         "id": "87b94237-3ca0-4d50-a67f-8f94a400113b",
-        "rev": "HCKf4zekuu2Li58GHZG40P"
+        "rev": "6lC6EdqLuwxmjCN9IeNohB"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:13:29Z",
+    "_updatedAt": "2026-11-24T04:39:29Z",
     "client": "RISD",
     "content": [
       {
@@ -1054,7 +1054,7 @@
       "identity design",
       "motion design"
     ],
-    "webTitle": "RSID Commencement 2025",
+    "webTitle": "RISD Commencement 2025",
     "year": 2025
   },
   {
@@ -1323,15 +1323,15 @@
   {
     "_createdAt": "2026-07-21T22:37:03Z",
     "_id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
+    "_rev": "sZKM7OASV5aNDEZKfNDivK",
     "_system": {
       "base": {
         "id": "bd177a58-a417-4f3b-bb30-b2f251da6f3b",
-        "rev": "PWImsxFx7g4xqmxC76c3Bg"
+        "rev": "sZKM7OASV5aNDEZKfNCDgu"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:08:23Z",
+    "_updatedAt": "2026-11-24T19:54:33Z",
     "client": "Color and Surface RISD 2025",
     "content": [
       {
@@ -1345,8 +1345,8 @@
         },
         "image2": {
           "asset": {
-            "mimeType": "image/jpeg",
-            "url": "https://cdn.sanity.io/files/91e2aldw/production/d941e88cf0b76609f237cdcf4ff526e9807c9610.jpg"
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/4ce9f911fbf834056c9802186b523d6baf0a00ed.mp4"
           }
         },
         "mobileImage1": null,
@@ -1428,8 +1428,8 @@
         "_type": "contentBlock",
         "image1": {
           "asset": {
-            "mimeType": "image/jpeg",
-            "url": "https://cdn.sanity.io/files/91e2aldw/production/66c3b1d3cd71978ac1566703f5153873022beffa.jpg"
+            "mimeType": "video/mp4",
+            "url": "https://cdn.sanity.io/files/91e2aldw/production/3c87d22a2e9683657424c606d75fc85503c77df9.mp4"
           }
         },
         "image2": null,
@@ -1495,15 +1495,15 @@
   {
     "_createdAt": "2026-07-21T08:08:46Z",
     "_id": "c55510b0-9460-4e1b-b770-17614faf1353",
-    "_rev": "6lC6EdqLuwxmjCN9IeNohB",
+    "_rev": "mQREkmXrvQRCUZyXC4FZQP",
     "_system": {
       "base": {
         "id": "c55510b0-9460-4e1b-b770-17614faf1353",
-        "rev": "HCKf4zekuu2Li58GHa52Lf"
+        "rev": "6lC6EdqLuwxmjCN9IeNohB"
       }
     },
     "_type": "project",
-    "_updatedAt": "2026-11-23T20:17:02Z",
+    "_updatedAt": "2026-11-24T20:18:41Z",
     "client": "Typography III RISD 2023 Fall",
     "content": [
       {
@@ -1615,8 +1615,8 @@
     "description": "“This world needs more pee pee poo poo.” Clean Wipes is a project dedicated to make the ultimate 'go-to toilet read.' It embraces the charm of the “bad” cultures we love. The first volume is a dive into bad movies and the cinematic guilty pleasures, presenting both a physical book and a corresponding web version.",
     "heroImage": {
       "asset": {
-        "mimeType": "image/jpeg",
-        "url": "https://cdn.sanity.io/files/91e2aldw/production/66a92754e4b5b7e7e7514625a6e507f9fe805f8e.jpg"
+        "mimeType": "image/png",
+        "url": "https://cdn.sanity.io/files/91e2aldw/production/8027ca34cd22a7eaa648c6c0ed987851b265302d.png"
       }
     },
     "index": 10,
